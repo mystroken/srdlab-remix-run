@@ -1,0 +1,14 @@
+.scroolpub {
+  border: 40rem;
+  border-color: blue;
+  animation: myscrool 0.5s ease-in-out;
+}
+
+@keyframes myscrool {
+  0% {
+    -moz-transform: translateX(50%);
+  }
+  100% {
+    -moz-transform: translateX(-50%);
+  }
+}

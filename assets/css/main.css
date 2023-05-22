@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* The @layer directive helps you control declaration
+order by automatically relocating your styles to the corresponding @tailwind directive,
+and also enables features like modifiers and tree-shaking for your own custom CSS.
+@see https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer */
+@layer base {
+  /* Adding our custom font face */
+  @font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: local("Poppins Light"),
+      url(/fonts/Poppins/Poppins-Light.woff2) format("woff2");
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local("Poppins SemiBold"),
+      url(/fonts/Poppins/Poppins-SemiBold.woff2) format("woff2");
+  }
+
+  /* To make types look sexy */
+  html {
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 300;
+  }
+
+  /* Default style for headings. */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+  }
+  h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+button.slick-prev:before,
+button.slick-next:before {
+  color: black;
+  font-size: 25px;
+  margin: 0 2px 0 -2px;
+}

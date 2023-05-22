@@ -1,0 +1,11 @@
+.myheader {
+  transition: all 0.6s ease-in-out;
+  color: white;
+}
+
+
+.myheader:hover {
+  background-color: #b9c4ce;
+  cursor: pointer;
+  color: #0e3758
+}
