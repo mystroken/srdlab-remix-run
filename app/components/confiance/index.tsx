@@ -1,8 +1,4 @@
-import DG from "../../../assets/imgs/partners/dg_logo.jpg"
-import ESC from "../../../assets/imgs/partners/esc_logo.jpg"
-import IHFRA from "../../../assets/imgs/partners/ihfra_logo.jpg"
-import RISD from "../../../assets/imgs/partners/risd_logo.jpg"
-import WB from "../../../assets/imgs/partners/wb.jpg"
+import { DG, ESC, RISD, WB } from "~/data/images";
 
 export default function ConfianceComponent() {
     return (
