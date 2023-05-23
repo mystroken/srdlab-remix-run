@@ -3,7 +3,7 @@ import LogoColor from "../../../assets/imgs/logo.png"
 import BtnNext from "../../../assets/imgs/next.png"
 import BtnPrevious from "../../../assets/imgs/previous.png"
 import styles from "./styles.css"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Link, useMatches } from "@remix-run/react"
 import { carouselItems, header } from "~/data/header"
 import type { HeaderType, SolutionsType } from "~/types"
@@ -24,6 +24,21 @@ export default function BannerComponent({ title, content, arrow, list, ...props 
     const [navbar, setNavbar] = useState(false);
     const [isShow, setIsShow] = useState(false)
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [colorChange, setColorchange] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener('scroll', changeNavbarColor);
+    })
+
+    const changeNavbarColor = () => {
+        if (window.scrollY >= 80) {
+            setColorchange(true);
+        }
+        else {
+            setColorchange(false);
+        }
+    };
+
     const next = () => {
         setCurrentIndex((currentIndex + 1) % carouselItems.length);
     };
@@ -38,7 +53,7 @@ export default function BannerComponent({ title, content, arrow, list, ...props 
     return (
         <div className="bg-center bg-cover bg-[url('assets/imgs/banner.png')] z-50">
             <header className="bg-center bg-cover">
-                <div className="fixed right-0 top-0 left-0 z-40">
+                <div className={`fixed right-0 top-0 left-0 z-40 ${colorChange ? 'bg-primary' : ''}`}>
                     <div className="myheader container-other hover:rounded-xl my-4"
                         onMouseLeave={() => setIsShow(false)}
                         onMouseEnter={() => setIsShow(true)}
