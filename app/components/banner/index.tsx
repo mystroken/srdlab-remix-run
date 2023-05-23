@@ -58,7 +58,7 @@ export default function BannerComponent({ title, content, arrow, list, ...props 
                         onMouseLeave={() => setIsShow(false)}
                         onMouseEnter={() => setIsShow(true)}
                     >
-                        <div className="py-4 container mx-auto">
+                        <div className="py-2 container mx-auto">
                             <nav>
                                 <div className="flex items-center justify-between">
                                     <Link to="/">
