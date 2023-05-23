@@ -10,7 +10,7 @@ export default function Index() {
   return (
     <>
       <DefaultLayout>
-        <BannerComponent title="Aide aux décisions économiques et socio-démographiques"
+        <BannerComponent list={true} title="Aide aux décisions économiques et socio-démographiques"
           content="SRD Lab est un cabinet d’étude producteur de données et de formations pour l’aide aux décisions économiques et socio-démographiques."
           arrow={true}
         />

@@ -5,8 +5,8 @@ import BtnPrevious from "../../../assets/imgs/previous.png"
 import styles from "./styles.css"
 import { useState } from "react"
 import { Link, useMatches } from "@remix-run/react"
-import { header } from "~/data/header"
-import type { HeaderType } from "~/types"
+import { carouselItems, header } from "~/data/header"
+import type { HeaderType, SolutionsType } from "~/types"
 
 export function links() {
     return [{ rel: "stylesheet", href: styles }]
@@ -16,12 +16,22 @@ interface BannerComponentProps {
     title: string
     content: string
     arrow?: boolean
+    list?: boolean
 }
 
 
-export default function BannerComponent({ title, content, arrow, ...props }: BannerComponentProps) {
+export default function BannerComponent({ title, content, arrow, list, ...props }: BannerComponentProps) {
     const [navbar, setNavbar] = useState(false);
     const [isShow, setIsShow] = useState(false)
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const next = () => {
+        setCurrentIndex((currentIndex + 1) % carouselItems.length);
+    };
+    const prev = () => {
+        setCurrentIndex((currentIndex - 1 + carouselItems.length) % carouselItems.length);
+    };
+
+
     const path = useMatches()
 
     const idPath = path[1].pathname
@@ -62,7 +72,7 @@ export default function BannerComponent({ title, content, arrow, ...props }: Ban
                                                 header.map((item: HeaderType, index) => {
                                                     return (
                                                         <li key={index}>
-                                                        <Link to={`${item.link}`} className={`${item.link === idPath ? 'font-extrabold border rounded-full px-6 py-2 border-[#faaf42]' : 'font-normal'} text-sm ${item.link === '#travailleravecnous' ? '' : ''}`}>{item.name}</Link>
+                                                            <Link to={`${item.link}`} className={`${item.link === idPath ? 'font-extrabold border rounded-full px-6 py-2 border-[#faaf42]' : 'font-normal'} text-sm ${item.link === '#travailleravecnous' ? '' : ''}`}>{item.name}</Link>
                                                         </li>
                                                     )
                                                 })
@@ -91,33 +101,73 @@ export default function BannerComponent({ title, content, arrow, ...props }: Ban
                     </div>
                 </div>
             </header >
-            <header className="bg-center  bg-cover z-40 pt-[6.5rem]">
-                <div className="py-4 container mx-auto sticky top-0 z-20">
-                    <div className="mt-[4.4rem] md:mt-[8.8rem] md:w-[44rem] mb-36">
-                        <h1
-                            className="text-white text-2xl text-center md:text-start md:text-[2.93rem] md:mr-8 leading-[2rem] md:leading-[120%]">
-                            {title}
-                        </h1>
-                        {arrow === true ?
-                            <hr className="my-8 h-1 bg-orange w-44 mx-auto md:mx-0" /> : <div className="my-8" />
-                        }
-                        <p className="text-white text-lg md:text-[1.25rem] md:w-3/4 text-center md:text-start leading-[1.7rem]">
-                            {content}
-                        </p>
-                        {arrow === true ?
-                            <div className="flex justify-center md:justify-end mt-16">
-                                <button className="w-6 h-6 mx-2">
-                                    <img src={BtnPrevious} alt="" />
-                                </button>
-                                <button className="w-6 h-6 mx-2">
-                                    <img src={BtnNext} alt="" />
-                                </button>
+            {
+                list === true ? (
+                    <header className="bg-center  bg-cover z-40 pt-[6.5rem]">
+                        <div className="py-4 container mx-auto sticky top-0 z-20">
+                            <div className="mt-[4.4rem] md:mt-[8.8rem] md:w-[44rem] mb-36">
+                                <>
+                                    <div className='slider-container'>
+                                        {carouselItems.map((item: SolutionsType, index) => (
+                                            <div
+                                                key={index}
+                                                className={
+                                                    carouselItems[currentIndex].title === item.title ? 'fade' : 'slide fade'
+                                                }
+                                            >
+                                                <h1
+                                                    className="text-white text-2xl text-center md:text-start md:text-[2.93rem] md:mr-8 leading-[2rem] md:leading-[120%] h-36">
+                                                    {item.title}
+                                                </h1>
+                                                <hr className="my-8 h-1 bg-orange w-44 mx-auto md:mx-0" /> : <div className="my-8" />
+                                                <p className="text-white text-lg md:text-[1.25rem] md:w-3/4 text-center md:text-start leading-[1.7rem] h-36">
+                                                    {item.content}
+                                                </p>
+                                            </div>
+                                        ))}
+                                        <div className="flex justify-center md:justify-end mt-16">
+                                            <button onClick={prev} className="w-6 h-6 mx-2">
+                                                <img src={BtnPrevious} alt="" />
+                                            </button>
+                                            <button onClick={next} className="w-6 h-6 mx-2">
+                                                <img src={BtnNext} alt="" />
+                                            </button>
+                                        </div>
+                                    </div>
+                                </>
                             </div>
-                            : <div />
-                        }
-                    </div>
-                </div>
-            </header>
+                        </div>
+                    </header>
+                ) : (
+                    <header className="bg-center  bg-cover z-40 pt-[6.5rem]">
+                        <div className="py-4 container mx-auto sticky top-0 z-20">
+                            <div className="mt-[4.4rem] md:mt-[8.8rem] md:w-[44rem] mb-36">
+                                <h1
+                                    className="text-white text-2xl text-center md:text-start md:text-[2.93rem] md:mr-8 leading-[2rem] md:leading-[120%]">
+                                    {title}
+                                </h1>
+                                {arrow === true ?
+                                    <hr className="my-8 h-1 bg-orange w-44 mx-auto md:mx-0" /> : <div className="my-8" />
+                                }
+                                <p className="text-white text-lg md:text-[1.25rem] md:w-3/4 text-center md:text-start leading-[1.7rem]">
+                                    {content}
+                                </p>
+                                {arrow === true ?
+                                    <div className="flex justify-center md:justify-end mt-16">
+                                        <button onClick={prev} className="w-6 h-6 mx-2">
+                                            <img src={BtnPrevious} alt="" />
+                                        </button>
+                                        <button onClick={next} className="w-6 h-6 mx-2">
+                                            <img src={BtnNext} alt="" />
+                                        </button>
+                                    </div>
+                                    : <div />
+                                }
+                            </div>
+                        </div>
+                    </header>
+                )
+            }
         </div >
     )
 }
