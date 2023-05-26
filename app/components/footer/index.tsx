@@ -8,8 +8,8 @@ export default function FooterComponent() {
         window.scrollTo({ top: 0, behavior: 'smooth' })
     }
     return (
-        <footer className="bg-primary pt-16 md:pt-32">
-            <div className="container mx-auto py-16 md:py-20">
+        <footer className="bg-primary pt-10">
+            <div className="container mx-auto py-10">
                 <div className="flex flex-col md:flex-row">
                     <div className="w-full flex justify-center md:justify-start md:1/4">
                         <div>
@@ -41,9 +41,9 @@ export default function FooterComponent() {
                         </nav>
                     </div>
                     <div className="w-full flex justify-center md:1/4">
-                        <div className="border-2 rounded-full w-20 h-20 p-4">
+                        <div className="border-2 rounded-full w-20 h-20 flex items-center justify-center">
                             <button onClick={handleScrollToTop}>
-                                <img className="w-16 h-auto" src={UpArrow} alt="up" />
+                                <img className="h-6 w-auto" src={UpArrow} alt="up" />
                             </button>
                         </div>
                     </div>
