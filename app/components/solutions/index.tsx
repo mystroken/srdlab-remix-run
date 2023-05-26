@@ -17,10 +17,10 @@ export default function SolutionsComponent() {
                         </div>
                         <div className="xl:flex  hidden  w-1/4">
                             <div className="absolute left-[81.88%] right-[4.62%] w-[194px] h-[200px]">
-                                <img src="~/assets/imgs/vect-second.png" alt="" />
+                                {/* <img src="~/assets/imgs/vect-second.png" alt="" /> */}
                             </div>
                             <div className="absolute left-[83.56%] right-[3.1%] w-[190px] h-[110px] mt-[4%]">
-                                <img src="~/assets/imgs/vect-prim.png" alt="" />
+                                {/* <img src="~/assets/imgs/vect-prim.png" alt="" /> */}
                             </div>
                         </div>
                     </div>

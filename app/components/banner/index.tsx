@@ -118,9 +118,9 @@ export default function BannerComponent({ title, content, arrow, list, ...props 
             </header >
             {
                 list === true ? (
-                    <header className="bg-center  bg-cover z-40 pt-[6.5rem]">
+                    <header className="bg-center  bg-cover z-40 pt-[6.5rem] md:h-[600px]">
                         <div className="py-4 container mx-auto sticky top-0 z-20">
-                            <div className="mt-[4.4rem] md:mt-[8.8rem] md:w-[44rem] mb-36">
+                            <div className="mt-[4.4rem] md:mt-[8.8rem] md:w-[44rem]">
                                 <>
                                     <div className='slider-container'>
                                         {carouselItems.map((item: SolutionsType, index) => (
@@ -131,16 +131,16 @@ export default function BannerComponent({ title, content, arrow, list, ...props 
                                                 }
                                             >
                                                 <h1
-                                                    className="text-white text-2xl text-center md:text-start md:text-[2.93rem] md:mr-8 leading-[2rem] md:leading-[120%] h-36">
+                                                    className="text-white text-2xl text-center md:text-start md:text-[2.5rem] md:mr-8 leading-[2rem] md:leading-[120%]">
                                                     {item.title}
                                                 </h1>
-                                                <hr className="my-8 h-1 bg-orange w-44 mx-auto md:mx-0" /> : <div className="my-8" />
-                                                <p className="text-white text-lg md:text-[1.25rem] md:w-3/4 text-center md:text-start leading-[1.7rem] h-36">
+                                                <hr className="h-1 mt-10 bg-orange w-44 mx-auto md:mx-0" /> : <div className="my-8" />
+                                                <p className="text-white text-lg md:text-[1.25rem] md:w-3/4 text-center md:text-start leading-[1.7rem]">
                                                     {item.content}
                                                 </p>
                                             </div>
                                         ))}
-                                        <div className="flex justify-center md:justify-end mt-16">
+                                        <div className="flex mt-6 md:mt-0 justify-center md:justify-end">
                                             <button onClick={prev} className="w-6 h-6 mx-2">
                                                 <img src={BtnPrevious} alt="" />
                                             </button>
@@ -158,7 +158,7 @@ export default function BannerComponent({ title, content, arrow, list, ...props 
                         <div className="py-4 container mx-auto sticky top-0 z-20">
                             <div className="mt-[4.4rem] md:mt-[8.8rem] md:w-[44rem] mb-36">
                                 <h1
-                                    className="text-white text-2xl text-center md:text-start md:text-[2.93rem] md:mr-8 leading-[2rem] md:leading-[120%]">
+                                    className="text-white text-2xl text-center md:text-start md:text-[2.5rem] md:mr-8 leading-[2rem] md:leading-[120%]">
                                     {title}
                                 </h1>
                                 {arrow === true ?

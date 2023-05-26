@@ -41,7 +41,7 @@ export default function FooterComponent() {
                         </nav>
                     </div>
                     <div className="w-full flex justify-center md:1/4">
-                        <div className="border-2 rounded-full w-20 h-20 flex items-center justify-center">
+                        <div className="border-2 rounded-full w-14 h-14 flex items-center justify-center">
                             <button onClick={handleScrollToTop}>
                                 <img className="h-6 w-auto" src={UpArrow} alt="up" />
                             </button>
