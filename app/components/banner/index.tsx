@@ -30,6 +30,10 @@ export default function BannerComponent({ title, content, arrow, list, ...props 
         window.addEventListener('scroll', changeNavbarColor);
     })
 
+    const handleScrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+
     const changeNavbarColor = () => {
         if (window.scrollY >= 80) {
             setColorchange(true);
@@ -62,7 +66,7 @@ export default function BannerComponent({ title, content, arrow, list, ...props 
                         <div className="py-2 container mx-auto">
                             <nav>
                                 <div className="flex items-center justify-between">
-                                    <Link to="/">
+                                    <Link to="/" onClick={handleScrollToTop}>
                                         {
                                             isShow === true ?
                                                 (<div>
@@ -75,7 +79,7 @@ export default function BannerComponent({ title, content, arrow, list, ...props 
                                         }
                                     </Link>
                                     <div className="xl:hidden" onClick={() => setNavbar(!navbar)}>
-                                        <button>
+                                        <button onClick={handleScrollToTop}>
                                             <svg className="h-8 w-8 fill-current text-white" fill="none" strokeLinecap="round" strokeLinejoin="round"
                                                 strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path d="M4 6h16M4 12h16M4 18h16"></path>
@@ -87,7 +91,7 @@ export default function BannerComponent({ title, content, arrow, list, ...props 
                                             {
                                                 header.map((item: HeaderType, index) => {
                                                     return (
-                                                        <li key={index}>
+                                                        <li onClick={handleScrollToTop} key={index}>
                                                             <Link to={`${item.link}`} className={`${item.link === idPath ? 'font-extrabold border rounded-full px-6 py-2 border-[#faaf42]' : 'font-normal'} text-sm ${item.link === '#travailleravecnous' ? '' : ''}`}>{item.name}</Link>
                                                         </li>
                                                     )
@@ -104,7 +108,7 @@ export default function BannerComponent({ title, content, arrow, list, ...props 
                                         {
                                             header.map((item: HeaderType, index) => {
                                                 return (
-                                                    <li key={index}>
+                                                    <li onClick={handleScrollToTop} key={index}>
                                                         <Link className="text-gray-800 font-medium text-sm mt-4" to={`${item.link}`}>{item.name}</Link>
                                                     </li>
                                                 )

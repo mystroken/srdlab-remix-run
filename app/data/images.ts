@@ -6,6 +6,7 @@ import FB from "../../assets/imgs/facebook.png"
 import TWITTER from "../../assets/imgs/twitter.png"
 import LINKEDIN from "../../assets/imgs/linkedin.png"
 import CLOSE from "../../assets/imgs/close.png"
+import NEWLETTER from "../../assets/imgs/newsletter.png"
 
 export {
     DG,
@@ -15,5 +16,6 @@ export {
     FB,
     TWITTER,
     LINKEDIN,
-    CLOSE
+    CLOSE,
+    NEWLETTER
 }

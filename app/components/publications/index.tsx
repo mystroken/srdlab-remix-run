@@ -11,6 +11,9 @@ export const loader = async () => {
 
 
 export default function PublicationComponent() {
+    const handleScrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
     return (
         <div className="bg-white">
             <div className="pt-[7rem]">
@@ -50,12 +53,12 @@ export default function PublicationComponent() {
                                                         {item.date}
                                                     </p>
                                                 </div>
-                                                <Link to={`publication/${item.slug}`} className="text-primary py-3 text-[1rem] leading-[155%] font-semibold cursor-pointer hover:underline hover:underline-offset-4">
+                                                <a href={`publication/${item.slug}`} className="text-primary py-3 text-[1rem] leading-[155%] font-semibold cursor-pointer hover:underline hover:underline-offset-4">
                                                     {item.title}
-                                                </Link>
-                                                <p className="pt-[.6rem] text-[.8rem] leading-[170%] text-[#505A62] truncate">
+                                                </a>
+                                                {/* <p className="pt-[.6rem] text-[.8rem] leading-[170%] text-[#505A62] truncate">
                                                     {item.content}
-                                                </p>
+                                                </p> */}
                                             </div>
                                         </article>
                                     </div>

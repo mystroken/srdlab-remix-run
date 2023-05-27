@@ -23,7 +23,7 @@ export default function ConfianceComponent() {
                     <p className="text-[##0E3758] mt-2 text-center text-lg mx-auto md:text-xl">Ils nous font confiance</p>
                 </div>
                 <div className="container mx-auto">
-                    <div className={`wid wscroolpub grid ${mySize ? 'mymarq' : ''} sm:grid-cols-2 md:grid-cols-4 -mx-1 lg:-mx-4 container py-10`}>
+                    <div className={`wscroolpub grid ${mySize === true ? 'mymarq' : ''} sm:grid-cols-2 md:grid-cols-4 -mx-1 lg:-mx-4 container py-10`}>
                         <div className="my-1 px-1 lg:my-4 lg:px-4">
                             <div className="w-full h-[4rem]">
                                 <img src={DG} alt="" className="w-full object-cover" />
