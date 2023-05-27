@@ -24,3 +24,7 @@ export type PriorityType = {
     title: String
     description: String
 }
+export type Socials = {
+    picture: any
+    path: string
+}
