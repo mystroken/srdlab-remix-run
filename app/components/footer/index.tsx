@@ -37,7 +37,7 @@ export default function FooterComponent() {
                             <p className="text-lg md:text-xl font-bold text-white">
                                 Go Social
                             </p>
-                            <div className="flex mt-4">
+                            <div className="flex justify-center md:justify-start mt-4">
                                 {
                                     socials.map((item: Socials, index) => {
                                         return (<Link key={index} to={item.path}>
