@@ -629,23 +629,19 @@ h1 {
   z-index: 20;
 }
 
-.m-10 {
-  margin: 2.5rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .my-8 {
@@ -830,16 +826,16 @@ h1 {
   width: 2rem;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .w-44 {
   width: 11rem;
 }
 
 .w-6 {
   width: 1.5rem;
-}
-
-.w-full {
-  width: 100%;
 }
 
 .w-4 {
@@ -902,8 +898,16 @@ h1 {
   cursor: pointer;
 }
 
+.resize {
+  resize: both;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -984,10 +988,6 @@ h1 {
 
 .border-\[1px\] {
   border-width: 1px;
-}
-
-.border-b-2 {
-  border-bottom-width: 2px;
 }
 
 .border-\[\#faaf42\] {
@@ -1097,6 +1097,11 @@ h1 {
   padding-right: 1.5rem;
 }
 
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1140,11 +1145,6 @@ h1 {
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-}
-
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 
 .px-\[1\.3rem\] {
@@ -1271,14 +1271,14 @@ h1 {
   font-family: Poppins, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-2xl {
@@ -1293,11 +1293,6 @@ h1 {
 
 .text-\[\.9rem\] {
   font-size: .9rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .text-xs {
@@ -1351,6 +1346,14 @@ h1 {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.leading-10 {
+  line-height: 2.5rem;
+}
+
+.leading-8 {
+  line-height: 2rem;
 }
 
 .leading-\[2rem\] {
@@ -1472,6 +1475,11 @@ button.slick-next:before {
   .md\:my-0 {
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+
+  .md\:my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   .md\:mt-0 {
@@ -1606,6 +1614,11 @@ button.slick-next:before {
     padding: 1rem;
   }
 
+  .md\:py-44 {
+    padding-top: 11rem;
+    padding-bottom: 11rem;
+  }
+
   .md\:py-\[16px\] {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -1616,14 +1629,14 @@ button.slick-next:before {
     padding-right: 48px;
   }
 
-  .md\:py-44 {
-    padding-top: 11rem;
-    padding-bottom: 11rem;
-  }
-
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+
+  .md\:py-\[7rem\] {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
   }
 
   .md\:pb-0 {
@@ -1644,6 +1657,11 @@ button.slick-next:before {
 
   .md\:text-start {
     text-align: start;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .md\:text-\[2\.5rem\] {
