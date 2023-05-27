@@ -1,7 +1,14 @@
+import { Link } from "@remix-run/react"
 import { publications } from "~/data/publications"
 import type { PublicationType } from "~/types"
 import Clock from "../../../assets/imgs/clock.svg"
 import { Button } from "../commons/button"
+import { json } from "@remix-run/node";
+
+export const loader = async () => {
+    return json({ publication: publications });
+};
+
 
 export default function PublicationComponent() {
     return (
@@ -43,10 +50,10 @@ export default function PublicationComponent() {
                                                         {item.date}
                                                     </p>
                                                 </div>
-                                                <h1 className="text-primary py-3 text-[1rem] leading-[155%] font-semibold cursor-pointer">
+                                                <Link to={`publication/${item.slug}`} className="text-primary py-3 text-[1rem] leading-[155%] font-semibold cursor-pointer hover:underline hover:underline-offset-4">
                                                     {item.title}
-                                                </h1>
-                                                <p className="pt-[.6rem] text-[.8rem] leading-[170%] text-[#505A62]">
+                                                </Link>
+                                                <p className="pt-[.6rem] text-[.8rem] leading-[170%] text-[#505A62] truncate">
                                                     {item.content}
                                                 </p>
                                             </div>

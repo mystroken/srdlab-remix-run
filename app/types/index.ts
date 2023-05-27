@@ -15,6 +15,7 @@ export type AccordionType = {
 }
 
 export type PublicationType = {
+    slug: String
     date: String
     title: String
     content: String

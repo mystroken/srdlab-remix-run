@@ -54,6 +54,7 @@ export default function BannerComponent({ title, content, arrow, list, ...props 
         <div className="bg-center bg-cover bg-[url('assets/imgs/banner.png')] z-50">
             <header className="bg-center bg-cover">
                 <div className={`fixed right-0 top-0 left-0 z-40 ${colorChange ? 'bg-primary' : ''}`}>
+
                     <div className="myheader container-other hover:rounded-xl my-4"
                         onMouseLeave={() => setIsShow(false)}
                         onMouseEnter={() => setIsShow(true)}
