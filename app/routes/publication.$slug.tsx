@@ -23,7 +23,7 @@ export default function PublicationSlug() {
         await setTimeout(() => {
             setLoading(true)
             window.scrollTo({ top: 0, behavior: 'smooth' })
-        }, 800)
+        }, 900)
         setLoading(false)
     }
     const { slug }: any = useLoaderData<typeof loader>();
