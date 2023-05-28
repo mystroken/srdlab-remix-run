@@ -105,21 +105,23 @@ export default function PublicationSlug() {
                 <div className="py-16 md:py-44">
                     <div className="container mx-auto">
                         <img src={NEWLETTER} alt="pic" className="w-16 h-16" />
-                        <div className="flex flex-row">
-                            <div className="w-full lg:w-3/4">
-                                <h1 className="my-6 leading-10 text-xl md:text-3xl">
-                                    {mypublication.title}
-                                </h1>
-                                <p className="mb-6 text-xs text-gray-600">{mypublication.date}</p>
-                                <p className="leading-8">{mypublication.content}</p>
+                        {loading === false ? <p>Chargement...</p> :
+                            <div className="flex flex-row">
+                                <div className="w-full lg:w-3/4">
+                                    <h1 className="my-6 leading-10 text-xl md:text-3xl">
+                                        {mypublication.title}
+                                    </h1>
+                                    <p className="mb-6 text-xs text-gray-600">{mypublication.date}</p>
+                                    <p className="leading-8">{mypublication.content}</p>
+                                </div>
                             </div>
-                        </div>
+                        }
                         <hr className="my-8" />
                         <p className="underline underline-offset-8 font-semibold text-gray-700">Les autres articles</p>
                         <div className="grid sm:grid-cols-2 md:grid-cols-4 -mx-1 lg:-mx-4 container pt-10">
                             {
                                 loading === false ?
-                                    <p>chargement./.</p>
+                                    <p>chargement.</p>
                                     :
                                     loading &&
                                     publications.map((item: PublicationType, index) => {
