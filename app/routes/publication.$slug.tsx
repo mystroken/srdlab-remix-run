@@ -5,7 +5,7 @@ import { Link, useLoaderData, useMatches, } from "@remix-run/react"
 import { publications } from "~/data/publications";
 import { header } from "~/data/header";
 import type { HeaderType, PublicationType } from "~/types";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Logo from "../../assets/imgs/srd-lab-logo.svg"
 import LogoColor from "../../assets/imgs/logo.png"
 import { NEWLETTER } from "~/data/images";
@@ -26,8 +26,14 @@ export default function PublicationSlug() {
     const mypublication = publications[slug - 1]
     const [navbar, setNavbar] = useState(false);
     const [isShow, setIsShow] = useState(false)
+    const [loading, setLoading] = useState(false)
     const path = useMatches()
     const idPath = path[1].pathname
+
+    useEffect(() => {
+        typeof slug === "string" ? setLoading(true) : setLoading(false)
+    }, [])
+
 
     return (
         <>
@@ -112,6 +118,7 @@ export default function PublicationSlug() {
                         <p className="underline underline-offset-8 font-semibold text-gray-700">Les autres articles</p>
                         <div className="grid sm:grid-cols-2 md:grid-cols-4 -mx-1 lg:-mx-4 container pt-10">
                             {
+                                loading &&
                                 publications.map((item: PublicationType, index) => {
                                     return (
                                         <div className="my-1 px-1 lg:my-4 lg:px-4" key={index}>
