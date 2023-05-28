@@ -108,7 +108,7 @@ export default function PublicationSlug() {
                 </header>
                 <div className="py-16 md:py-44">
                     <div className="container mx-auto">
-                        <img src={NEWLETTER} alt="pic" className="w-16 h-16" />
+                        <img src={NEWLETTER} alt="pic" className="w-16 h-16 mt-16 md:mt-0" />
                         {
                             loading === false ? <p>Chargement...</p> :
                                 <div className="flex flex-row">
