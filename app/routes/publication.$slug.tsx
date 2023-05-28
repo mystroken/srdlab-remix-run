@@ -118,30 +118,33 @@ export default function PublicationSlug() {
                         <p className="underline underline-offset-8 font-semibold text-gray-700">Les autres articles</p>
                         <div className="grid sm:grid-cols-2 md:grid-cols-4 -mx-1 lg:-mx-4 container pt-10">
                             {
-                                loading &&
-                                publications.map((item: PublicationType, index) => {
-                                    return (
-                                        <div className="my-1 px-1 lg:my-4 lg:px-4" key={index}>
-                                            <article className="rounded-lg mb-4 md:mb-0">
-                                                <div className="w-full h-[10rem] bg-gray-300"></div>
-                                                <div className="p-2 md:p-4 mt-9">
-                                                    <div className="flex items-center my-auto">
-                                                        <img src={Clock} className="w-[1.2rem] h-[1.2rem]" alt="" />
-                                                        <p className="pl-2 text-[.8rem] leading-[170%]">
-                                                            {item.date}
-                                                        </p>
-                                                    </div>
-                                                    <Link to={`/publication/${index + 1}`} onClick={handleScrollToTop} className="text-primary py-3 text-[1rem] leading-[155%] font-semibold cursor-pointer hover:underline hover:underline-offset-4">
-                                                        {item.title}
-                                                    </Link>
-                                                    {/* <p className="pt-[.6rem] text-[.8rem] leading-[170%] text-[#505A62] truncate">
+                                loading === false ?
+                                    <p>chargement./.</p>
+                                    :
+                                    loading &&
+                                    publications.map((item: PublicationType, index) => {
+                                        return (
+                                            <div className="my-1 px-1 lg:my-4 lg:px-4" key={index}>
+                                                <article className="rounded-lg mb-4 md:mb-0">
+                                                    <div className="w-full h-[10rem] bg-gray-300"></div>
+                                                    <div className="p-2 md:p-4 mt-9">
+                                                        <div className="flex items-center my-auto">
+                                                            <img src={Clock} className="w-[1.2rem] h-[1.2rem]" alt="" />
+                                                            <p className="pl-2 text-[.8rem] leading-[170%]">
+                                                                {item.date}
+                                                            </p>
+                                                        </div>
+                                                        <Link to={`/publication/${index + 1}`} onClick={handleScrollToTop} className="text-primary py-3 text-[1rem] leading-[155%] font-semibold cursor-pointer hover:underline hover:underline-offset-4">
+                                                            {item.title}
+                                                        </Link>
+                                                        {/* <p className="pt-[.6rem] text-[.8rem] leading-[170%] text-[#505A62] truncate">
                                                     {item.content}
                                                 </p> */}
-                                                </div>
-                                            </article>
-                                        </div>
-                                    )
-                                })
+                                                    </div>
+                                                </article>
+                                            </div>
+                                        )
+                                    })
 
                             }
                         </div>
