@@ -68,7 +68,7 @@ export default function PublicationComponent() {
                     </div>
                 </div>
             </div>
-            <div className="w-[17rem] mx-auto py-[7rem]">
+            <div className="w-[17rem] mx-auto py-[4rem] md:py-[7rem]">
                 <Button name="Voir plus de publications" />
             </div>
         </div >
