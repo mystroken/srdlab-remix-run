@@ -22,7 +22,7 @@ export default function PublicationComponent() {
                         <div className="w-full md:w-3/4">
                             <p className="text-secondary mt-2 text-lg md:text-xl">Nos Récentes</p>
                             <h1 className="text-primary mt-1 text-2xl md:text-5xl">Publications</h1>
-                            <p className="mt-2 text-sm md:mt-5 md:text-[1rem] leading-[1.7rem] md:w-[30rem]">Ultrices vitae integer et neque, est
+                            <p className="mt-2 text-sm md:mt-5 md:text-[1rem] leading-[1.7rem] md:w-[40rem]">Ultrices vitae integer et neque, est
                                 egestas.
                                 Diam non donec mi
                                 purus at quis et.

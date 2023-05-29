@@ -11,8 +11,8 @@ export default function SolutionsComponent() {
                         <div className="w-full md:w-3/4">
                             <p className="text-secondary mt-2 text-lg md:text-xl">Toutes nos</p>
                             <h1 className="text-primary mt-1 text-2xl md:text-5xl">Solutions</h1>
-                            <p className="mt-2 text-sm md:mt-5 md:text-[1rem] leading-[1.7rem] md:w-[30rem]">
-                                Ultrices vitae integer et neque, est egestas. Diam non donec mi purus at quis et. Faucibus tincidunt consequat blandit sed metus in. Lectus venenatis eget senectus ornare.
+                            <p className="mt-2 text-sm md:mt-5 md:text-[1rem] leading-[1.7rem] md:w-[40rem]">
+                                Nous offrons une gamme complète de services adaptées à vos besoins spécifiques pour concrétiser vos projets : <b>collecte de données, études sociales et économiques, gestion de projet et formation</b>. Notre expertise multidisciplinaire garantit des résultats durables, de la conception de vos projets à l'évaluation de leur impact.
                             </p>
                         </div>
                         <div className="xl:flex  hidden  w-1/4">
