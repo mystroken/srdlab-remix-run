@@ -27,20 +27,20 @@ export default function SolutionsComponent() {
                 </div>
             </div>
             <div className="container-other mx-auto pt-[2.6rem] pb-[7rem]">
-                <div className="grid sm:grid-cols-2 md:grid-cols-4 -mx-1 lg:-mx-4 bg-[#e1e1e1] py-10">
+                <div className="grid sm:grid-cols-2 md:grid-cols-4 -mx-1 lg:-mx-2 bg-[#e1e1e1] py-10">
                     {
                         solutions.map((item: SolutionsType, index) => {
                             return (
-                                <div className="my-[2.2rem] px-1 lg:my-4 lg:px-4" key={index}>
+                                <div className="my-[2.2rem] px-1 lg:my-4 mx-2 lg:px-4" key={index}>
                                     <article className="mb-4 md:mb-0">
-                                        <div className="flex justify-center items-center">
+                                        <div className="flex justify-start items-center">
                                             <img src={Aperture} alt="" />
                                         </div>
                                         <div className="mt-[.8rem]">
-                                            <h1 className="text-primary py-3 text-[1.2rem] leading-[155%] font-semibold text-center">
+                                            <h1 className="text-primary py-1 text-[1.2rem] leading-[155%] font-semibold text-start">
                                                 {item.title}
                                             </h1>
-                                            <p className="pt-[.8rem] text-[.8rem] leading-[170%] text-[#505A62] text-center">
+                                            <p className="pt-[.8rem] text-[.8rem] leading-[170%] text-[#505A62] text-start">
                                                 {item.content}
                                             </p>
                                         </div>
