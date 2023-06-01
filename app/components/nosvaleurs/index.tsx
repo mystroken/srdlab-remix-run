@@ -5,7 +5,7 @@ export default function NosValeursComponent() {
                 <div className="container mx-auto">
                     <div className="flex flex-row">
                         <div className="w-full">
-                            <p className="text-secondary mt-2 tracking-wider text-xs uppercase">Nos valeurs</p>
+                            <p className="text-secondary mt-2 text-lg md:text-xl">Nos valeurs </p>
                             <h1
                                 className="text-primary mt-1 text-xl md:leading-[120%] md:text-[2rem]  md:mr-8 md:w-[40rem] text-start">
                                 SRDLAB a trois valeurs fondamentales : l'intégrité, la fidélité et la quête permanente de

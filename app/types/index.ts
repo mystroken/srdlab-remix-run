@@ -29,3 +29,11 @@ export type Socials = {
     picture: any
     path: string
 }
+
+export type EquipeType = {
+    picture: any
+    name: string
+    mail: string
+    title: string
+    description: string
+}

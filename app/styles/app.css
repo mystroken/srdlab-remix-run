@@ -674,9 +674,19 @@ h1 {
   margin-bottom: 2.2rem;
 }
 
-.mx-10 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .mb-\[10rem\] {
@@ -745,6 +755,22 @@ h1 {
 
 .mt-\[\.8rem\] {
   margin-top: .8rem;
+}
+
+.mr-8 {
+  margin-right: 2rem;
+}
+
+.ml-8 {
+  margin-left: 2rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
 }
 
 .block {
@@ -831,6 +857,22 @@ h1 {
   height: 110px;
 }
 
+.h-32 {
+  height: 8rem;
+}
+
+.h-52 {
+  height: 13rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
 .w-\[13rem\] {
   width: 13rem;
 }
@@ -901,6 +943,30 @@ h1 {
 
 .w-\[17rem\] {
   width: 17rem;
+}
+
+.w-11\/12 {
+  width: 91.666667%;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
+.w-52 {
+  width: 13rem;
+}
+
+.w-10\/12 {
+  width: 83.333333%;
+}
+
+.w-9\/12 {
+  width: 75%;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .flex-1 {
@@ -1071,6 +1137,21 @@ h1 {
   background-color: rgb(225 225 225 / var(--tw-bg-opacity));
 }
 
+.bg-red-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+}
+
+.bg-blue-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+}
+
+.bg-red-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'assets\/imgs\/banner\.png\'\)\] {
   background-image: url('assets/imgs/banner.png');
 }
@@ -1187,6 +1268,11 @@ h1 {
 .py-\[4rem\] {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .pb-3 {
@@ -1346,6 +1432,15 @@ h1 {
   font-size: 0.6rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-\[12px\] {
+  font-size: 12px;
+}
+
 .font-extrabold {
   font-weight: 800;
 }
@@ -1408,6 +1503,18 @@ h1 {
 
 .leading-\[130\%\] {
   line-height: 130%;
+}
+
+.leading-6 {
+  line-height: 1.5rem;
+}
+
+.leading-4 {
+  line-height: 1rem;
+}
+
+.leading-5 {
+  line-height: 1.25rem;
 }
 
 .tracking-wider {
@@ -1473,6 +1580,11 @@ h1 {
   color: rgb(51 51 51 / var(--tw-text-opacity));
 }
 
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -1526,6 +1638,16 @@ button.slick-next:before {
     margin-bottom: 0px;
   }
 
+  .md\:mx-8 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .md\:mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
   .md\:mt-0 {
     margin-top: 0px;
   }
@@ -1550,6 +1672,10 @@ button.slick-next:before {
     margin-top: 1.25rem;
   }
 
+  .md\:ml-4 {
+    margin-left: 1rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -1558,8 +1684,16 @@ button.slick-next:before {
     display: flex;
   }
 
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:h-\[600px\] {
     height: 600px;
+  }
+
+  .md\:h-52 {
+    height: 13rem;
   }
 
   .md\:w-\[44rem\] {
@@ -1614,6 +1748,22 @@ button.slick-next:before {
     width: 29rem;
   }
 
+  .md\:w-9\/12 {
+    width: 75%;
+  }
+
+  .md\:w-52 {
+    width: 13rem;
+  }
+
+  .md\:w-\[60rem\] {
+    width: 60rem;
+  }
+
+  .md\:w-11\/12 {
+    width: 91.666667%;
+  }
+
   .md\:max-w-\[40rem\] {
     max-width: 40rem;
   }
@@ -1640,6 +1790,10 @@ button.slick-next:before {
 
   .md\:justify-end {
     justify-content: flex-end;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
   }
 
   .md\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
@@ -1759,19 +1913,9 @@ button.slick-next:before {
     margin-bottom: 1rem;
   }
 
-  .lg\:mx-4 {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
   .lg\:-mx-2 {
     margin-left: -0.5rem;
     margin-right: -0.5rem;
-  }
-
-  .lg\:my-3 {
-    margin-top: 0.75rem;
-    margin-bottom: 0.75rem;
   }
 
   .lg\:hidden {
@@ -1789,16 +1933,6 @@ button.slick-next:before {
   .lg\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
-  }
-
-  .lg\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  .lg\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 }
 

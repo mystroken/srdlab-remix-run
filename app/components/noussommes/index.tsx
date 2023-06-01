@@ -5,7 +5,7 @@ export default function NousSommesComponent() {
                 <div className="container mx-auto">
                     <div className="flex flex-row">
                         <div className="w-full lg:w-3/4">
-                            <p className="text-secondary mt-2 tracking-wider text-xs uppercase text-start">
+                            <p className="text-secondary mt-2 text-lg md:text-xl">
                                 Qui sommes-nous ?
                             </p>
                             <h1

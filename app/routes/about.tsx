@@ -1,4 +1,5 @@
 import BannerComponent from "~/components/banner";
+import EquipesComponent from "~/components/equipes";
 import NosValeursComponent from "~/components/nosvaleurs";
 import NosVisionsCompoment from "~/components/nosvisions";
 import NousSommesComponent from "~/components/noussommes";
@@ -14,6 +15,7 @@ export default function AboutRoute() {
                 <NousSommesComponent />
                 <PrioritesComponent />
                 <NosValeursComponent />
+                <EquipesComponent />
                 <NosVisionsCompoment />
             </DefaultLayout>
         </>

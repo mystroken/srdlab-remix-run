@@ -4,7 +4,7 @@ export default function NosVisionsCompoment() {
             <div className="py-16 md:py-44">
                 <div className="container mx-auto">
                     <div className="flex flex-col justify-center md:items-center">
-                        <p className="text-[#faaf42] text-[11px] leading-[175%]">Notre vision </p>
+                            <p className="text-secondary mt-2 text-lg md:text-xl">Notre vision </p>
                         <h1
                             className="pt-[0.8rem] md:w-[50rem] w-full text-xl md:text-[2rem] md:text-center leading-[120%] text-white">
                             Devenir un cabinet

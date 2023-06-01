@@ -8,8 +8,7 @@ export default function PrioritesComponent() {
                 <div className="container mx-auto">
                     <div className="flex flex-row">
                         <div className="w-full">
-                            <p className="text-secondary mt-2 tracking-wider text-xs uppercase"> Nos
-                                priorités</p>
+                            <p className="text-secondary mt-2 text-lg md:text-xl">Nos priorités</p>
                             <h1
                                 className="text-primary mt-1 text-xl  md:leading-[120%] md:text-[2rem]  md:mr-8  md:w-[40rem] text-start">
                                 un cabinet d’étude producteur de données et de formations pour l’aide aux décisions
