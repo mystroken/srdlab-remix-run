@@ -37,21 +37,21 @@ export default function EquipesComponent() {
                                                 }
                                             >
                                                 <div className="flex mx-2 md:mx-8 flex-col md:flex-row">
-                                                    <div className="w-36 md:w-52 bg-blue-400 rounded-full h-36 md:h-52 mx-auto md:mx-4"></div>
-                                                    <div className="md:ml-4 md:w-9/12 flex flex-col md:justify-center mx-auto">
+                                                    <div className="w-36 md:w-52 bg-blue-400 rounded-full h-36 md:h-52 md:mx-4"></div>
+                                                    <div className="md:ml-4 md:w-9/12 flex flex-col md:justify-start">
                                                         <h1
-                                                            className="text-2xl md:text-3xl text-center md:text-start mt-4 md:mt-0">
+                                                            className="text-2xl md:text-3xl text-start mt-4 md:mt-0">
                                                             {item.name}
                                                         </h1>
                                                         <h4
-                                                            className="text-base text-center md:text-start font-medium">
+                                                            className="text-base text-start font-medium">
                                                             {item.title}
                                                         </h4>
-                                                        <p className="text-xs mt-4 text-center md:text-start leading-5">
+                                                        <p className="text-xs mt-4 text-start leading-5">
                                                             {item.description}
                                                         </p>
                                                         <hr className="text-gray-400 my-2" />
-                                                        <p className="text-xs mt-4 md:mt-0 text-center md:text-start">
+                                                        <p className="text-xs mt-2 md:mt-0 text-start">
                                                             {item.mail}
                                                         </p>
                                                     </div>
@@ -64,11 +64,11 @@ export default function EquipesComponent() {
                                     </button>
                                 </div>
                             </div>
-                            <div className="flex justify-center items-center mt-4 md:hidden">
-                                <button onClick={prev} className="w-6 h-6 mr-2">
+                            <div className="flex justify-start items-center mt-2 md:hidden">
+                                <button onClick={prev} className="w-6 h-6 m-1">
                                     <img src={BtnPrevious} alt="" />
                                 </button>
-                                <button onClick={next} className="w-6 h-6 ml-2">
+                                <button onClick={next} className="w-6 h-6 ml-1">
                                     <img src={BtnNext} alt="" />
                                 </button>
                             </div>
