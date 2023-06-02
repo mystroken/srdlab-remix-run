@@ -755,6 +755,14 @@ h1 {
   margin-top: .8rem;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -839,6 +847,26 @@ h1 {
   height: 110px;
 }
 
+.h-24 {
+  height: 6rem;
+}
+
+.h-28 {
+  height: 7rem;
+}
+
+.h-2 {
+  height: 0.5rem;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
 .w-\[13rem\] {
   width: 13rem;
 }
@@ -911,6 +939,26 @@ h1 {
   width: 17rem;
 }
 
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-10\/12 {
+  width: 83.333333%;
+}
+
+.w-11\/12 {
+  width: 91.666667%;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-3\/5 {
+  width: 60%;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -921,6 +969,10 @@ h1 {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.cursor-auto {
+  cursor: auto;
 }
 
 .resize {
@@ -981,6 +1033,12 @@ h1 {
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
 .justify-self-center {
   justify-self: center;
 }
@@ -1023,6 +1081,16 @@ h1 {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-gray-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-border-opacity));
+}
+
+.border-gray-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
 .bg-primary {
@@ -1202,6 +1270,11 @@ h1 {
   padding-bottom: 4rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -1294,6 +1367,18 @@ h1 {
   padding-top: .8rem;
 }
 
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1384,6 +1469,10 @@ h1 {
   text-transform: uppercase;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .leading-10 {
   line-height: 2.5rem;
 }
@@ -1426,6 +1515,10 @@ h1 {
 
 .leading-\[130\%\] {
   line-height: 130%;
+}
+
+.leading-6 {
+  line-height: 1.5rem;
 }
 
 .tracking-wider {
@@ -1491,6 +1584,11 @@ h1 {
   color: rgb(51 51 51 / var(--tw-text-opacity));
 }
 
+.text-red-700 {
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -1512,6 +1610,14 @@ button.slick-next:before {
 
 .hover\:rounded-xl:hover {
   border-radius: 0.75rem;
+}
+
+.hover\:border-2:hover {
+  border-width: 2px;
+}
+
+.hover\:border-4:hover {
+  border-width: 4px;
 }
 
 .hover\:underline:hover {
@@ -1580,6 +1686,10 @@ button.slick-next:before {
 
   .md\:mt-5 {
     margin-top: 1.25rem;
+  }
+
+  .md\:mb-6 {
+    margin-bottom: 1.5rem;
   }
 
   .md\:block {
@@ -1666,6 +1776,10 @@ button.slick-next:before {
     width: 29rem;
   }
 
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
   .md\:max-w-\[40rem\] {
     max-width: 40rem;
   }
@@ -1704,6 +1818,12 @@ button.slick-next:before {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .md\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:p-4 {
@@ -1826,6 +1946,10 @@ button.slick-next:before {
 
   .lg\:min-w-\[650px\] {
     min-width: 650px;
+  }
+
+  .lg\:min-w-\[250px\] {
+    min-width: 250px;
   }
 
   .lg\:px-4 {
