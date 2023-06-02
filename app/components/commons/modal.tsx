@@ -18,7 +18,7 @@ export const Modal = ({ title, children, footer, onClose }: ModalProps) => {
 
     return (
         <div className="fixed top-0 bottom-0 left-0 right-0 bg-[#000a] flex items-start justify-center p-4 pt-32">
-            <div className="flex flex-col bg-white rounded-lg w-3/5">
+            <div className="flex flex-col bg-white rounded-lg lg:w-3/5">
                 <div className="flex justify-between p-3 items-center text-lg">
                     <strong>{title}</strong>
                     <button onClick={close}>

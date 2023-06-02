@@ -60,7 +60,7 @@ export default function EquipesComponent() {
                                 </div>
                             </div>
                             <hr className="my-2" />
-                            <p className='text-xs leading-6 py-1'>{equipes[myIndex].description}</p>
+                            <p className='text-xs leading-6 py-1 overflow-y-scroll md:overflow-hidden h-[280px] md:h-64'>{equipes[myIndex].description}</p>
                             <hr className="my-2" />
                             <a href={`mailto:${equipes[myIndex].mail}`} className="text-xs font-normal cursor-pointer pt-4 hover:underline hover:underline-offset-4">{equipes[myIndex].mail}</a>
                         </div>
