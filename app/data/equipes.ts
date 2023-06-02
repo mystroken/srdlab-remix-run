@@ -27,7 +27,7 @@ export const equipes: EquipeType[] = [
         name: "Abba Sali Aboubakar Mamate",
         title: "It Manager",
         description: "Abba Sali Aboubakar Mamate a rejoint SRD Lab en 2022. En tant qu'ingénieur de travaux en informatique de gestion et analyste-programmeur, il se passionne pour le développement mobile et web. Abba a obtenu son diplôme d'ingénieur de travaux en informatique de gestion / analyste-programmeur à l'École Nationale Supérieure Polytechnique de Maroua. Il accompagne les organisations dans la réalisation de projets informatiques.Avant SRD Lab, Abba a travaillé en tant que développeur frontend chez ONACUT | OSS Cameroon, où il a contribué au design, au logo et à la cartographie du site avec OpenStreetMap.Il a également participé à des projets tels que Wakatime Scraping, en développant une application NodeJS pour l'analyse des données de suivi du temps, ainsi que chez ITRADE | DIGITRADE, en intégrant des données dans un tableau AgGrid et en assurant la cohérence du site.",
-        mail: "mailacreer@sdrlab.com"
+        mail: "abbasaliaboubakar@gmail.com"
     },
     {
         picture: "",

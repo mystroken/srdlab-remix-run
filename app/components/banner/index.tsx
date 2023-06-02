@@ -79,7 +79,7 @@ export default function BannerComponent({ title, content, arrow, list, ...props 
                                         }
                                     </Link>
                                     <div className="xl:hidden" onClick={() => setNavbar(!navbar)}>
-                                        <button onClick={handleScrollToTop}>
+                                        <button>
                                             <svg className="h-8 w-8 fill-current text-white" fill="none" strokeLinecap="round" strokeLinejoin="round"
                                                 strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path d="M4 6h16M4 12h16M4 18h16"></path>
