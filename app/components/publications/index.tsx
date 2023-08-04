@@ -1,18 +1,19 @@
-import { Link } from "@remix-run/react"
-import { publications } from "~/data/publications"
-import type { PublicationType } from "~/types"
+import {Link} from "@remix-run/react"
+import {publications} from "~/data/publications"
+import type {PublicationType} from "~/types"
 import Clock from "../../../assets/imgs/clock.svg"
-import { Button } from "../commons/button"
-import { json } from "@remix-run/node";
+import {Button} from "../commons/button"
+import {json} from "@remix-run/node";
+import {cleanText} from "~/utils/helpers"
 
 export const loader = async () => {
-    return json({ publication: publications });
+    return json({publication: publications});
 };
 
 
 export default function PublicationComponent() {
     const handleScrollToTop = () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' })
+        window.scrollTo({top: 0, behavior: 'smooth'})
     }
     return (
         <div className="bg-white">
@@ -22,7 +23,8 @@ export default function PublicationComponent() {
                         <div className="w-full md:w-3/4">
                             <p className="text-secondary mt-2 text-lg md:text-xl">Nos Récentes</p>
                             <h1 className="text-primary mt-1 text-2xl md:text-5xl">Publications</h1>
-                            <p className="mt-2 text-sm md:mt-5 md:text-[1rem] leading-[1.7rem] md:w-[40rem]">Ultrices vitae integer et neque, est
+                            <p className="mt-2 text-sm md:mt-5 md:text-[1rem] leading-[1.7rem] md:w-[40rem]">Ultrices
+                                vitae integer et neque, est
                                 egestas.
                                 Diam non donec mi
                                 purus at quis et.
@@ -48,13 +50,14 @@ export default function PublicationComponent() {
                                             <div className="w-full h-[10rem] bg-gray-300"></div>
                                             <div className="p-2 md:p-4 mt-9">
                                                 <div className="flex items-center my-auto">
-                                                    <img src={Clock} className="w-[1.2rem] h-[1.2rem]" alt="" />
+                                                    <img src={Clock} className="w-[1.2rem] h-[1.2rem]" alt=""/>
                                                     <p className="pl-2 text-[.8rem] leading-[170%]">
                                                         {item.date}
                                                     </p>
                                                 </div>
-                                                <a href={`publication/${item.slug}`} className="text-primary py-3 text-[1rem] leading-[155%] font-semibold cursor-pointer hover:underline hover:underline-offset-4">
-                                                    {item.title}
+                                                <a href={`publication/${item.slug}`}
+                                                   className="text-primary py-3 text-[1rem] leading-[155%] font-semibold cursor-pointer hover:underline hover:underline-offset-4">
+                                                    {cleanText(item.title, 60)}
                                                 </a>
                                                 {/* <p className="pt-[.6rem] text-[.8rem] leading-[170%] text-[#505A62] truncate">
                                                     {item.content}
@@ -69,8 +72,8 @@ export default function PublicationComponent() {
                 </div>
             </div>
             <div className="w-[17rem] mx-auto py-[4rem] md:py-[7rem]">
-                <Button name="Voir plus de publications" />
+                <Button name="Voir plus de publications"/>
             </div>
-        </div >
+        </div>
     )
 }

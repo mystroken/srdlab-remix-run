@@ -18,7 +18,11 @@ export type PublicationType = {
     slug: String
     date: String
     title: String
-    content: String
+    header: String
+    content1: String
+    content2: String
+    content3: String
+    content4?: String[]
 }
 
 export type PriorityType = {

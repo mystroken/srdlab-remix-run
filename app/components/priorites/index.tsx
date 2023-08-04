@@ -1,7 +1,10 @@
-import { priorities } from "~/data/priority";
-import type { PriorityType } from "~/types";
+import {priorities} from "~/data/priority";
+import type {PriorityType} from "~/types";
+import {cleanText} from "~/utils/helpers";
+import {useState} from "react";
 
 export default function PrioritesComponent() {
+    const [showText, setShowText] = useState(false)
     return (
         <div className="bg-[#f6fafe]">
             <div className="py-16 md:py-44">
@@ -19,11 +22,15 @@ export default function PrioritesComponent() {
                                     {
                                         priorities.map((item: PriorityType, index) => {
                                             return (
-                                                <div key={index} className="pb-12 md:pb-0">
-                                                    <div className="bg-[#d9d9d9] w-36 h-36"></div>
+                                                <div key={index} className="pb-12 md:pb-0"
+                                                     onClick={() => setShowText(!showText)}>
+                                                    <div
+                                                        className={`bg-[#d9d9d9] w-36 h-36`}></div>
                                                     <h2
                                                         className="pt-7 pb-3 md:w-[14rem] xl:w-[18rem] text-[1.2rem] leading-[130%] text-primary">{item.title}</h2>
-                                                    <p className="md:w-[14rem] xl:w-[18rem] text-[0.7rem] leading-[185%] pr-10 md:pr-0">{item.description}</p>
+                                                    <p className={`md:w-[14rem] xl:w-[18rem] text-[0.7rem] leading-[185%] pr-10 md:pr-0 ${showText === false ? 'flex' : 'hidden'}`}>{cleanText(item.description, 200)}</p>
+                                                    <span
+                                                        className={`md:w-[14rem] xl:w-[18rem] text-[0.7rem] leading-[185%] pr-10 md:pr-0 ${showText === true ? 'flex' : 'hidden'}`}> {item.description}</span>
                                                 </div>
                                             )
                                         })

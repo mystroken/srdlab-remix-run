@@ -1,8 +1,11 @@
-import { solutions } from "~/data/solutions"
-import type { SolutionsType } from "~/types"
+import {solutions} from "~/data/solutions"
+import type {SolutionsType} from "~/types"
 import Aperture from "../../../assets/imgs/aperture.png"
+import {useState} from "react";
+import {cleanText} from "~/utils/helpers";
 
 export default function SolutionsComponent() {
+    const [showText, setShowText] = useState(false)
     return (
         <div className="bg-[#F6FAFE]">
             <div className="pt-[7rem]">
@@ -12,7 +15,10 @@ export default function SolutionsComponent() {
                             <p className="text-secondary mt-2 text-lg md:text-xl">Toutes nos</p>
                             <h1 className="text-primary mt-1 text-2xl md:text-5xl">Solutions</h1>
                             <p className="mt-2 text-sm md:mt-5 md:text-[1rem] leading-[1.7rem] md:w-[40rem]">
-                                Nous offrons une gamme complète de services adaptées à vos besoins spécifiques pour concrétiser vos projets : <b>collecte de données, études sociales et économiques, gestion de projet et formation</b>. Notre expertise multidisciplinaire garantit des résultats durables, de la conception de vos projets à l'évaluation de leur impact.
+                                Nous offrons une gamme complète de services adaptées à vos besoins spécifiques pour
+                                concrétiser vos projets : <b>collecte de données, études sociales et économiques,
+                                gestion de projet et formation</b>. Notre expertise multidisciplinaire garantit des
+                                résultats durables, de la conception de vos projets à l'évaluation de leur impact.
                             </p>
                         </div>
                         <div className="xl:flex  hidden  w-1/4">
@@ -34,15 +40,22 @@ export default function SolutionsComponent() {
                                 <div className="my-[2.2rem] px-1 lg:my-4 mx-2 lg:px-4" key={index}>
                                     <article className="mb-4 md:mb-0">
                                         <div className="flex justify-start items-center">
-                                            <img src={Aperture} alt="" />
+                                            <img src={Aperture} alt=""/>
                                         </div>
                                         <div className="mt-[.8rem]">
                                             <h1 className="text-primary py-1 text-[1.2rem] leading-[155%] font-semibold text-start">
                                                 {item.title}
                                             </h1>
-                                            <p className="pt-[.8rem] text-[.8rem] leading-[170%] text-[#505A62] text-start">
-                                                {item.content}
-                                            </p>
+                                            <div
+                                                onClick={() => setShowText(!showText)}
+                                            >
+                                                <p className={`pt-[.8rem] text-[.8rem] leading-[170%] text-[#505A62] text-start ${showText === false ? 'flex' : 'hidden'}`}>
+                                                    {cleanText(item.content, 150)}
+                                                </p>
+                                                <p className={`pt-[.8rem] text-[.8rem] leading-[170%] text-[#505A62] text-start ${showText === true ? 'flex' : 'hidden'}`}>
+                                                    {item.content}
+                                                </p>
+                                            </div>
                                         </div>
                                     </article>
                                 </div>
