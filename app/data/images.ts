@@ -7,6 +7,7 @@ import TWITTER from "../../assets/imgs/twitter.png"
 import LINKEDIN from "../../assets/imgs/linkedin.png"
 import CLOSE from "../../assets/imgs/close.png"
 import NEWLETTER from "../../assets/imgs/newsletter.png"
+import ADE from "../../assets/imgs/ade.jpg"
 
 export {
     DG,
@@ -17,5 +18,6 @@ export {
     TWITTER,
     LINKEDIN,
     CLOSE,
-    NEWLETTER
+    NEWLETTER,
+    ADE
 }
