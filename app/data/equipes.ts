@@ -41,9 +41,12 @@ export const equipes: EquipeType[] = [
         name: "Juliette MEWAMBA-CHEKEM",
         title: "Analyste de recherche",
         description: "Juliette MEWAMBA-CHEKEM occupe le poste d’analyste de recherche à SRD Lab en 2023 depuis 2023. Elle est une économiste du développement spécialisée dans les problématiques énergétiques en Afrique subsaharienne. Elle est titulaire d'un doctorat en économie de l'Université de Dschang, ainsi que d'un Master spécialisé en économie internationale et développement de l'Université de Namur et de l'Université catholique de Louvain en Belgique. Elle est également membre de l’Association for the Advancement of African Women Economists (AAAWE) et de la Econometric Society (ES).  Ses recherches ont été publiées dans des revues à comité de lecture.\n" +
+            "\n" +
             "Avant de rejoindre SRD Lab, Juliette a occupé le poste d'enseignante et d'assistante de recherche à l'Université de Dschang, où elle a enseigné des cours de macroéconomie, microéconomie, statistiques et analyse mathématique.\n" +
-            "Juliette possède une expertise solide et approfondie dans l'analyse des données, ce qui lui permet de contribuer de manière significative aux sujets liés au développement. ",
-        mail: "roosveltnango@gmail.com "
+            "\n" +
+            "Juliette possède une expertise solide et approfondie dans l'analyse des données, ce qui lui permet de contribuer de manière significative aux sujets liés au développement.\n" +
+            "\n",
+        mail: "jmewambachekem@yahoo.com"
     },
     {
         picture: "",
