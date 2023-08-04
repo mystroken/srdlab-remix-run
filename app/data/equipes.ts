@@ -1,4 +1,4 @@
-import type { EquipeType } from "~/types";
+import type {EquipeType} from "~/types";
 
 export const equipes: EquipeType[] = [
     {
@@ -35,5 +35,21 @@ export const equipes: EquipeType[] = [
         title: "Stagiare",
         description: "Roosvelt Love Azefack Nango est en stage au sein de SRD Lab pour la période allant Juin-Août 2023. Il est inscrit en Master 1 Magistère deuxième année économie du développement au Centre d’Etude et de Recherche sur le developement international (CERDI) de l’Université de Clermont Auvergne en France. Roosvelt est un étudiant passionné en économie du développement, doté de compétences solides en économétrie et en traitement de données. Son engagement, sa créativité et sa volonté de réussir lui permettent de contribuer efficacement à des projets et de s'adapter rapidement à de nouveaux environnements. Il participe également à des projets philanthropiques visant à améliorer les conditions de vie des enfants au Cameroun. Ses travaux académiques portent sur des sujets tels que l'impact de la diversité migratoire sur la croissance économique et la couverture vaccinale contre la COVID-19. Au sein de SRD Lab, Roosvelt contribuera sur l’étude de la migration et la mécanisation de l’agriculture en Afrique Subsaharienne.",
         mail: "roosveltnango@gmail.com "
+    },
+    {
+        picture: "",
+        name: "Juliette MEWAMBA-CHEKEM",
+        title: "Analyste de recherche",
+        description: "Juliette MEWAMBA-CHEKEM occupe le poste d’analyste de recherche à SRD Lab en 2023 depuis 2023. Elle est une économiste du développement spécialisée dans les problématiques énergétiques en Afrique subsaharienne. Elle est titulaire d'un doctorat en économie de l'Université de Dschang, ainsi que d'un Master spécialisé en économie internationale et développement de l'Université de Namur et de l'Université catholique de Louvain en Belgique. Elle est également membre de l’Association for the Advancement of African Women Economists (AAAWE) et de la Econometric Society (ES).  Ses recherches ont été publiées dans des revues à comité de lecture.\n" +
+            "Avant de rejoindre SRD Lab, Juliette a occupé le poste d'enseignante et d'assistante de recherche à l'Université de Dschang, où elle a enseigné des cours de macroéconomie, microéconomie, statistiques et analyse mathématique.\n" +
+            "Juliette possède une expertise solide et approfondie dans l'analyse des données, ce qui lui permet de contribuer de manière significative aux sujets liés au développement. ",
+        mail: "roosveltnango@gmail.com "
+    },
+    {
+        picture: "",
+        name: "Nos superviseurs et enquêteurs",
+        title: "",
+        description: "Depuis 2022, SRD Lab dispose d'un vaste réseau d'enquêteurs, de superviseurs et d'assistants de recherche dans plusieurs pays de l’Afrique Subsaharienne. Ce répertoire de personnes qualifiées et expérimentées a été constitué afin de permettre aux partenaires de mener à bien des projets d'envergure intensives en personnel de terrain. Ce réseau est composé de personnel possédant une solide expertise dans la collecte de données, tant qualitatives que quantitatives. Chaque membre de ce personnel est spécifiquement formé en fonction de la thématique et du projet de recherche sur lequel il est affecté. Ils sont mobilisés de manière ponctuelle en fonction des besoins. Toutes les catégories de personnel bénéficient de formations dispensées par SRD Lab et ses partenaires, le cas échéant, afin de maintenir leurs compétences à jour.",
+        mail: ""
     },
 ]

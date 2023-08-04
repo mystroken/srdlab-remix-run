@@ -21,7 +21,7 @@ export default function EquipesComponent() {
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             </h1>
                             <div className="pt-[3rem]">
-                                <div className="grid md:grid-cols-3 grid-cols-1 space-y-4 md:space-y-0">
+                                <div className="grid md:grid-cols-3 grid-cols-1 gap-y-4">
                                     {
                                         equipes.map((item: EquipeType, index) => {
                                             return (
