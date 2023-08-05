@@ -48,7 +48,11 @@ export type PosteType = {
     name: string
     title: string
     date: string
-    role: string
+    role: string[]
+    responsabilite?: string[]
+    qualifications?: string[]
+    recrutement?: any
     context: string
     description: string
+    quisommesnous?: string
 }

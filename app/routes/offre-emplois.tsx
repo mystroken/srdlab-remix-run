@@ -111,7 +111,7 @@ export default function OffresEmplois() {
                 </header>
                 <div className="container mx-auto">
                     <div className="py-16 md:py-44">
-                        <div className={"flex justify-center items-center space-x-8 text-sm font-normal"}>
+                        <div className={"flex mt-20 md:mt-0 flex-row justify-center items-center space-x-8 text-sm font-normal"}>
                             <div
                                 onClick={selectAll}
                                 className={`cursor-pointer ${openAll ? 'bg-orange rounded-full text-xs px-4 py-2' : ''}`}>TOUT
