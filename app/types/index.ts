@@ -41,3 +41,14 @@ export type EquipeType = {
     title: string
     description: string
 }
+
+export type PosteType = {
+    slug: number
+    open?: boolean
+    name: string
+    title: string
+    date: string
+    role: string
+    context: string
+    description: string
+}
