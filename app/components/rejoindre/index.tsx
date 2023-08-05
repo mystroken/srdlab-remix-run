@@ -50,9 +50,9 @@ export default function Rejoindre() {
                                     <a href={"/offre-emplois"} className="md:w-[20rem]">
                                         <Button name="Consultez nos offres d'emploi"/>
                                     </a>
-                                    <div className="md:w-[23rem]">
+                                    <a href={"/candidature"} className="md:w-[23rem]">
                                         <Button name="Envoyez une candidature spontanée"/>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
