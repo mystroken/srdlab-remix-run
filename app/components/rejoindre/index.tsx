@@ -43,7 +43,7 @@ export default function Rejoindre() {
                             </p>
                             <div className="py-16">
                                 <img className={`w-full h-auto`}
-                                     src={Team} alt=""/>
+                                     src={Team} alt="team"/>
                             </div>
                             <div className="pb-16 md:pb-32">
                                 <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
