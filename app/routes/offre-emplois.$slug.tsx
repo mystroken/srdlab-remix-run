@@ -113,7 +113,7 @@ export default function EmploiSlug() {
                     <div className="container mx-auto">
                         {
                             loading === false ? <p>Chargement...</p> :
-                                <div className="flex flex-row">
+                                <div className="flex flex-row mt-16 md:mt-0">
                                     <div className="w-full lg:w-3/4">
                                         <h4 className="my-2 leading-10 text-sm md:text-base">
                                             {myposte.name}
