@@ -1153,6 +1153,11 @@ h1 {
   background-color: rgb(225 225 225 / var(--tw-bg-opacity));
 }
 
+.bg-green-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 253 244 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'assets\/imgs\/banner\.png\'\)\] {
   background-image: url('assets/imgs/banner.png');
 }

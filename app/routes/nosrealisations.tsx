@@ -42,11 +42,11 @@ export default function NosRessourcesRoute() {
                                 className={`cursor-pointer ${openAll ? 'bg-orange rounded-full text-xs px-4 py-2' : ''}`}>TOUT
                             </div>
                             <div
-                                className={`${openRealise ? 'bg-orange rounded-full text-xs px-4 py-2' : ''} cursor-pointer`}
+                                className={`${openRealise ? 'bg-green-500 text-white rounded-full text-xs px-4 py-2' : ''} cursor-pointer`}
                                 onClick={selectRealise}>EN COURS
                             </div>
                             <div
-                                className={`${openEnCours ? 'bg-orange rounded-full text-xs px-4 py-2' : ''} cursor-pointer`}
+                                className={`${openEnCours ? 'bg-red-500 rounded-full text-xs text-white px-4 py-2' : ''} cursor-pointer`}
                                 onClick={selectEnCours}>ACHEVEES
                             </div>
                         </div>

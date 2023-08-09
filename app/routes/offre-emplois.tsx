@@ -116,10 +116,10 @@ export default function OffresEmplois() {
                                 onClick={selectAll}
                                 className={`cursor-pointer ${openAll ? 'bg-orange rounded-full text-xs px-4 py-2' : ''}`}>TOUT
                             </div>
-                            <div className={`${openActu ? 'bg-orange rounded-full text-xs px-4 py-2' : ''} cursor-pointer`}
+                            <div className={`${openActu ? 'bg-green-500 text-white rounded-full text-xs px-4 py-2' : ''} cursor-pointer`}
                                  onClick={selectActu}>ACTU
                             </div>
-                            <div className={`${openFerme ? 'bg-orange rounded-full text-xs px-4 py-2' : ''} cursor-pointer`}
+                            <div className={`${openFerme ? 'bg-red-500 text-white rounded-full text-xs px-4 py-2' : ''} cursor-pointer`}
                                  onClick={selectFerme}>FERMES
                             </div>
                         </div>
