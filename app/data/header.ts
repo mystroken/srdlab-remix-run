@@ -14,8 +14,8 @@ export const header: HeaderType[] = [
         name: "Notre expertise"
     },
     {
-        link: "/nosressources",
-        name: "Nos ressources"
+        link: "/nosrealisations",
+        name: "Nos realisaions"
     },
     {
         link: "/travailleravecnous",

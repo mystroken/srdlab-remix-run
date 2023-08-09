@@ -15,10 +15,14 @@ export default function SolutionsComponent() {
                             <p className="text-secondary mt-2 text-lg md:text-xl">Toutes nos</p>
                             <h1 className="text-primary mt-1 text-2xl md:text-5xl">Solutions</h1>
                             <p className="mt-2 text-sm md:mt-5 md:text-[1rem] leading-[1.7rem] md:w-[40rem]">
-                                Nous offrons une gamme complète de services adaptées à vos besoins spécifiques pour
-                                concrétiser vos projets : <b>collecte de données, études sociales et économiques,
-                                gestion de projet et formation</b>. Notre expertise multidisciplinaire garantit des
-                                résultats durables, de la conception de vos projets à l'évaluation de leur impact.
+                                En tant que cabinet spécialisé dans la collecte de données, les études sociales et
+                                économiques, ainsi que la gestion de projet et la formation, nous vous proposons une
+                                gamme complète de services qui permettront la réalisation de vos projets. Avec notre
+                                expertise approfondie et multidisciplinaire, nous sommes là pour vous accompagner de la
+                                conception à la mise en œuvre de vos projets y compris l’évaluation de leurs impacts
+                                pour les populations cible, afin de garantir des résultats durables et positifs.
+                                <br /><br/>Notre approche holistique et intégrée nous permet de vous proposer des solutions
+                                complètes et adaptées à vos besoins spécifiques
                             </p>
                         </div>
                         <div className="xl:flex  hidden  w-1/4">
