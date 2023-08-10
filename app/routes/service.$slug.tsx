@@ -2,7 +2,7 @@ import {DefaultLayout} from "~/layouts/default";
 import type {LoaderArgs} from "@remix-run/node";
 import {json} from "@remix-run/node";
 import {Link, useLoaderData, useMatches,} from "@remix-run/react"
-import {domaines} from "~/data/domaines";
+import {services} from "~/data/services";
 import {header} from "~/data/header";
 import type {HeaderType} from "~/types";
 import {useEffect, useState} from "react";
@@ -15,7 +15,7 @@ export const loader = async ({params}: LoaderArgs) => {
 };
 
 
-export default function DomaineSlug() {
+export default function ServiceSlug() {
     const handleScrollToTop = async () => {
         await setTimeout(() => {
             setLoading(true)
@@ -24,7 +24,7 @@ export default function DomaineSlug() {
         setLoading(false)
     }
     const {slug}: any = useLoaderData<typeof loader>();
-    const mydomaine = domaines[slug - 1]
+    const myservice = services[slug - 1]
     const [navbar, setNavbar] = useState(false);
     const [isShow, setIsShow] = useState(false)
     const [loading, setLoading] = useState(false)
@@ -115,12 +115,12 @@ export default function DomaineSlug() {
                                 <div className="flex flex-row mt-16 md:mt-0">
                                     <div className="w-full lg:w-3/4">
                                         <h1 className="my-6 leading-10 text-xl md:text-3xl">
-                                            {mydomaine.title}
+                                            {myservice.title}
                                         </h1>
                                         <h4 className="my-2 leading-10 text-sm md:text-base">
-                                            {mydomaine.subtitle}
+                                            {myservice.subtitle}
                                         </h4>
-                                        <p className="my-6 text-xs text-gray-600">{mydomaine.content}</p>
+                                        <p className="my-6 text-xs text-gray-600">{myservice.content}</p>
                                     </div>
                                 </div>
                         }
