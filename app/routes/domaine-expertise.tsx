@@ -8,13 +8,6 @@ import LogoColor from "../../assets/imgs/logo.png"
 
 
 export default function DomaineExpertiseSlug() {
-    const handleScrollToTop = async () => {
-        await setTimeout(() => {
-            setLoading(true)
-            window.scrollTo({top: 0, behavior: 'smooth'})
-        }, 900)
-        setLoading(false)
-    }
     const location = useLocation()
     const [navbar, setNavbar] = useState(false);
     const [isShow, setIsShow] = useState(false)

@@ -1397,12 +1397,12 @@ h1 {
   line-height: 1rem;
 }
 
-.text-\[\.9rem\] {
-  font-size: .9rem;
-}
-
 .text-\[1\.1rem\] {
   font-size: 1.1rem;
+}
+
+.text-\[\.9rem\] {
+  font-size: .9rem;
 }
 
 .text-\[0\.7rem\] {
@@ -1556,6 +1556,11 @@ h1 {
   color: rgb(51 51 51 / var(--tw-text-opacity));
 }
 
+.text-gray-100 {
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -1660,6 +1665,10 @@ button.slick-next:before {
     margin-top: 2.5rem;
   }
 
+  .md\:mr-4 {
+    margin-right: 1rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -1752,6 +1761,10 @@ button.slick-next:before {
     max-width: 40rem;
   }
 
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1760,12 +1773,12 @@ button.slick-next:before {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:items-start {
+    align-items: flex-start;
   }
 
   .md\:items-center {
