@@ -1,24 +1,13 @@
 import {DefaultLayout} from "~/layouts/default";
-import type {LoaderArgs} from "@remix-run/node";
-import {json} from "@remix-run/node";
-import {Link, useLoaderData, useMatches,} from "@remix-run/react"
-import {domaines} from "~/data/domaines";
+import {Link, useLocation, useMatches} from "@remix-run/react"
 import {header} from "~/data/header";
 import type {HeaderType} from "~/types";
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import Logo from "../../assets/imgs/srd-lab-logo.svg"
 import LogoColor from "../../assets/imgs/logo.png"
 
 
-export const loader = async ({params}: LoaderArgs) => {
-    return json({slug: params.slug});
-};
-
-export async function loaderItem() {
-    return json({name: "Ryan", date: new Date()});
-}
-
-export default function DomaineSlug() {
+export default function DomaineExpertiseSlug() {
     const handleScrollToTop = async () => {
         await setTimeout(() => {
             setLoading(true)
@@ -26,17 +15,14 @@ export default function DomaineSlug() {
         }, 900)
         setLoading(false)
     }
-    const {slug}: any = useLoaderData<typeof loader>();
-    const mydomaine = domaines[slug - 1]
+    const location = useLocation()
     const [navbar, setNavbar] = useState(false);
     const [isShow, setIsShow] = useState(false)
-    const [loading, setLoading] = useState(false)
     const path = useMatches()
     const idPath = path[1].pathname
+    const data = location.state.data
 
-    useEffect(() => {
-        typeof slug === "string" ? setLoading(true) : setLoading(false)
-    }, [])
+    console.log("SLUG =>", location.state.data)
 
 
     return (
@@ -113,41 +99,14 @@ export default function DomaineSlug() {
                 </header>
                 <div className="py-16 md:py-44">
                     <div className="container mx-auto">
-                        {
-                            loading === false ? <p>Chargement...</p> :
-                                <div className="flex flex-row mt-16 md:mt-0">
-                                    <div className="w-full lg:w-3/4">
-                                        <h1 className="my-6 leading-10 text-xl md:text-3xl">
-                                            {mydomaine.title}
-                                        </h1>
-                                        <h4 className="my-2 leading-10 text-sm md:text-base">
-                                            {mydomaine.subtitle}
-                                        </h4>
-                                        <p className="my-6 text-xs text-gray-600">{mydomaine.content}</p>
-                                        <div className="pt-[3rem]">
-                                            <div className="grid md:grid-cols-2 grid-cols-1 gap-y-4">
-                                                {
-                                                    mydomaine.childs.map((item: any, index) => {
-                                                        // console.log("CHILD ->", item)
-                                                        return (
-                                                            <Link state={{data: item}}
-                                                                  to={{pathname: `/domaine-expertise`}}
-                                                                  key={index}
-                                                                  className="h-44 md:h-40 md:mb-6 md:w-11/12 cursor-pointer">
-                                                                <div
-                                                                    className="p-4 border border-gray-400 hover:border-orange hover:bg-orange hover:border-2 flex items-center flex-col justify-center rounded-md h-full">
-                                                                    <h2
-                                                                        className="text-center md:w-[14rem] xl:w-[18rem] text-[1.1rem] text-primary">{item.title}</h2>
-                                                                </div>
-                                                            </Link>
-                                                        )
-                                                    })
-                                                }
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                        }
+                        <div className="flex flex-row mt-16 md:mt-0">
+                            <div className="w-full lg:w-3/4">
+                                <h1 className="my-6 leading-10 text-xl md:text-3xl">
+                                    {data.title}
+                                </h1>
+                                <p className="my-6 text-xs text-gray-600">{data.content}</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </DefaultLayout>
