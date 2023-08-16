@@ -108,7 +108,7 @@ export default function ExpertisesRoute() {
                                                     {
                                                         services.map((item: any, index) => {
                                                             return (
-                                                                <a href={`/service/${item.slug}`} key={index}
+                                                                <a href={`/expertise-services/${item.slug}`} key={index}
                                                                    className="h-44 md:h-40 md:mb-6 md:w-11/12 cursor-pointer">
                                                                     <div
                                                                         className="p-4 border border-gray-400 hover:border-orange hover:bg-orange hover:border-2 flex items-center flex-col justify-center rounded-md h-full">

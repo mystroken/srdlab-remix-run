@@ -85,17 +85,18 @@ export default function FooterComponent() {
                         title="Contact"
                     >
                         <form>
-                            <div>
-                                <p className='text-sm py-1'>Nom complet</p>
+                            <div className={"mb-2"}>
+                                <p className='text-sm py-2'>Nom complet</p>
                                 <input type="text" className='px-6 rounded-md py-1 bg-white border-2 w-full'/>
                             </div>
-                            <div>
-                                <p className='text-sm py-1'>Adresse email</p>
+                            <div className={"mb-2"}>
+                                <p className='text-sm py-2'>Adresse email</p>
                                 <input type="text" className='px-6 rounded-md py-1 bg-white border-2 w-full'/>
                             </div>
-                            <div>
-                                <p className='text-sm py-1'>Message</p>
-                                <textarea cols={4} rows={6} className='px-6 rounded-md py-1 bg-white border-2 w-full'/>
+                            <div className={"mb-2"}>
+                                <p className='text-sm py-2'>Message</p>
+                                <textarea cols={4} rows={6}
+                                          className='px-6 rounded-md py-1 bg-white border-2 w-full'/>
                             </div>
                             <div className="flex flex-row space-x-4 items-center justify-end my-6">
                                 <div className="flex justify-center items-center w-28">
@@ -110,7 +111,6 @@ export default function FooterComponent() {
                         </form>
                     </Modal>
                 )
-
             }
         </footer>
     )
