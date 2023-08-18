@@ -25,13 +25,13 @@ export default function ConfianceComponent() {
                 </div>
                 <div className="container mx-auto">
                     <div
-                        className={`wscroolpub grid ${mySize === true ? '' : ''} sm:grid-cols-3 gap-y-12 md:gap-y-0  md:grid-cols-4 xl:grid-cols-5 -mx-1 lg:-mx-4 container py-10`}>
+                        className={`wscroolpub grid ${mySize === true ? '' : ''} sm:grid-cols-3 gap-y-12 xl:gap-y-0  md:grid-cols-4 xl:grid-cols-5 -mx-1 lg:-mx-4 container py-10`}>
                         {
                             confiances.map((item, index) => {
                                 return (
                                     <div className="my-1 px-1 lg:my-4 lg:px-4">
                                         <div className="w-full h-[4rem]">
-                                            <img src={item} alt="" className="w-full object-cover"/>
+                                            <img src={item} alt="" className="w-full object-cover h-full"/>
                                         </div>
                                     </div>
                                 )
