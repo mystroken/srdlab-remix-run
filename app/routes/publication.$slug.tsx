@@ -4,12 +4,10 @@ import {json} from "@remix-run/node";
 import {Link, useLoaderData, useMatches,} from "@remix-run/react"
 import {publications} from "~/data/publications";
 import {header} from "~/data/header";
-import type {HeaderType, PublicationType} from "~/types";
+import type {HeaderType} from "~/types";
 import {useEffect, useState} from "react";
 import Logo from "../../assets/imgs/srd-lab-logo.svg"
 import LogoColor from "../../assets/imgs/logo.png"
-import {NEWLETTER} from "~/data/images";
-import Clock from "../../assets/imgs/clock.svg"
 
 
 export const loader = async ({params}: LoaderArgs) => {
@@ -18,13 +16,7 @@ export const loader = async ({params}: LoaderArgs) => {
 
 
 export default function PublicationSlug() {
-    const handleScrollToTop = async () => {
-        await setTimeout(() => {
-            setLoading(true)
-            window.scrollTo({top: 0, behavior: 'smooth'})
-        }, 900)
-        setLoading(false)
-    }
+
     const {slug}: any = useLoaderData<typeof loader>();
     const mypublication = publications[slug - 1]
     const [navbar, setNavbar] = useState(false);
@@ -116,7 +108,7 @@ export default function PublicationSlug() {
                             loading === false ? <p>Chargement...</p> :
                                 <div className="flex flex-row">
                                     <div className="w-full lg:w-3/4">
-                                        <img src={mypublication.image} />
+                                        <img src={mypublication.image} className={'mt-16 md:mt-0'}/>
                                         <h1 className="my-6 leading-10 text-xl md:text-3xl">
                                             {mypublication.title}
                                         </h1>

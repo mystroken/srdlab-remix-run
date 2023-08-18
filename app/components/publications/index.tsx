@@ -47,7 +47,7 @@ export default function PublicationComponent() {
                                 return (
                                     <div className="my-1 px-1 lg:my-4 lg:px-4" key={index}>
                                         <article className="rounded-lg mb-4 md:mb-0">
-                                            <img className="w-full h-[10rem] bg-gray-300" src={item.image}/>
+                                            <img className="w-full h-[10rem] bg-cover" src={item.image}/>
                                             <div className="pt-4">
                                                 <div className="flex items-center my-auto">
                                                     <img src={Clock} className="w-[1.2rem] h-[1.2rem]" alt=""/>
