@@ -31,7 +31,7 @@ export default function ConfianceComponent() {
                                 return (
                                     <div className="my-1 px-1 lg:my-4 lg:px-4">
                                         <div className="w-full h-[4rem]">
-                                            <img src={item} alt="" className="w-full object-cover h-auto"/>
+                                            <img src={item} alt="pic" className="w-full object-cover h-auto"/>
                                         </div>
                                     </div>
                                 )
