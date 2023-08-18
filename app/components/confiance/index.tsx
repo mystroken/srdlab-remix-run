@@ -1,5 +1,4 @@
 import {useEffect, useState} from "react";
-import {DG, ESC, RISD, WB} from "~/data/images";
 import {confiances} from "~/data/confiances";
 
 export default function ConfianceComponent() {

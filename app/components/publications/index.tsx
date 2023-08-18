@@ -4,7 +4,6 @@ import Clock from "../../../assets/imgs/clock.svg"
 import {Button} from "../commons/button"
 import {json} from "@remix-run/node";
 import {cleanText} from "~/utils/helpers"
-import {CIGARRETTE} from "~/data/images";
 
 export const loader = async () => {
     return json({publication: publications});
@@ -12,9 +11,6 @@ export const loader = async () => {
 
 
 export default function PublicationComponent() {
-    const handleScrollToTop = () => {
-        window.scrollTo({top: 0, behavior: 'smooth'})
-    }
     return (
         <div className="bg-white">
             <div className="pt-[7rem]">
