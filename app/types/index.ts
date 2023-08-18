@@ -16,6 +16,7 @@ export type AccordionType = {
 
 export type PublicationType = {
     slug: String
+    image: any
     date: String
     title: String
     header: String
@@ -26,6 +27,7 @@ export type PublicationType = {
 }
 
 export type PriorityType = {
+    image: any
     title: String
     description: String
 }

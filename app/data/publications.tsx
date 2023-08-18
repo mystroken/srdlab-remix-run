@@ -1,8 +1,10 @@
 import type {PublicationType} from "~/types";
+import {CIGAFRIQUE, CIGARRETTE, COMMERCE, DESKTOP} from "~/data/images";
 
 export const publications: PublicationType[] = [
     {
         slug: "1",
+        image: CIGARRETTE,
         date: "Decembre 2022",
         title: "Etude sur le commerce illicite de cigarettes en Republique Democratique Du Congo",
         header: "SRD Lab et le cabinet Research Initiative for Social Development (RISD)\n" +
@@ -39,6 +41,7 @@ export const publications: PublicationType[] = [
     },
     {
         slug: "2",
+        image: COMMERCE,
         date:
             "22 Mai 2023",
         title:
@@ -73,6 +76,7 @@ export const publications: PublicationType[] = [
     ,
     {
         slug: "3",
+        image: CIGAFRIQUE,
         date:
             "Mai 2023",
         title: "Recherche primaire sur les données sur les jeunes et le tabagisme en Afrique",
@@ -86,6 +90,7 @@ export const publications: PublicationType[] = [
     ,
     {
         slug: "4",
+        image: DESKTOP,
         date:
             "5 Mars 2023",
         title:

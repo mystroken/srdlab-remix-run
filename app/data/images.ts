@@ -8,6 +8,15 @@ import LINKEDIN from "../../assets/imgs/linkedin.png"
 import CLOSE from "../../assets/imgs/close.png"
 import NEWLETTER from "../../assets/imgs/newsletter.png"
 import ADE from "../../assets/imgs/ade.jpg"
+import ABOUT from "../../assets/imgs/about.jpg";
+import RESPECT from "../../assets/imgs/united.png";
+import SATISFACTION from "../../assets/imgs/reputation.png";
+import CONTROL from "../../assets/imgs/assessment.png";
+import BLOG from "../../assets/imgs/blog.png";
+import CIGARRETTE from "../../assets/imgs/cigarettes.jpg";
+import CIGAFRIQUE from "../../assets/imgs/cig-afrique.jpg";
+import DESKTOP from "../../assets/imgs/bureau.jpg";
+import COMMERCE from "../../assets/imgs/commerce.jpg";
 
 export {
     DG,
@@ -19,5 +28,14 @@ export {
     LINKEDIN,
     CLOSE,
     NEWLETTER,
-    ADE
+    ADE,
+    ABOUT,
+    CONTROL,
+    RESPECT,
+    SATISFACTION,
+    BLOG,
+    CIGARRETTE,
+    CIGAFRIQUE,
+    DESKTOP,
+    COMMERCE
 }
