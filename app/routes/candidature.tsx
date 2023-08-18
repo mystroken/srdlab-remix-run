@@ -1,14 +1,12 @@
 import {DefaultLayout} from "~/layouts/default";
 import type {LoaderArgs} from "@remix-run/node";
 import {json} from "@remix-run/node";
-import {Link, useLoaderData, useMatches,} from "@remix-run/react"
-import {postes} from "~/data/postes";
+import {Link, useMatches,} from "@remix-run/react"
 import {header} from "~/data/header";
-import type {HeaderType, PosteType, PublicationType} from "~/types";
-import {useEffect, useState} from "react";
+import type {HeaderType} from "~/types";
+import {useState} from "react";
 import Logo from "../../assets/imgs/srd-lab-logo.svg"
 import LogoColor from "../../assets/imgs/logo.png"
-import {NEWLETTER} from "~/data/images";
 import {Button} from "~/components/commons/button";
 
 
@@ -18,16 +16,8 @@ export const loader = async ({params}: LoaderArgs) => {
 
 
 export default function Candidature() {
-    const handleScrollToTop = async () => {
-        await setTimeout(() => {
-            setLoading(true)
-            window.scrollTo({top: 0, behavior: 'smooth'})
-        }, 900)
-        setLoading(false)
-    }
     const [navbar, setNavbar] = useState(false);
     const [isShow, setIsShow] = useState(false)
-    const [loading, setLoading] = useState(false)
     const path = useMatches()
     const idPath = path[1].pathname
 
