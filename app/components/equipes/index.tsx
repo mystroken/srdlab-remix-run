@@ -15,9 +15,9 @@ export default function EquipesComponent() {
                 <div className="container mx-auto">
                     <div className="flex flex-row">
                         <div className="w-full">
-                            <p className="text-secondary mt-2 text-lg md:text-xl">Notre équipe</p>
+                            <p className="md:text-justify text-secondary mt-2 text-lg md:text-xl">Notre équipe</p>
                             <h1
-                                className="text-primary mt-1 text-xl  md:leading-[120%] md:text-[2rem]  md:mr-8  md:w-[40rem] text-start">
+                                className="md:text-justify text-primary mt-1 text-xl  md:leading-[120%] md:text-[2rem]  md:mr-8  md:w-[40rem] text-start">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             </h1>
                             <div className="pt-[3rem]">

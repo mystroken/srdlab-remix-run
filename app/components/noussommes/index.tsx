@@ -7,7 +7,7 @@ export default function NousSommesComponent() {
                 <div className="container mx-auto">
                     <div className="flex flex-row">
                         <div className="w-full lg:w-3/4">
-                            <p className="text-secondary mt-2 text-lg md:text-xl">
+                            <p className="md:text-justify text-secondary mt-2 text-lg md:text-xl">
                                 Qui sommes-nous ?
                             </p>
                             <h1
@@ -16,7 +16,7 @@ export default function NousSommesComponent() {
                                 économiques et socio-démographiques
                             </h1>
                             <p
-                                className="mt-2 md:mt-10 md:w-[29rem] text-[#333333] text-sm md:text-[1rem] text-start leading-[175%]">
+                                className="md:text-justify mt-2 md:mt-10 md:w-[29rem] text-[#333333] text-sm md:text-[1rem] text-start leading-[175%]">
                                 SRDLab est un cabinet dédié à la collecte de données quantitatives et qualitatives et à
                                 la
                                 réalisation d’études économiques, sociales et démographiques afin d’accompagner les

@@ -19,13 +19,7 @@ export async function loaderItem() {
 }
 
 export default function DomaineSlug() {
-    const handleScrollToTop = async () => {
-        await setTimeout(() => {
-            setLoading(true)
-            window.scrollTo({top: 0, behavior: 'smooth'})
-        }, 900)
-        setLoading(false)
-    }
+
     const {slug}: any = useLoaderData<typeof loader>();
     const mydomaine = domaines[slug - 1]
     const [navbar, setNavbar] = useState(false);
@@ -123,7 +117,7 @@ export default function DomaineSlug() {
                                         <h4 className="my-2 leading-10 text-sm md:text-base">
                                             {mydomaine.subtitle}
                                         </h4>
-                                        <p className="my-6 text-xs text-gray-600">{mydomaine.content}</p>
+                                        <p className="my-6 text-xs text-gray-600 md:text-justify">{mydomaine.content}</p>
                                         <div className="pt-[3rem]">
                                             <div className="grid md:grid-cols-2 grid-cols-1 gap-y-4">
                                                 {

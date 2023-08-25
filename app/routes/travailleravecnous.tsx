@@ -1,6 +1,5 @@
 import BannerComponent from "~/components/banner";
 import {DefaultLayout} from "~/layouts/default";
-import Team from "../../assets/imgs/team.jpg";
 import {Button} from "~/components/commons/button";
 
 
@@ -17,7 +16,7 @@ export default function TravaillerAvecNousRoute() {
                                 <div className="w-full md:w-3/4">
                                     <p className="text-secondary mt-2 text-lg md:text-xl">Bienvenue dans notre</p>
                                     <h1 className="text-primary mt-1 text-2xl md:text-5xl">Espace Collaboratif</h1>
-                                    <p className="mt-2 text-sm md:mt-5 md:text-[1rem] leading-[1.7rem] md:w-[40rem]">
+                                    <p className="mt-2 text-sm md:mt-5 md:text-[1rem] leading-[1.7rem] md:w-[40rem] md:text-justify">
                                         Nous sommes ravis de vous accueillir sur notre page "Travaillez avec Nous". Chez
                                         SRD Lab, nous croyons en la puissance de la collaboration et de l'engagement
                                         pour réaliser des projets exceptionnels. Que vous souhaitiez faire partie de
@@ -26,7 +25,7 @@ export default function TravaillerAvecNousRoute() {
                                         ensemble pour réussir la réalisation des projets exceptionnels.
                                         Prêt(e) à Passer à l'Action ?
                                     </p>
-                                    <p className="mt-2 text-sm md:mt-5 md:text-[1rem] leading-[1.7rem] md:w-[40rem]">
+                                    <p className="mt-2 text-sm md:mt-5 md:text-[1rem] leading-[1.7rem] md:w-[40rem] md:text-justify">
                                         Nous sommes impatients de vous connaître. Utilisez les boutons ci-dessous pour
                                         explorer vos options et en apprendre davantage sur les opportunités qui vous
                                         attendent. Nous croyons fermement que chaque interaction est une opportunité de

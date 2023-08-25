@@ -33,7 +33,7 @@ export default function Post({slug, date, context, open, role, name, title, desc
                             {date}
                         </p>
                     </div>
-                    <p className="mt-4 text-[.8rem] leading-[170%]">
+                    <p className="mt-4 text-[.8rem] leading-[170%] md:text-justify">
                         {cleanText(
                             context,
                             200

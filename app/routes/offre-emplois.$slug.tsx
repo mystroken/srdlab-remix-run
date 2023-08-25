@@ -4,11 +4,10 @@ import {json} from "@remix-run/node";
 import {Link, useLoaderData, useMatches,} from "@remix-run/react"
 import {postes} from "~/data/postes";
 import {header} from "~/data/header";
-import type {HeaderType, PosteType, PublicationType} from "~/types";
+import type {HeaderType} from "~/types";
 import {useEffect, useState} from "react";
 import Logo from "../../assets/imgs/srd-lab-logo.svg"
 import LogoColor from "../../assets/imgs/logo.png"
-import {NEWLETTER} from "~/data/images";
 
 
 export const loader = async ({params}: LoaderArgs) => {
@@ -17,13 +16,7 @@ export const loader = async ({params}: LoaderArgs) => {
 
 
 export default function EmploiSlug() {
-    const handleScrollToTop = async () => {
-        await setTimeout(() => {
-            setLoading(true)
-            window.scrollTo({top: 0, behavior: 'smooth'})
-        }, 900)
-        setLoading(false)
-    }
+
     const {slug}: any = useLoaderData<typeof loader>();
     const myposte = postes[slug - 1]
     const [navbar, setNavbar] = useState(false);
@@ -124,12 +117,12 @@ export default function EmploiSlug() {
                                         <p className="mb-6 text-xs text-gray-600"><span
                                             className={'underline outline-offset-4'}>Date de clôture:</span> {myposte.date}
                                             <div className={`my-4`}>
-                                                <p className="leading-8 font-semibold text-base">Contexte</p>
-                                                <p className="leading-8 font-normal">{myposte.description}</p>
+                                                <p className="leading-8 font-semibold text-base md:text-justify">Contexte</p>
+                                                <p className="leading-8 font-normal md:text-justify">{myposte.description}</p>
                                             </div>
                                             <div className={`my-4`}>
-                                                <p className="leading-8 font-semibold text-base">Description</p>
-                                                <p className="leading-8 font-normal">{myposte.description}</p>
+                                                <p className="leading-8 font-semibold text-base md:text-justify">Description</p>
+                                                <p className="leading-8 font-normal md:text-justify">{myposte.description}</p>
                                             </div>
                                             <div className={`my-4`}>
                                                 <p className="leading-8 font-semibold text-base">Role</p>
@@ -153,58 +146,58 @@ export default function EmploiSlug() {
                                                 </ul>
                                             </div>
                                             <div className={`my-4`}>
-                                                <p className="leading-8 font-semibold text-base">Cadre de
+                                                <p className="leading-8 font-semibold text-base md:text-justify">Cadre de
                                                     recrutement</p>
                                                 <div>
                                                     <h4 className="mt-2 leading-10 text-sm">
                                                         Position
                                                     </h4>
-                                                    <p className="leading-8 font-normal">{myposte.recrutement?.position}</p>
+                                                    <p className="leading-8 font-normal md:text-justify">{myposte.recrutement?.position}</p>
                                                 </div>
                                                 <div>
                                                     <h4 className="mt-2 leading-10 text-sm">
                                                         Localisation
                                                     </h4>
-                                                    <p className="leading-8 font-normal">{myposte.recrutement?.localisation}</p>
+                                                    <p className="leading-8 font-normal md:text-justify">{myposte.recrutement?.localisation}</p>
                                                 </div>
                                                 <div>
                                                     <h4 className="mt-2 leading-10 text-sm">
                                                         Fermeture des postes
                                                     </h4>
-                                                    <p className="leading-8 font-normal">{myposte.recrutement?.fermeture}</p>
+                                                    <p className="leading-8 font-normal md:text-justify">{myposte.recrutement?.fermeture}</p>
                                                 </div>
                                                 <div>
                                                     <h4 className="mt-2 leading-10 text-sm">
                                                         Date de début de la mission
                                                     </h4>
-                                                    <p className="leading-8 font-normal">{myposte.recrutement?.debut}</p>
+                                                    <p className="leading-8 font-normal md:text-justify">{myposte.recrutement?.debut}</p>
                                                 </div>
                                                 <div>
                                                     <h4 className="mt-2 leading-10 text-sm">
                                                         Durée du contrat
                                                     </h4>
-                                                    <p className="leading-8 font-normal">{myposte.recrutement?.duree}</p>
+                                                    <p className="leading-8 font-normal md:text-justify">{myposte.recrutement?.duree}</p>
                                                 </div>
                                                 <div>
                                                     <h4 className="mt-2 leading-10 text-sm">
                                                         Comment postuler
                                                     </h4>
-                                                    <p className="leading-8 font-normal">{myposte.recrutement?.postuler}</p>
+                                                    <p className="leading-8 font-normal md:text-justify">{myposte.recrutement?.postuler}</p>
                                                 </div>
                                                 <div>
                                                     <h4 className="mt-2 leading-10 text-sm">
                                                         Courriel pour la soumission
                                                     </h4>
-                                                    <p className="leading-8 font-normal">{myposte.recrutement?.courrier}</p>
+                                                    <p className="leading-8 font-normal md:text-justify">{myposte.recrutement?.courrier}</p>
                                                 </div>
                                                 <div>
-                                                    <p className="leading-8 font-normal">{myposte.recrutement?.etape}</p>
+                                                    <p className="leading-8 font-normal md:text-justify">{myposte.recrutement?.etape}</p>
                                                 </div>
                                                 <div>
                                                     <h4 className="mt-2 leading-10 text-sm">
                                                         Avis sur l'égalité des chances
                                                     </h4>
-                                                    <p className="leading-8 font-normal">{myposte.recrutement?.egalite}</p>
+                                                    <p className="leading-8 font-normal md:text-justify">{myposte.recrutement?.egalite}</p>
                                                 </div>
                                             </div>
                                         </p>

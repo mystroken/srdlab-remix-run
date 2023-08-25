@@ -10,7 +10,7 @@ export default function Rejoindre() {
                         <div className="w-full md:w-3/4">
                             <p className="text-secondary mt-2 text-lg md:text-xl">Rejoignez notre</p>
                             <h1 className="text-primary mt-1 text-2xl md:text-5xl">Equipe</h1>
-                            <p className="mt-2 text-sm md:mt-5 md:text-[1rem] leading-[1.7rem] md:w-[40rem]">
+                            <p className="mt-2 text-sm md:mt-5 md:text-[1rem] leading-[1.7rem] md:w-[40rem] md:text-justify">
                                 Si vous êtes passionné(e) par l'innovation, la créativité et le travail d'équipe, vous
                                 pourriez bien être la personne que nous recherchons. Nous cherchons constamment à
                                 élargir notre équipe avec des esprits passionnés et dévoués. Nous sommes à la quête des

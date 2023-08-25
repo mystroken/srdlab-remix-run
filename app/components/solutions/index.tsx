@@ -14,7 +14,7 @@ export default function SolutionsComponent() {
                         <div className="w-full md:w-3/4">
                             <p className="text-secondary mt-2 text-lg md:text-xl">Toutes nos</p>
                             <h1 className="text-primary mt-1 text-2xl md:text-5xl">Solutions</h1>
-                            <p className="mt-2 text-sm md:mt-5 md:text-[1rem] leading-[1.7rem] md:w-[40rem]">
+                            <p className="mt-2 text-sm md:mt-5 md:text-[1rem] leading-[1.7rem] md:w-[40rem] md:text-justify">
                                 En tant que cabinet spécialisé dans la collecte de données, les études sociales et
                                 économiques, ainsi que la gestion de projet et la formation, nous vous proposons une
                                 gamme complète de services qui permettront la réalisation de vos projets. Avec notre

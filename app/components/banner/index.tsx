@@ -109,7 +109,7 @@ export default function BannerComponent({ title, content, arrow, list, ...props 
                                             header.map((item: HeaderType, index) => {
                                                 return (
                                                     <li onClick={handleScrollToTop} key={index}>
-                                                        <Link className="text-gray-800 font-medium text-sm mt-4" to={`${item.link}`}>{item.name}</Link>
+                                                        <Link className="md:text-justify text-gray-800 font-medium text-sm mt-4" to={`${item.link}`}>{item.name}</Link>
                                                     </li>
                                                 )
                                             })
@@ -136,11 +136,11 @@ export default function BannerComponent({ title, content, arrow, list, ...props 
                                                 }
                                             >
                                                 <h1
-                                                    className="text-white text-2xl text-center md:text-start md:text-[2.5rem] md:mr-8 leading-[2rem] md:leading-[120%]">
+                                                    className="md:text-justify text-white text-2xl text-center md:text-[2.5rem] md:mr-8 leading-[2rem] md:leading-[120%]">
                                                     {item.title}
                                                 </h1>
                                                 <hr className="h-1 mt-10 bg-orange w-44 mx-auto md:mx-0" /> : <div className="my-8" />
-                                                <p className="text-white text-lg md:text-[1.25rem] md:w-3/4 text-center md:text-start leading-[1.7rem]">
+                                                <p className="md:text-justify text-white text-lg md:text-[1.25rem] md:w-3/4 text-center leading-[1.7rem]">
                                                     {item.content}
                                                 </p>
                                             </div>

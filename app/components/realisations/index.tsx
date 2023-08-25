@@ -26,7 +26,7 @@ export default function Realisations({slug, date, context, open, role, name, tit
                 <hr/>
                 <div className={"p-4"}>
                     <div className="flex items-center my-auto mt-2">
-                        <p className="text-[.8rem] leading-[170%] underline outline-offset-4">
+                        <p className="text-[.8rem] leading-[170%] underline outline-offset-4 md:text-justify">
                             Date de realisation:
                         </p>
                         <p className="pl-2 text-[.8rem] leading-[170%]">
