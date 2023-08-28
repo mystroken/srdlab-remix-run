@@ -27,8 +27,8 @@ export default function NosValeursComponent() {
                                                     className={`bg-primary ${showText === true ? 'h-[25rem]' : 'h-[18rem]'} w-full md:w-[18rem] px-[1.3rem] mb-12 md:mb-0`}
                                                     key={index}>
                                                     <h2 className="pt-[3.3rem] text-white text-[1.2rem] leading-[175%]">{item.title}</h2>
-                                                    <p className={`${showText === false ? 'flex' : 'hidden'} pt-[1.3rem] text-[0.7rem] text-white leading-[185%] md:text-justify`}>{cleanText(item.content, 200)}</p>
-                                                    <p className={`${showText === true ? 'flex' : 'hidden'} pt-[1.3rem] text-[0.7rem] text-white leading-[185%] md:text-justify`}>{item.content}</p>
+                                                    <p className={`${showText === false ? 'flex' : 'hidden'} pt-[1.3rem] text-[0.7rem] text-white leading-[185%] text-justify`}>{cleanText(item.content, 200)}</p>
+                                                    <p className={`${showText === true ? 'flex' : 'hidden'} pt-[1.3rem] text-[0.7rem] text-white leading-[185%] text-justify`}>{item.content}</p>
                                                 </div>
                                             )
                                         })

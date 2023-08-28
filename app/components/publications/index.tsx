@@ -19,7 +19,7 @@ export default function PublicationComponent() {
                         <div className="w-full md:w-3/4">
                             <p className="text-secondary mt-2 text-lg md:text-xl">Nos Récentes</p>
                             <h1 className="text-primary mt-1 text-2xl md:text-5xl">Publications</h1>
-                            <p className="md:text-justify mt-2 text-sm md:mt-5 md:text-[1rem] leading-[1.7rem] md:w-[40rem]">Ultrices
+                            <p className="text-justify mt-2 text-sm md:mt-5 md:text-[1rem] leading-[1.7rem] md:w-[40rem]">Ultrices
                                 vitae integer et neque, est
                                 egestas.
                                 Diam non donec mi
@@ -52,7 +52,7 @@ export default function PublicationComponent() {
                                                     </p>
                                                 </div>
                                                 <a href={`publication/${item.slug}`}
-                                                   className="md:text-justify text-primary py-3 text-[1rem] leading-[155%] font-semibold cursor-pointer hover:underline hover:underline-offset-4">
+                                                   className="text-justify text-primary py-3 text-[1rem] leading-[155%] font-semibold cursor-pointer hover:underline hover:underline-offset-4">
                                                     {cleanText(item.title, 60)}
                                                 </a>
                                                 {/* <p className="pt-[.6rem] text-[.8rem] leading-[170%] text-[#505A62] truncate">

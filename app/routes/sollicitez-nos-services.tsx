@@ -5,8 +5,6 @@ import LogoColor from "../../assets/imgs/logo.png";
 import Logo from "../../assets/imgs/srd-lab-logo.svg";
 import {HeaderType} from "~/types";
 import React, {useState} from "react";
-import Team from "../../assets/imgs/team.jpg";
-import {Button} from "~/components/commons/button";
 
 
 export default function SollicitezNosServices() {

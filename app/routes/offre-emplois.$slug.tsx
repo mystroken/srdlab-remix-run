@@ -118,11 +118,11 @@ export default function EmploiSlug() {
                                             className={'underline outline-offset-4'}>Date de clôture:</span> {myposte.date}
                                             <div className={`my-4`}>
                                                 <p className="leading-8 font-semibold text-base md:text-justify">Contexte</p>
-                                                <p className="leading-8 font-normal md:text-justify">{myposte.description}</p>
+                                                <p className="leading-8 font-normal text-justify">{myposte.description}</p>
                                             </div>
                                             <div className={`my-4`}>
                                                 <p className="leading-8 font-semibold text-base md:text-justify">Description</p>
-                                                <p className="leading-8 font-normal md:text-justify">{myposte.description}</p>
+                                                <p className="leading-8 font-normal text-justify">{myposte.description}</p>
                                             </div>
                                             <div className={`my-4`}>
                                                 <p className="leading-8 font-semibold text-base">Role</p>
@@ -146,58 +146,58 @@ export default function EmploiSlug() {
                                                 </ul>
                                             </div>
                                             <div className={`my-4`}>
-                                                <p className="leading-8 font-semibold text-base md:text-justify">Cadre de
+                                                <p className="leading-8 font-semibold text-base text-justify">Cadre de
                                                     recrutement</p>
                                                 <div>
                                                     <h4 className="mt-2 leading-10 text-sm">
                                                         Position
                                                     </h4>
-                                                    <p className="leading-8 font-normal md:text-justify">{myposte.recrutement?.position}</p>
+                                                    <p className="leading-8 font-normal text-justify">{myposte.recrutement?.position}</p>
                                                 </div>
                                                 <div>
                                                     <h4 className="mt-2 leading-10 text-sm">
                                                         Localisation
                                                     </h4>
-                                                    <p className="leading-8 font-normal md:text-justify">{myposte.recrutement?.localisation}</p>
+                                                    <p className="leading-8 font-normal text-justify">{myposte.recrutement?.localisation}</p>
                                                 </div>
                                                 <div>
                                                     <h4 className="mt-2 leading-10 text-sm">
                                                         Fermeture des postes
                                                     </h4>
-                                                    <p className="leading-8 font-normal md:text-justify">{myposte.recrutement?.fermeture}</p>
+                                                    <p className="leading-8 font-normal text-justify">{myposte.recrutement?.fermeture}</p>
                                                 </div>
                                                 <div>
                                                     <h4 className="mt-2 leading-10 text-sm">
                                                         Date de début de la mission
                                                     </h4>
-                                                    <p className="leading-8 font-normal md:text-justify">{myposte.recrutement?.debut}</p>
+                                                    <p className="leading-8 font-normal text-justify">{myposte.recrutement?.debut}</p>
                                                 </div>
                                                 <div>
                                                     <h4 className="mt-2 leading-10 text-sm">
                                                         Durée du contrat
                                                     </h4>
-                                                    <p className="leading-8 font-normal md:text-justify">{myposte.recrutement?.duree}</p>
+                                                    <p className="leading-8 font-normal text-justify">{myposte.recrutement?.duree}</p>
                                                 </div>
                                                 <div>
                                                     <h4 className="mt-2 leading-10 text-sm">
                                                         Comment postuler
                                                     </h4>
-                                                    <p className="leading-8 font-normal md:text-justify">{myposte.recrutement?.postuler}</p>
+                                                    <p className="leading-8 font-normal text-justify">{myposte.recrutement?.postuler}</p>
                                                 </div>
                                                 <div>
                                                     <h4 className="mt-2 leading-10 text-sm">
                                                         Courriel pour la soumission
                                                     </h4>
-                                                    <p className="leading-8 font-normal md:text-justify">{myposte.recrutement?.courrier}</p>
+                                                    <p className="leading-8 font-normal text-justify">{myposte.recrutement?.courrier}</p>
                                                 </div>
                                                 <div>
-                                                    <p className="leading-8 font-normal md:text-justify">{myposte.recrutement?.etape}</p>
+                                                    <p className="leading-8 font-normal text-justify">{myposte.recrutement?.etape}</p>
                                                 </div>
                                                 <div>
                                                     <h4 className="mt-2 leading-10 text-sm">
                                                         Avis sur l'égalité des chances
                                                     </h4>
-                                                    <p className="leading-8 font-normal md:text-justify">{myposte.recrutement?.egalite}</p>
+                                                    <p className="leading-8 font-normal text-justify">{myposte.recrutement?.egalite}</p>
                                                 </div>
                                             </div>
                                         </p>

@@ -30,7 +30,7 @@ export default function PrioritesComponent() {
                                                     />
                                                     <h2
                                                         className="pt-7 pb-3 md:w-[14rem] xl:w-[18rem] text-[1.2rem] leading-[130%] text-primary">{item.title}</h2>
-                                                    <p className={`md:w-[14rem] xl:w-[18rem] text-[0.7rem] leading-[185%] pr-10 md:pr-0 ${showText === false ? 'flex' : 'hidden'}`}>{cleanText(item.description, 200)}</p>
+                                                    <p className={`md:w-[14rem] text-justify xl:w-[18rem] text-[0.7rem] leading-[185%] pr-10 md:pr-0 ${showText === false ? 'flex' : 'hidden'}`}>{cleanText(item.description, 200)}</p>
                                                     <span
                                                         className={`md:w-[14rem] xl:w-[18rem] text-[0.7rem] leading-[185%] pr-10 md:pr-0 ${showText === true ? 'flex' : 'hidden'}`}> {item.description}</span>
                                                 </div>

@@ -17,13 +17,7 @@ export const loader = async ({params}: LoaderArgs) => {
 
 
 export default function RealisationsSlug() {
-    const handleScrollToTop = async () => {
-        await setTimeout(() => {
-            setLoading(true)
-            window.scrollTo({top: 0, behavior: 'smooth'})
-        }, 900)
-        setLoading(false)
-    }
+
     const {slug}: any = useLoaderData<typeof loader>();
     const myposte = postes[slug - 1]
     const [navbar, setNavbar] = useState(false);

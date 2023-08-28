@@ -1372,6 +1372,10 @@ h1 {
   text-align: center;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .text-start {
   text-align: start;
 }
@@ -1887,10 +1891,6 @@ button.slick-next:before {
 
   .md\:pt-28 {
     padding-top: 7rem;
-  }
-
-  .md\:text-left {
-    text-align: left;
   }
 
   .md\:text-center {

@@ -113,16 +113,16 @@ export default function PublicationSlug() {
                                             {mypublication.title}
                                         </h1>
                                         <p className="mb-6 text-xs text-gray-600">{mypublication.date}</p>
-                                        <p className="leading-8 font-semibold md:text-justify">{mypublication.header}</p>
-                                        <p className="leading-8 text-xs mt-8 md:text-justify">{mypublication.content1}</p>
-                                        <p className="leading-8 text-xs mt-4 md:text-justify">{mypublication.content2}</p>
-                                        <p className="leading-8 text-xs mt-4 md:text-justify">{mypublication.content3}</p>
-                                        <p className="leading-8 text-xs mt-4 md:text-justify">{mypublication.content4}</p>
+                                        <p className="leading-8 font-semibold text-justify">{mypublication.header}</p>
+                                        <p className="leading-8 text-xs mt-8 text-justify">{mypublication.content1}</p>
+                                        <p className="leading-8 text-xs mt-4 text-justify">{mypublication.content2}</p>
+                                        <p className="leading-8 text-xs mt-4 text-justify">{mypublication.content3}</p>
+                                        <p className="leading-8 text-xs mt-4 text-justify">{mypublication.content4}</p>
                                         {
                                             mypublication.content4 === null ? <p></p> :
                                                 (mypublication.content4?.map((item, index) => {
                                                     return (
-                                                        <p className="leading-8 text-xs mt-2 md:text-justify">{item}</p>
+                                                        <p className="leading-8 text-xs mt-2 text-justify">{item}</p>
                                                     )
                                                 }))
                                         }
