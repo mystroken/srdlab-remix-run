@@ -3,44 +3,46 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-    text-rendering: geometricPrecision;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-weight: 300;
-    font-family: "Poppins", sans-serif;
-  }
+    html {
+        text-rendering: geometricPrecision;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-weight: 300;
+        font-family: "Poppins", sans-serif;
+    }
 
-  /* Default style for headings. */
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-weight: 700;
-  }
-  h1 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
+    /* Default style for headings. */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 700;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
 }
 
 button.slick-prev:before,
 button.slick-next:before {
-  color: black;
-  font-size: 25px;
-  margin: 0 2px 0 -2px;
+    color: black;
+    font-size: 25px;
+    margin: 0 2px 0 -2px;
 }
 
 .mymarq {
-  animation: marquee 20s linear infinite;
+    animation: marquee 20s linear infinite;
 }
+
 @-webkit-keyframes marquee {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
