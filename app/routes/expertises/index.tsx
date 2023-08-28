@@ -54,7 +54,7 @@ export default function ExpertisesRoute() {
                                             {
                                                 domaines.map((item: any, index) => {
                                                     return (
-                                                        <a href={`/domaine/${item.slug}`} key={index}
+                                                        <a href={`/expertises/${item.slug}`} key={index}
                                                            className="h-44 md:h-40 md:mb-6 md:w-11/12 cursor-pointer">
                                                             <div
                                                                 className="p-4 border border-gray-400 hover:border-orange hover:bg-orange hover:border-2 flex items-start flex-col justify-center rounded-md h-full">

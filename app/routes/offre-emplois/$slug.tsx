@@ -6,8 +6,8 @@ import {postes} from "~/data/postes";
 import {header} from "~/data/header";
 import type {HeaderType} from "~/types";
 import {useEffect, useState} from "react";
-import Logo from "../../assets/imgs/srd-lab-logo.svg"
-import LogoColor from "../../assets/imgs/logo.png"
+import Logo from "../../../assets/imgs/srd-lab-logo.svg"
+import LogoColor from "../../../assets/imgs/logo.png"
 
 
 export const loader = async ({params}: LoaderArgs) => {

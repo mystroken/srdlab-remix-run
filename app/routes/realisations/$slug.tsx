@@ -6,8 +6,8 @@ import {postes} from "~/data/postes";
 import {header} from "~/data/header";
 import type {HeaderType, PosteType, PublicationType} from "~/types";
 import {useEffect, useState} from "react";
-import Logo from "../../assets/imgs/srd-lab-logo.svg"
-import LogoColor from "../../assets/imgs/logo.png"
+import Logo from "../../../assets/imgs/srd-lab-logo.svg"
+import LogoColor from "../../../assets/imgs/logo.png"
 import {NEWLETTER} from "~/data/images";
 
 

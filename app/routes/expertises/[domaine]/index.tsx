@@ -1,41 +1,22 @@
-import React, {useState} from "react";
 import {DefaultLayout} from "~/layouts/default";
+import {Link, useLocation, useMatches} from "@remix-run/react"
 import {header} from "~/data/header";
-import {Link, useMatches} from "@remix-run/react";
-import LogoColor from "../../assets/imgs/logo.png";
-import Logo from "../../assets/imgs/srd-lab-logo.svg";
-import {HeaderType, PosteType} from "~/types";
-import {postes} from "~/data/postes";
-import Post from "~/components/postes";
+import type {HeaderType} from "~/types";
+import {useState} from "react";
+import Logo from "../../../../assets/imgs/srd-lab-logo.svg"
+import LogoColor from "../../../../assets/imgs/logo.png"
 
-export default function OffresEmplois() {
+
+export default function DomaineExpertiseSlug() {
+    const location = useLocation()
     const [navbar, setNavbar] = useState(false);
-    const [isShow, setIsShow] = useState(false);
-    const [loading, setLoading] = useState(false);
-    const [openAll, setOpenAll] = useState(true)
-    const [openActu, setOpenActu] = useState(false)
-    const [openFerme, setOpenFerme] = useState(false)
-    const [bar, setMyBar] = useState(false)
+    const [isShow, setIsShow] = useState(false)
     const path = useMatches()
     const idPath = path[1].pathname
+    const data = location.state.data
 
-    const selectActu = () => {
-        setOpenActu(true)
-        setOpenAll(false)
-        setOpenFerme(false)
-    }
+    console.log("SLUG =>", location.state.data)
 
-    const selectFerme = () => {
-        setOpenFerme(true)
-        setOpenAll(false)
-        setOpenActu(false)
-    }
-
-    const selectAll = () => {
-        setOpenAll(true)
-        setOpenFerme(false)
-        setOpenActu(false)
-    }
 
     return (
         <>
@@ -109,53 +90,15 @@ export default function OffresEmplois() {
                         </div>
                     </div>
                 </header>
-                <div className="container mx-auto">
-                    <div className="py-16 md:py-44">
-                        <div className={"flex mt-20 md:mt-0 flex-row justify-center items-center space-x-8 text-sm font-normal"}>
-                            <div
-                                onClick={selectAll}
-                                className={`cursor-pointer ${openAll ? 'bg-orange rounded-full text-xs px-4 py-2' : ''}`}>TOUT
+                <div className="py-16 md:py-44">
+                    <div className="container mx-auto">
+                        <div className="flex flex-row mt-16 md:mt-0">
+                            <div className="w-full lg:w-3/4">
+                                <h1 className="my-6 leading-10 text-xl md:text-3xl">
+                                    {data.title}
+                                </h1>
+                                <p className="my-6 text-xs text-gray-600">{data.content}</p>
                             </div>
-                            <div className={`${openActu ? 'bg-green-500 text-white rounded-full text-xs px-4 py-2' : ''} cursor-pointer`}
-                                 onClick={selectActu}>ACTU
-                            </div>
-                            <div className={`${openFerme ? 'bg-red-500 text-white rounded-full text-xs px-4 py-2' : ''} cursor-pointer`}
-                                 onClick={selectFerme}>FERMES
-                            </div>
-                        </div>
-                        <div
-                            className="grid sm:grid-cols-2 md:grid-cols-3 container pt-10 gap-y-4  md:gap-x-10">
-                            {
-                                openAll && postes.map((item: PosteType, index: number) => {
-                                    return (
-                                        <Post key={index} open={item.open} slug={item.slug} name={item.name}
-                                              title={item.title} date={item.date} role={item.role}
-                                              context={item.context} description={item.description}/>
-                                    );
-                                })
-                            }
-                            {
-                                openActu && postes.map((item: PosteType, index: number) => {
-                                    while (item.open === openActu) {
-                                        return (
-                                            <Post key={index} open={item.open} slug={item.slug} name={item.name}
-                                                  title={item.title} date={item.date} role={item.role}
-                                                  context={item.context} description={item.description}/>
-                                        );
-                                    }
-                                })
-                            }
-                            {
-                                openFerme && postes.map((item: PosteType, index: number) => {
-                                    while (item.open === false) {
-                                        return (
-                                            <Post key={index} open={item.open} slug={item.slug} name={item.name}
-                                                  title={item.title} date={item.date} role={item.role}
-                                                  context={item.context} description={item.description}/>
-                                        );
-                                    }
-                                })
-                            }
                         </div>
                     </div>
                 </div>

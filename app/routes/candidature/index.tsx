@@ -1,18 +1,26 @@
 import {DefaultLayout} from "~/layouts/default";
-import Rejoindre from "~/components/rejoindre";
+import type {LoaderArgs} from "@remix-run/node";
+import {json} from "@remix-run/node";
+import {Link, useMatches,} from "@remix-run/react"
 import {header} from "~/data/header";
-import {Link, useMatches} from "@remix-run/react";
-import LogoColor from "../../assets/imgs/logo.png";
-import Logo from "../../assets/imgs/srd-lab-logo.svg";
-import {HeaderType} from "~/types";
-import React, {useState} from "react";
+import type {HeaderType} from "~/types";
+import {useState} from "react";
+import Logo from "../../../assets/imgs/srd-lab-logo.svg"
+import LogoColor from "../../../assets/imgs/logo.png"
+import {Button} from "~/components/commons/button";
 
 
-export default function RejoindreNotreEquipe() {
+export const loader = async ({params}: LoaderArgs) => {
+    return json({slug: params.slug});
+};
+
+
+export default function Index() {
     const [navbar, setNavbar] = useState(false);
-    const [isShow, setIsShow] = useState(false);
+    const [isShow, setIsShow] = useState(false)
     const path = useMatches()
     const idPath = path[1].pathname
+
     return (
         <>
             <DefaultLayout>
@@ -86,7 +94,42 @@ export default function RejoindreNotreEquipe() {
                     </div>
                 </header>
                 <div className="py-16 md:py-44">
-                    <Rejoindre/>
+                    <div className="container mx-auto">
+                        <div className="py-16 md:py-44">
+                            <p className="text-secondary mt-2 text-lg md:text-xl">Rejoignez notre</p>
+                            <h1 className="text-primary mt-1 text-2xl md:text-5xl">Equipe</h1>
+                            <p className="mt-2 text-sm md:mt-5 md:text-[1rem] leading-[1.7rem] md:w-[40rem]">
+                                Nous sommes à la recherche de personnes
+                                compétentes et engagées qui peuvent évoluer
+                                avec nous et nous aider à satisfaire et même
+                                à dépasser les attentes de nos clients. SRD
+                                Lab est reconnu comme un employeur ouvert
+                                qui se différencie par de vraies valeurs et
+                                considère ses employés comme son atout le
+                                plus important. SRD Lab est un employeur qui
+                                respecte l'égalité des chances et ne pratique
+                                aucune discrimination fondée sur l'âge, la race, la
+                                religion, la nationalité, le sexe, ou toute autre
+                                forme de discrimination.
+                            </p>
+                            <form className={"mt-6"} method="GET" action="mailto:abbasalimokolo@gmail.com">
+                                <input className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}
+                                       placeholder={"Prenom"} name={"subject"}/>
+                                <input className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}
+                                       placeholder={"Nom"}/>
+                                <input className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}
+                                       placeholder={"Email"}/>
+                                <input className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}
+                                       placeholder={"Phone"}/>
+                                <textarea cols={6} rows={6} placeholder={'Message'}
+                                          name={"body"}
+                                          className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}/>
+                                <div className="w-full md:w-3/5 mt-8">
+                                    <Button value={"send"} name="Envoyez un message"/>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </DefaultLayout>
         </>

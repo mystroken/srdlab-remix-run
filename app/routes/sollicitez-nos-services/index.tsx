@@ -1,38 +1,17 @@
 import {DefaultLayout} from "~/layouts/default";
-import type {LoaderArgs} from "@remix-run/node";
-import {json} from "@remix-run/node";
-import {Link, useLoaderData, useMatches,} from "@remix-run/react"
-import {domaines} from "~/data/domaines";
 import {header} from "~/data/header";
-import type {HeaderType} from "~/types";
-import {useEffect, useState} from "react";
-import Logo from "../../assets/imgs/srd-lab-logo.svg"
-import LogoColor from "../../assets/imgs/logo.png"
+import {Link, useMatches} from "@remix-run/react";
+import LogoColor from "../../../assets/imgs/logo.png";
+import Logo from "../../../assets/imgs/srd-lab-logo.svg";
+import {HeaderType} from "~/types";
+import React, {useState} from "react";
 
 
-export const loader = async ({params}: LoaderArgs) => {
-    return json({slug: params.slug});
-};
-
-export async function loaderItem() {
-    return json({name: "Ryan", date: new Date()});
-}
-
-export default function DomaineSlug() {
-
-    const {slug}: any = useLoaderData<typeof loader>();
-    const mydomaine = domaines[slug - 1]
+export default function Index() {
     const [navbar, setNavbar] = useState(false);
-    const [isShow, setIsShow] = useState(false)
-    const [loading, setLoading] = useState(false)
+    const [isShow, setIsShow] = useState(false);
     const path = useMatches()
     const idPath = path[1].pathname
-
-    useEffect(() => {
-        typeof slug === "string" ? setLoading(true) : setLoading(false)
-    }, [])
-
-
     return (
         <>
             <DefaultLayout>
@@ -106,42 +85,29 @@ export default function DomaineSlug() {
                     </div>
                 </header>
                 <div className="py-16 md:py-44">
-                    <div className="container mx-auto">
-                        {
-                            loading === false ? <p>Chargement...</p> :
-                                <div className="flex flex-row mt-16 md:mt-0">
-                                    <div className="w-full lg:w-3/4">
-                                        <h1 className="my-6 leading-10 text-xl md:text-3xl">
-                                            {mydomaine.title}
-                                        </h1>
-                                        <h4 className="my-2 leading-10 text-sm md:text-base">
-                                            {mydomaine.subtitle}
-                                        </h4>
-                                        <p className="my-6 text-xs text-gray-600 text-justify">{mydomaine.content}</p>
-                                        <div className="pt-[3rem]">
-                                            <div className="grid md:grid-cols-2 grid-cols-1 gap-y-4">
-                                                {
-                                                    mydomaine.childs.map((item: any, index) => {
-                                                        // console.log("CHILD ->", item)
-                                                        return (
-                                                            <Link state={{data: item}}
-                                                                  to={{pathname: `/domaine-expertise`}}
-                                                                  key={index}
-                                                                  className="h-44 md:h-40 md:mb-6 md:w-11/12 cursor-pointer">
-                                                                <div
-                                                                    className="p-4 border border-gray-400 hover:border-orange hover:bg-orange hover:border-2 flex items-center flex-col justify-center rounded-md h-full">
-                                                                    <h2
-                                                                        className="text-center md:w-[14rem] xl:w-[18rem] text-[1.1rem] text-primary">{item.title}</h2>
-                                                                </div>
-                                                            </Link>
-                                                        )
-                                                    })
-                                                }
-                                            </div>
+                    <div className="bg-white">
+                        <div className="pt-[7rem]">
+                            <div className="container mx-auto">
+                                <div className="flex flex-row">
+                                    <div className="w-full md:w-3/4">
+                                        <p className="text-secondary mt-2 text-lg md:text-xl">Sollicitez nos</p>
+                                        <h1 className="text-primary mt-1 text-2xl md:text-5xl">Services</h1>
+                                        <p className="mt-2 text-sm md:mt-5 md:text-[1rem] leading-[1.7rem] md:w-[40rem]">
+                                            Si vous êtes une entreprise ou une organisation à la recherche de solutions
+                                            professionnelles de haute qualité, nous sommes là pour répondre à vos
+                                            besoins. Notre expertise couvre un large éventail de domaines, et nous
+                                            sommes déterminés à vous fournir des solutions sur mesure qui correspondent
+                                            à vos objectifs et à votre vision. Notre engagement envers l'excellence et
+                                            notre approche collaborative nous permettent de créer des partenariats
+                                            fructueux et durables.
+                                        </p>
+                                        <div className="py-16">
+                                            {/*<p>HELLO SUITE</p>*/}
                                         </div>
                                     </div>
                                 </div>
-                        }
+                            </div>
+                        </div>
                     </div>
                 </div>
             </DefaultLayout>
