@@ -19,9 +19,8 @@ import DESKTOP from "../../assets/imgs/bureau.jpg";
 import COMMERCE from "../../assets/imgs/commerce.jpg";
 import PUB1 from "../../assets/imgs/pub1.jpg";
 import PUB2 from "../../assets/imgs/pub2.jpg";
-import PUB3 from "../../assets/imgs/pub3.png";
-import PUB4 from "../../assets/imgs/pub4.png";
-import PUB11 from "../../assets/imgs/pub11.jpg";
+import PUB3 from "../../assets/imgs/pub3.jpg";
+import PUB4 from "../../assets/imgs/pub4.jpg";
 
 export {
     DG,

@@ -1964,6 +1964,10 @@ button.slick-next:before {
     line-height: 1;
   }
 
+  .md\:text-\[1\.15rem\] {
+    font-size: 1.15rem;
+  }
+
   .md\:text-\[1\.25rem\] {
     font-size: 1.25rem;
   }
@@ -1974,6 +1978,10 @@ button.slick-next:before {
 
   .md\:text-\[1rem\] {
     font-size: 1rem;
+  }
+
+  .md\:text-\[2\.2rem\] {
+    font-size: 2.2rem;
   }
 
   .md\:text-\[2\.5rem\] {
@@ -1992,18 +2000,6 @@ button.slick-next:before {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-\[2\.2rem\] {
-    font-size: 2.2rem;
-  }
-
-  .md\:text-\[1\.20rem\] {
-    font-size: 1.20rem;
-  }
-
-  .md\:text-\[1\.15rem\] {
-    font-size: 1.15rem;
   }
 
   .md\:leading-\[120\%\] {
