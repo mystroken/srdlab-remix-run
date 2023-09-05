@@ -17,6 +17,11 @@ import CIGARRETTE from "../../assets/imgs/cigarettes.jpg";
 import CIGAFRIQUE from "../../assets/imgs/cig-afrique.jpg";
 import DESKTOP from "../../assets/imgs/bureau.jpg";
 import COMMERCE from "../../assets/imgs/commerce.jpg";
+import PUB1 from "../../assets/imgs/pub1.jpg";
+import PUB2 from "../../assets/imgs/pub2.jpg";
+import PUB3 from "../../assets/imgs/pub3.png";
+import PUB4 from "../../assets/imgs/pub4.png";
+import PUB11 from "../../assets/imgs/pub11.jpg";
 
 export {
     DG,
@@ -37,5 +42,10 @@ export {
     CIGARRETTE,
     CIGAFRIQUE,
     DESKTOP,
-    COMMERCE
+    COMMERCE,
+    PUB11,
+    PUB1,
+    PUB2,
+    PUB3,
+    PUB4
 }

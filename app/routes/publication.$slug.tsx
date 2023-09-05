@@ -116,8 +116,6 @@ export default function PublicationSlug() {
                                         <p className="leading-8 font-semibold text-justify">{mypublication.header}</p>
                                         <p className="leading-8 text-xs mt-8 text-justify">{mypublication.content1}</p>
                                         <p className="leading-8 text-xs mt-4 text-justify">{mypublication.content2}</p>
-                                        <p className="leading-8 text-xs mt-4 text-justify">{mypublication.content3}</p>
-                                        <p className="leading-8 text-xs mt-4 text-justify">{mypublication.content4}</p>
                                         {
                                             mypublication.content4 === null ? <p></p> :
                                                 (mypublication.content4?.map((item, index) => {
@@ -126,6 +124,7 @@ export default function PublicationSlug() {
                                                     )
                                                 }))
                                         }
+                                        <p className="leading-8 text-xs mt-4 text-justify">{mypublication.content3}</p>
                                     </div>
                                 </div>
                         }

@@ -141,20 +141,20 @@ export default function BannerComponent({title, content, arrow, list}: BannerCom
                                                 }
                                             >
                                                 <h1
-                                                    className="md:text-start text-white text-2xl text-center md:text-[2.5rem] md:mr-8 leading-[2rem] md:leading-[120%]">
+                                                    className="md:text-justify text-white text-2xl text-center md:text-[2.2rem] md:mr-8 leading-[2rem] md:leading-[120%]">
                                                     {item.title}
                                                 </h1>
                                                 <hr className="h-1 mt-10 bg-orange w-44 mx-auto md:mx-0"/>
                                                 : <div className="my-8"/>
-                                                <p className="md:text-start text-white text-[1.125rem] md:text-[1.25rem] md:w-3/4 text-center leading-[2rem]">
+                                                <p className="md:text-justify text-white text-[1.125rem] md:text-[1.15rem] md:w-3/4 text-center leading-[2rem]">
                                                     {item.content}
                                                 </p>
                                             </div>
                                         ))}
                                     </div>
-                                    <div className="hidden md:flex md:absolute md:right-0 md:top-0">
-                                        <p className={'text-[24px] w-[46px] text-gray-400'}>{currentIndex+1}/{carouselItems.length}</p>
-                                    </div>
+                                    {/*<div classNamessName="hidden md:flex md:absolute md:right-0 md:top-0">*/}
+                                    {/*    <p className={'text-[24px] w-[46px] text-gray-400'}>{currentIndex + 1}/{carouselItems.length}</p>*/}
+                                    {/*</div>*/}
                                     <div className="flex justify-center md:absolute md:right-0 md:bottom-40">
                                         <button onClick={prev}
                                                 className="w-10 h-10 mx-2 flex justify-center items-center border border-gray-400 rounded-full p-1">

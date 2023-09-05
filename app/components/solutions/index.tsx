@@ -53,10 +53,10 @@ export default function SolutionsComponent() {
                                             <div
                                                 onClick={() => setShowText(!showText)}
                                             >
-                                                <p className={`pt-[.8rem] text-[.8rem] leading-[170%] text-[#505A62] text-start ${showText === false ? 'flex' : 'hidden'}`}>
+                                                <p className={`pt-[.8rem] text-[.8rem] leading-[170%] text-[#505A62] text-justify ${showText === false ? 'flex' : 'hidden'}`}>
                                                     {cleanText(item.content, 150)}
                                                 </p>
-                                                <p className={`pt-[.8rem] text-[.8rem] leading-[170%] text-[#505A62] text-start ${showText === true ? 'flex' : 'hidden'}`}>
+                                                <p className={`pt-[.8rem] text-[.8rem] leading-[170%] text-[#505A62] text-justify ${showText === true ? 'flex' : 'hidden'}`}>
                                                     {item.content}
                                                 </p>
                                             </div>

@@ -1,128 +1,60 @@
 import type {PublicationType} from "~/types";
-import {CIGAFRIQUE, CIGARRETTE, COMMERCE, DESKTOP} from "~/data/images";
+import {CIGAFRIQUE, DESKTOP, PUB1, PUB2, PUB3, PUB4} from "~/data/images";
 
 export const publications: PublicationType[] = [
     {
         slug: "1",
-        image: CIGARRETTE,
-        date: "Decembre 2022",
-        title: "Etude sur le commerce illicite de cigarettes en Republique Democratique Du Congo",
-        header: "SRD Lab et le cabinet Research Initiative for Social Development (RISD)\n" +
-            "travaillent en consortium pour mener une étude sur le commerce illicite de tabac en République\n" +
-            "Démocratique du Congo (RDC). Ce projet est commandité par l’ONG Development Gateway\n" +
-            "(DG).",
-        content1: "En République démocratique du Congo (RDC), le projet Tobacco Control Data\n" +
-            "Initiative (TCDI) a mis en évidence une lacune considérable de données sur le tabac en général, et\n" +
-            "plus spécifiquement sur le commerce illicite du tabac. Suite à cette constatation, une recherche\n" +
-            "qualitative préliminaire a été réalisée, suivie de l'organisation d'un atelier de cocréation\n" +
-            "rassemblant diverses parties prenantes engagées dans la lutte antitabac en RDC. Cet exercice a\n" +
-            "conduit à identifier le commerce illicite du tabac comme une problématique prioritaire pour la\n" +
-            "réalisation d'une recherche basée sur la collecte et l'analyse de données.",
-        content2: "Le TCDI joue un rôle crucial dans la lutte contre le tabagisme en RDC. Ce projet, dont la mise en\n" +
-            "œuvre est assurée par l'organisation internationale Development Gateway, vise à collecter, agréger\n" +
-            "et faciliter l'accès aux données essentielles pour l'élaboration et la mise en œuvre de politiques\n" +
-            "efficaces de lutte antitabac. Grâce à des partenariats stratégiques, notamment avec l'Université du\n" +
-            "Cap Town et le soutien financier de la Fondation Bill et Melinda Gates, l'initiative TCDI vise à\n" +
-            "fournir aux gouvernements de la RDC, des informations précieuses et actualisées sur la\n" +
-            "prévalence du tabagisme, les pratiques de commercialisation illicite, ainsi que les effets sanitaires\n" +
-            "et économiques du tabac. En renforçant les capacités des décideurs et des acteurs clés, cette\n" +
-            "initiative vise à contribuer à la prise de décision politiques de santé publique plus efficaces ainsi\n" +
-            "que la protection de la population congolaise contre les méfaits du tabac.",
-        content3: "Pour mener à bien cette recherche, Development Gateway a lancé un appel d'offres visant à\n" +
-            "recruter une structure ou un groupe de structures compétente(s). À l'issue d'un processus de\n" +
-            "sélection rigoureux, le consortium de cabinets composé de Laboratory for Survey &amp; Research for\n" +
-            "Development (SRD Lab) et Research Initiative for Social Development (RISD) a été choisi. SRD\n" +
-            "Lab est donc engagé dans toutes les phase de cette recherche: la conception de la méthodologie\n" +
-            "de collecte, la collecte de données quantitatives et qualitatives, la rédaction du présent rapport de\n" +
-            "recherche qui expose les principaux résultats de l’étude. La recherche apporte des réponses aux\n" +
-            "questions principales qui ont guidé l'étude, notamment:",
-        content4: ["1. Quel est le pourcentage du commerce illicite de la cigarette en RDC ?", "2. Quelles sont les origines et les marques des cigarettes illicites vendues en RDC ?"]
-
+        image: PUB1,
+        date: "Kinshasa, RDC du 01 au 03 Fév 2023",
+        title: "Atelier de lancement de l’étude sur le commerce illicite de cigarettes en RDC",
+        header: "Laboratory for Survey & Research for Development (SRD Lab), en collaboration avec le cabinet Research Initiative for Social Development (RISD), s'engage en République démocratique du Congo (RDC) à fournir des services techniques et consultatifs dans le cadre de l'initiative des données pour la lutte antitabac (Tobacco Control Data Initiative - TCDI).",
+        content1: "Cette initiative vise à agréger et faciliter l'accès aux données nécessaires à la conception et à la mise en œuvre des politiques antitabac effectuées par les gouvernements en Afrique Subsaharienne. TCDI est mis en œuvre par l'organisation internationale à but non lucratif Development Gateway, en partenariat avec l'Université du Cap, grâce au financement de la Fondation Bill et Melinda Gates.",
+        content2: "La recherche proposée devrait aborder les principales questions suivantes :",
+        content3: "Du 01 au 03 février 2023, SRD Lab a donc participé à l'atelier de lancement de l'étude sur le commerce illicite des cigarettes en RDC. L'objectif était de discuter et de valider la méthodologie, les livrables attendus et le calendrier prévu de l'étude. Nous vous donnons rendez-vous dans quelques semaines pour les nouvelles au sujet de cette étude, dont la pertinence est indiscutable.",
+        content4: ["1. Quel est le pourcentage du commerce illicite de la cigarette en RDC ?", "2. quelles sont les origines et les marques des cigarettes illicites vendues en rdc ?"]
     },
     {
         slug: "2",
-        image: COMMERCE,
+        image: PUB2,
         date:
-            "22 Mai 2023",
-        title:
-            "Etude sur le commerce illicite de cigarettes en Republique Democratique Du Congo",
+            "Nairobi, Kenya du 27 Nov au 1er Déc 2022",
+        title: "Atelier de recherche semestriel du CREA",
         header:
-            "Des chercheurs de SRD Lab ont contribué à une étude de l'impact de la réforme du système de paie des fonctionnaires sur la corruption intra-fonctionnaires en République démocratique du Congo (RDC).",
-        content1: "La réforme du système de paie des fonctionnaires en République\n" +
-            "Démocratique du Congo (RDC), mise en œuvre en 2011, a permis de moderniser le mode de\n" +
-            "paiement des salaires en effectuant des versements directs via les comptes bancaires/mobiles des\n" +
-            "fonctionnaires. Avant cette réforme, les fonctionnaires recevaient leur salaire soit de leur\n" +
-            "supérieur hiérarchique, soit d'un comptable, ce qui engendrait de nombreux abus et contribuait à\n" +
-            "la corruption entre les fonctionnaires.",
-        content2: "L’objectif de la recherche a été d’évaluer l’impact de la réforme du système de paie des\n" +
-            "fonctionnaires sur la corruption intra-fonctionnaires en RDC. L’étude repose sur une base de\n" +
-            "données unique et représentative, collectée auprès des fonctionnaires de 15 provinces de la RDC\n" +
-            "dans le cadre du Projet de Réforme et de Rajeunissement de l’Administration Publique (PRRAP).\n" +
-            "À l'état actuel de la recherche, cette étude met en évidence l'importance de la corruption entre les\n" +
-            "fonctionnaires avant la réforme. Environ 36% des fonctionnaires ont signalé des abus salariaux\n" +
-            "tels que des retenues sur salaire, des détournements de salaire et des pots-de-vin.",
-        content3: "Pour atteindre l’objectif de la recherche, l'étude se sert d’un modèle économétrique de variable\n" +
-            "instrumentale, en utilisant l'accessibilité aux services financiers comme source de variation\n" +
-            "exogène. Les principales conclusions de cette recherche sont que la réforme du système de paie\n" +
-            "des fonctionnaires a entraîné une diminution significative de près de 50% de la corruption entre\n" +
-            "les fonctionnaires. De plus, cet effet est plus prononcé dans les administrations où la corruption\n" +
-            "était plus prévalente. Ces résultats sont robustes et se confirment lorsque des spécifications\n" +
-            "alternatives du modèle initial sont utilisées.",
-        content4: ["L'article complet issu de cette étude est en cours de préparation en vue de sa publication dans\n" +
-        "une revue scientifique. Par ailleurs, la diffusion des résultats auprès des décideurs politiques\n" +
-        "congolais est une priorité de cette recherche, étant donné que ces résultats ont un potentiel\n" +
-        "d'impact élevé sur l'administration publique congolaise."]
+            "SRD Lab participe à l'Atelier de recherche semestriel organisé par le Consortium pour la recherche économique en Afrique (CREA), qui se déroule du 27 novembre au 1er décembre 2022 à Nairobi au Kenya.",
+        content1: "Cet atelier s'inscrit dans le cadre du renforcement des capacités de recherche initié par le CREA, qui organise régulièrement des ateliers méthodologiques pour affiner les compétences en recherche et familiariser les chercheurs actuels et potentiels du réseau avec les développements et outils pertinents pour la mise en œuvre de leurs projets de recherche.",
+        content2: "L’objectif de la recherche a été d’évaluer l’impact de la réforme du système de paie des\n",
+        content3: "Un membre de SRD Lab présente à cet atelier les premiers résultats de l'étude sur l'impact de la réforme bancaire sur la corruption entre les fonctionnaires en RDC. Le contexte de l'étude est le suivant : en 2011, le système de paiement des salaires des fonctionnaires en République démocratique du Congo (RDC) a été réformé. Les fonctionnaires ont été invités à ouvrir chacun, un compte bancaire personnel pour que son salaire puisse lui être versés directement par des banques commerciales ou des services bancaires via la téléphonie mobile. Cette réforme a été introduite à une époque où la corruption était endémique. L'étude dont les résultats sont présentés vise à contribuer au débat sur la corruption en mettant en lumière un aspect peu étudié jusqu'à présent, à savoir la corruption entre les fonctionnaires. En utilisant une approche de variable instrumentale, cette étude cherche à évaluer l'impact de cette réforme bancaire sur les comportements de corruption des fonctionnaires. L'étude repose sur des données collectées auprès de fonctionnaires dans 15 provinces de la RDC, issues de l'enquête menée dans le cadre du \"projet de réforme et de rajeunissement de l'administration publique\" soutenu par la Banque mondiale.",
+        content4: []
     }
     ,
     {
         slug: "3",
-        image: CIGAFRIQUE,
+        image: PUB3,
         date:
-            "Mai 2023",
-        title: "Recherche primaire sur les données sur les jeunes et le tabagisme en Afrique",
+            "Kinshasa, RDC 11 Août 2023",
+        title: "Restitution des Résultats de l'Étude sur le Commerce Illicite de Cigarettes en RDC",
         header:
-            "SRD Lab est engagé dans l’étude sur la prévalence du tabagisme chez les adolescents de 10 à 17 ans dans des pays ciblés par le programme DaYTA : la République démocratique du Congo (RDC), le Kenya et le Nigeria.",
+            "Le 11 Août 2023, le Laboratory for Survey & Research for Development (SRD Lab), en partenariat avec le cabinet Research Initiative for Social Development (RISD), a présenté les résultats de l'étude sur le commerce illicite de cigarettes en République démocratique du Congo (RDC). ",
         content1: "Etendue de l’enquête L’objectif de ce travail est de collecter des données personnalisées au niveau national dans trois pays de l’IOTA (RDC, Kenya et Nigeria) sur l’usage du tabac chez les adolescents âgés de 10 à 17 ans afin de combler les principales lacunes en matière de données probantes et de compléter les données existantes. Afin d'assurer un bon équilibre entre les besoins en données spécifiques aux pays et les besoins en données à l'échelle du programme, nous recrutons les suivants : 1) Des cabinet ou des consortiums à collecter des données au niveau national dans l'un des trois pays DaYTA (RDC, Kenya et Nigeria) ou dans plusieurs (Composante 1) 2) Un cabinet ou un consortium qui peut jouer un rôle central de gestion et de coordination de l'étude, avec la responsabilité de standardiser les protocoles de collecte de données dans les trois pays (Composante 2). Les cabinets ou les consortiums de recherche qui souhaitent soumissioner peuvent choisir de postuler pour les composantes 1 et 2 ou pour la composante 1 seulement. Les cabinets qui ne postulent que pour la composante 1 doivent indiquer clairement dans quel(s) des trois pays cibles ils se proposent de travailler.",
-        content2: "Questions de recherche La recherche proposée devrait aborder les principales questions suivantes: 1. Quelle est la prévalence du tabagisme chez les adolescents de 10 à 17 ans dans les pays ciblés ? 2. Quels sont les facteurs multi niveaux (p. ex., individuels, domestiques et environnementaux) associés à toutes les formes de tabagisme chez les adolescents (p. ex., tabagisme et tabac sans fumée) dans chaque pays ? En plus des caractéristiques sociodémographiques (l’âge, le sexe, l’année scolaire (si c’est à l’école), les dépenses hebdomadaires moyennes), les modules du protocole de base devraient comprendre : ",
-        content4: ["● Usage du tabac (pour le tabac fumé et le tabac sans fumé, y compris la shisha et les produits du tabac émergents comme les produits du tabac chauffés), y compris le type, la quantité, la fréquence, la dépendance, l’âge d’initiation, l’endroit où les adolescents fument et avec qui. Ces données nous permettront de calculer la prévalence du tabagisme et d’autres estimations importantes.", "● Utilisation de produits nouveaux tels quecinhalateurs électroniques contenant/ou pas la nicotine et les sachets de nicotine. Ces nouveaux produits à base de nicotine gagnent en popularité dans le monde entier, surtout chez les adolescents et les jeunes adultes. Les données probantes montrent une forte association entre l’utilisation de ces produits et le fait d’être un fumeur ou d’avoir récemment fumé des cigarettes 1,2 . Malheureusement, les données sur ces produits ne sont pas recueillies systématiquement dans tous les pays; la collecte de ces données dans le cadre de l'enquête mondiale sur le tabagisme chez les jeunes (GYTS), principale source actuelle de données relatives à la consommation de tabac chez les jeunes, est facultative.", "● L’accès au tabac et aux produits nouveaux (p. ex.comment les adolescents ont accès aux produits, où et à combien)", "● Facteurs multi niveaux (p. ex., individuels, familiaux et environnementaux) associés à l’usage du tabac chez les adolescents, comme les antécédents de consommation de tabac à l’école ou hors école, chez les parents/tuteurs/autres membres de la famille, l’exposition à la fumée secondaire de tabac à la maison, la consommation de tabac chez des amis proches, l’exposition à la publicité sur le tabac, la promotion ou le parrainage, et l’exposition aux messages antitabac. Les modules facultatifs du protocole comprendront les éléments suivants :", "● Exposition autodéclarée à la fumée de tabac dans les lieux publics intérieurs et extérieurs;", "● Connaissances, attitudes et perceptions au sujet de l’utilisation du tabac et des nouveaux produits et conséquences perçues. En plus des principales constatations, les données produites devraient, dans la mesure du possible, être désagrégées, y compris par type de produit, sexe, différences scolaires/non scolaires, rurales/urbaines et socioéconomiques. La recherche devrait également accorder la priorité à la participation des adolescents à la conception et à l’essai de protocoles de recherche et d’outils de collecte de données."],
-        content3: "",
+        content2: "L'étude, Dont la mise en œuvre a débuté en février 2023, a apporté des réponses aux principales questions de recherche quantitative et qualitative:",
+        content4: ["1. Quel est le pourcentage du commerce illicite de la cigarette en RDC ?", "2. Quelles sont les origines et les marques des cigarettes illicites vendues en RDC ?"],
+        content3: "L’atelier de restitution, qui s'est tenue à Kinshasa le 11 Août 2023, a permis une présentation et une discussion des résultats avec les parties prenantes notamment les représentants du ministère de la santé publique, hygiène et  prévoyance de la RDC et spécifiquement le Programme National de Lutte Contre la Toxicomanie et les Substances Toxiques (PNCLT), les fonctionnaire d’autres ministères comme le ministère du commerce extérieur, les intervenants de la société civile à travers les ONG, les universitaires et Développement Gateway qui est le principal commanditaire de l’étude. \n" +
+            "Les différents rapports dans lesquels sont consignés les résultats sont disponible auprès de l'organisation internationale à but non lucratif Development Gateway qui est le principal commanditaire cette étude.",
     }
     ,
     {
         slug: "4",
-        image: DESKTOP,
+        image: PUB4,
         date:
-            "5 Mars 2023",
+            "Kinshasa, RDC du 01 Sep 2023",
         title:
-            "Nairobi, Kenya - Atelier de recherche semestriel du CREA",
+            "Atelier de lancement de la recherche primaire les jeunes et le tabagisme en Afrique",
         header:
-            "",
-        content1: "En République démocratique du Congo (RDC), le projet Tobacco Control Data\n" +
-            "Initiative (TCDI) a mis en évidence une lacune considérable de données sur le tabac en général, et\n" +
-            "plus spécifiquement sur le commerce illicite du tabac. Suite à cette constatation, une recherche\n" +
-            "qualitative préliminaire a été réalisée, suivie de l'organisation d'un atelier de cocréation\n" +
-            "rassemblant diverses parties prenantes engagées dans la lutte antitabac en RDC. Cet exercice a\n" +
-            "conduit à identifier le commerce illicite du tabac comme une problématique prioritaire pour la\n" +
-            "réalisation d'une recherche basée sur la collecte et l'analyse de données.",
-        content2: "Le TCDI joue un rôle crucial dans la lutte contre le tabagisme en RDC. Ce projet, dont la mise en\n" +
-            "œuvre est assurée par l'organisation internationale Development Gateway, vise à collecter, agréger\n" +
-            "et faciliter l'accès aux données essentielles pour l'élaboration et la mise en œuvre de politiques\n" +
-            "efficaces de lutte antitabac. Grâce à des partenariats stratégiques, notamment avec l'Université du\n" +
-            "Cap Town et le soutien financier de la Fondation Bill et Melinda Gates, l'initiative TCDI vise à\n" +
-            "fournir aux gouvernements de la RDC, des informations précieuses et actualisées sur la\n" +
-            "prévalence du tabagisme, les pratiques de commercialisation illicite, ainsi que les effets sanitaires\n" +
-            "et économiques du tabac. En renforçant les capacités des décideurs et des acteurs clés, cette\n" +
-            "initiative vise à contribuer à la prise de décision politiques de santé publique plus efficaces ainsi\n" +
-            "que la protection de la population congolaise contre les méfaits du tabac.",
-        content3: "Pour mener à bien cette recherche, Development Gateway a lancé un appel d'offres visant à\n" +
-            "recruter une structure ou un groupe de structures compétente(s). À l'issue d'un processus de\n" +
-            "sélection rigoureux, le consortium de cabinets composé de Laboratory for Survey &amp; Research for\n" +
-            "Development (SRD Lab) et Research Initiative for Social Development (RISD) a été choisi. SRD\n" +
-            "Lab est donc engagé dans toutes les phase de cette recherche : la conception de la méthodologie\n" +
-            "de collecte, la collecte de données quantitatives et qualitatives, la rédaction du présent rapport de\n" +
-            "recherche qui expose les principaux résultats de l’étude. La recherche apporte des réponses aux\n" +
-            "questions principales qui ont guidé l'étude, notamment :",
-        content4: ["1. Quel est le pourcentage du commerce illicite de la cigarette en RDC ?", "2. Quelles sont les origines et les marques des cigarettes illicites vendues en RDC ?"]
+            "Laboratory for Survey & Research for Development (SRD Lab), en collaboration avec le cabinet Research Initiative for Social Development (RISD), s'engage en République démocratique du Congo (RDC) à fournir des services techniques et consultatifs dans le cadre du programme d’information sur le tabagisme chez les adolescents (DaYTA).",
+        content1: "La mise en œuvre du programme est dirigée par Development Gateway (DG) : une filiale d'IREX, avec le soutien de la Fondation Bill et Melinda Gates (BMGF). Ce programme permettra de concevoir et mettre en œuvre des recherches primaires sur le tabagisme chez les jeunes dans les trois pays ciblés: la République démocratique du Congo (RDC), le Kenya et le Nigeria afin de combler les principales lacunes en matière de données.",
+        content2: "La recherche proposée devrait aborder les principales questions suivantes : ",
+        content4: ["1. Quelle est la prévalence du tabagisme chez les adolescents de 10 à 17 ans dans les pays ciblés ?", "2. Quels sont les facteurs multi niveaux (p. ex., individuels, domestiques et environnementaux) associés à toutes les formes de tabagisme chez les adolescents (p. ex., tabagisme et tabac sans fumée) dans chaque pays ?"],
+        content3: "Le 1er septembre 2023, SRD Lab a pris part à l'atelier de lancement de cette étude de recherche. L'objectif primordial était d'engager une discussion approfondie visant à valider la méthodologie, à définir les livrables attendus, ainsi qu'à entériner le calendrier prévisionnel de l'étude. Nous anticipons avec enthousiasme de partager prochainement les dernières actualités relatives à cette étude, dont la pertinence est indéniable."
     }
     ,
 ]

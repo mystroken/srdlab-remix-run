@@ -1,4 +1,4 @@
-import type { HeaderType, SolutionsType } from "../types";
+import type {HeaderType, SolutionsType} from "../types";
 
 export const header: HeaderType[] = [
     {
@@ -26,11 +26,11 @@ export const header: HeaderType[] = [
 export const carouselItems: SolutionsType[] = [
     {
         title: "Aide aux décisions économiques et sociodémographiques",
-        content: "SRDLab,  Un cabinet d'étude producteur de données et de formations pour l'aide aux décisions économiques et socio-démographiques."
+        content: "SRD Lab, un cabinet d'étude et de conseil spécialisé dans la réalisation d'études, la collecte de données de qualité, et la prestation de formations destinées à soutenir les prises de décisions économiques, sociales."
     },
     {
-        title: "Producteurs de travail de qualité",
-        content: "C'est au fil des années que nous avons développé notre capacité à délivrer ce que très souvent l'on attend de nous : un travail de qualité."
+        title: "Producteur de travail de qualité",
+        content: "SRD Lab a développé au fil des années sa capacité à délivrer ce que les clients attendent : un travail de qualité."
     },
     {
         title: "C'est une équipe d'experts",
