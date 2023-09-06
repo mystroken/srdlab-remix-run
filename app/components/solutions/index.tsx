@@ -3,6 +3,7 @@ import type {SolutionsType} from "~/types"
 import Aperture from "../../../assets/imgs/aperture.png"
 import {useState} from "react";
 import {cleanText} from "~/utils/helpers";
+import {Image} from "remix-image";
 
 export default function SolutionsComponent() {
     const [showText, setShowText] = useState(false)
@@ -27,10 +28,10 @@ export default function SolutionsComponent() {
                         </div>
                         <div className="xl:flex  hidden  w-1/4">
                             <div className="absolute left-[81.88%] right-[4.62%] w-[194px] h-[200px]">
-                                {/* <img src="~/assets/imgs/vect-second.png" alt="" /> */}
+                                {/* <Image src="~/assets/Images/vect-second.png" alt="" /> */}
                             </div>
                             <div className="absolute left-[83.56%] right-[3.1%] w-[190px] h-[110px] mt-[4%]">
-                                {/* <img src="~/assets/imgs/vect-prim.png" alt="" /> */}
+                                {/* <Image src="~/assets/Images/vect-prim.png" alt="" /> */}
                             </div>
                         </div>
                     </div>
@@ -44,7 +45,7 @@ export default function SolutionsComponent() {
                                 <div className="my-[2.2rem] px-1 lg:my-4 mx-2 lg:px-4" key={index}>
                                     <article className="mb-4 md:mb-0">
                                         <div className="flex justify-start items-center">
-                                            <img src={Aperture} alt=""/>
+                                            <Image src={Aperture} alt=""/>
                                         </div>
                                         <div className="mt-[.8rem]">
                                             <h1 className="text-primary py-1 text-[1.2rem] leading-[155%] font-semibold text-start">

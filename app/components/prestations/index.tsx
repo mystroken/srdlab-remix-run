@@ -1,7 +1,8 @@
-import { useState } from "react"
-import ArrowDown from "../../../assets/imgs/arrowdown.png"
-import ArrowUp from "../../../assets/imgs/arrowup.png"
-import LikeImg from "../../../assets/imgs/like.png"
+import {useState} from "react"
+import ArrowDown from "../../../assets/Images/arrowdown.png"
+import ArrowUp from "../../../assets/Images/arrowup.png"
+import LikeImg from "../../../assets/Images/like.png"
+import {Image} from "remix-image";
 
 interface PrestationComponentProps {
     title: String
@@ -9,13 +10,13 @@ interface PrestationComponentProps {
     lists?: String[]
 }
 
-export function PrestationComponent({ title, content, lists }: PrestationComponentProps) {
+export function PrestationComponent({title, content, lists}: PrestationComponentProps) {
     const [isActive, setIsActive] = useState(false)
     return (
         <div>
             <div>
                 <div className="flex flex-col">
-                    <hr className="h-[2px] bg-secondary" />
+                    <hr className="h-[2px] bg-secondary"/>
                     <div className="flex flex-row items-center justify-between">
                         <h1 className="text-primary py-8 text-[1rem] md:text-[1.6rem] leading-[120%] cursor-pointer"
                             onClick={() => setIsActive(!isActive)}
@@ -23,9 +24,9 @@ export function PrestationComponent({ title, content, lists }: PrestationCompone
                             {title}
                         </h1>
                         <div>{isActive ?
-                            <img src={ArrowDown} alt="" />
+                            <Image src={ArrowDown} alt=""/>
                             :
-                            <img src={ArrowUp} alt="" />
+                            <Image src={ArrowUp} alt=""/>
                         }</div>
                     </div>
                 </div>
@@ -35,23 +36,23 @@ export function PrestationComponent({ title, content, lists }: PrestationCompone
                             {content}
                         </p>
                         <div>
-                                <ul className="pt-[1.3rem]">
-                                    {lists?.map((item, index) => {
-                                        return (
-                                            <li key={index} className="flex items-center pb-[.67rem]">
-                                                <img className="w-auto h-[10px]" src={LikeImg} alt="" />
-                                                <p className="pl-[0.6rem] text-[#333333] text-[1rem]">
-                                                    {item}
-                                                </p>
-                                            </li>
-                                        )
-                                    })}
-                                </ul>
+                            <ul className="pt-[1.3rem]">
+                                {lists?.map((item, index) => {
+                                    return (
+                                        <li key={index} className="flex items-center pb-[.67rem]">
+                                            <Image className="w-auto h-[10px]" src={LikeImg} alt=""/>
+                                            <p className="pl-[0.6rem] text-[#333333] text-[1rem]">
+                                                {item}
+                                            </p>
+                                        </li>
+                                    )
+                                })}
+                            </ul>
                         </div>
                     </div>
                 </div>}
             </div>
-        </div >
+        </div>
     )
 
 }

@@ -4,6 +4,7 @@ import Clock from "../../../assets/imgs/clock.svg"
 import {Button} from "../commons/button"
 import {json} from "@remix-run/node";
 import {cleanText} from "~/utils/helpers"
+import {Image} from "remix-image";
 
 export const loader = async () => {
     return json({publication: publications});
@@ -24,10 +25,10 @@ export default function PublicationComponent() {
                         </div>
                         <div className="xl:flex  hidden  w-1/4">
                             <div className="absolute left-[81.88%] right-[4.62%] w-[194px] h-[200px]">
-                                {/* <img src="~/assets/imgs/vect-second.png" alt="" /> */}
+                                {/* <Image src="~/assets/Images/vect-second.png" alt="" /> */}
                             </div>
                             <div className="absolute left-[83.56%] right-[3.1%] w-[190px] h-[110px] mt-[4%]">
-                                {/* <img src="~/assets/imgs/vect-prim.png" alt="" /> */}
+                                {/* <Image src="~/assets/Images/vect-prim.png" alt="" /> */}
                             </div>
                         </div>
                     </div>
@@ -38,10 +39,10 @@ export default function PublicationComponent() {
                                 return (
                                     <div className="my-1 px-1 lg:my-4 lg:px-4" key={index}>
                                         <article className="rounded-lg mb-4 md:mb-0">
-                                            <img className="w-full h-[10rem] bg-cover" alt={'pic'} src={item.image}/>
+                                            <Image className="w-full h-[10rem] bg-cover" alt={'pic'} src={item.image}/>
                                             <div className="pt-4">
                                                 <div className="flex items-center my-auto">
-                                                    <img src={Clock} className="w-[1.2rem] h-[1.2rem]" alt=""/>
+                                                    <Image src={Clock} className="w-[1.2rem] h-[1.2rem]" alt=""/>
                                                     <p className="pl-2 text-[.8rem] leading-[170%]">
                                                         {item.date}
                                                     </p>

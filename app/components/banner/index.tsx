@@ -7,6 +7,7 @@ import {useEffect, useState} from "react"
 import {Link, useMatches} from "@remix-run/react"
 import {carouselItems, header} from "~/data/header"
 import type {HeaderType, SolutionsType} from "~/types"
+import {Image} from "remix-image";
 
 export function links() {
     return [{rel: "stylesheet", href: styles}]
@@ -69,11 +70,11 @@ export default function BannerComponent({title, content, arrow, list}: BannerCom
                                         {
                                             isShow ?
                                                 (<div>
-                                                    <img className={`logopng w-[13rem] h-[4.4rem] logocolor`}
+                                                    <Image className={`logopng w-[13rem] h-[4.4rem] logocolor`}
                                                          src={LogoColor} alt=""/>
                                                 </div>) : (
                                                     <div>
-                                                        <img className="logosvg w-[13rem] h-[4.4rem] logowhite" src={Logo}
+                                                        <Image className="logosvg w-[13rem] h-[4.4rem] logowhite" src={Logo}
                                                              alt=""/>
                                                     </div>
                                                 )
@@ -158,11 +159,11 @@ export default function BannerComponent({title, content, arrow, list}: BannerCom
                                     <div className="flex justify-center md:absolute md:right-0 md:bottom-40">
                                         <button onClick={prev}
                                                 className="w-10 h-10 mx-2 flex justify-center items-center border border-gray-400 rounded-full p-1">
-                                            <img src={BtnPrevious} alt=""/>
+                                            <Image src={BtnPrevious} alt=""/>
                                         </button>
                                         <button onClick={next}
                                                 className="w-10 h-10 mx-2 flex justify-center items-center border border-gray-400 rounded-full p-1">
-                                            <img src={BtnNext} alt=""/>
+                                            <Image src={BtnNext} alt=""/>
                                         </button>
                                     </div>
                                 </>
@@ -186,10 +187,10 @@ export default function BannerComponent({title, content, arrow, list}: BannerCom
                                 {arrow === true ?
                                     <div className="flex justify-center md:justify-end mt-16">
                                         <button onClick={prev} className="w-6 h-6 mx-2">
-                                            <img src={BtnPrevious} alt=""/>
+                                            <Image src={BtnPrevious} alt=""/>
                                         </button>
                                         <button onClick={next} className="w-6 h-6 mx-2">
-                                            <img src={BtnNext} alt=""/>
+                                            <Image src={BtnNext} alt=""/>
                                         </button>
                                     </div>
                                     : <div/>

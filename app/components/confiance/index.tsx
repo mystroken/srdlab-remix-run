@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
 import {confiances} from "~/data/confiances";
+import {Image} from "remix-image";
 
 export default function ConfianceComponent() {
 
@@ -32,7 +33,7 @@ export default function ConfianceComponent() {
                                     return (
                                         <div className="my-1 px-1 lg:my-4 lg:px-4">
                                             <div className="w-full h-[4rem]">
-                                                <img src={item} alt="pic" className="w-full object-cover h-auto"/>
+                                                <Image src={item} alt="pic" className="w-full object-cover h-auto"/>
                                             </div>
                                         </div>
                                     )
