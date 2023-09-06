@@ -21,14 +21,15 @@ export default function NousSommesComponent() {
                   showText === false ? "flex" : "hidden"
                 }`}
               >
-                SRDLab est un cabinet dédié à la collecte de données
-                quantitatives et qualitatives et à la réalisation d’études
-                économiques, sociales et démographiques afin d’accompagner les
-                décideurs dans la prise de meilleures mesures. SRDLab élargi son
-                activité en proposant des formations alliant théorie et
-                pratique. Nos partenaires sont les décideurs des secteurs
-                privés, publics et institutionnels ainsi que les chercheurs qui
-                œuvrent pour le développement.
+                SRDLab, fondé en 2020, est un cabinet d'études et de conseils
+                spécialisé dans la collecte de données, les études économiques,
+                sociales et démographiques, l'analyse et la gestion de projets,
+                ainsi que la formation. Nos partenaires proviennent des secteurs
+                privé, public, institutionnel et de la recherche axée sur le
+                développement. Notre équipe multidisciplinaire travaille en
+                étroite collaboration avec ces acteurs pour leurs fournir des
+                solutions adaptées et les aider à prendre des décisions
+                éclairées.
               </p>
             </div>
             <img
