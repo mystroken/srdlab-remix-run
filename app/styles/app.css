@@ -952,12 +952,30 @@ h1 {
   width: 100%;
 }
 
+.w-\[200px\] {
+  width: 200px;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
 
 .border-separate {
   border-collapse: separate;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee-infinite {
+  animation: marquee 25s linear infinite;
 }
 
 .cursor-pointer {
@@ -970,6 +988,10 @@ h1 {
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -1012,6 +1034,10 @@ h1 {
   row-gap: 1rem;
 }
 
+.gap-y-0 {
+  row-gap: 0px;
+}
+
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -1038,6 +1064,14 @@ h1 {
 
 .justify-self-center {
   justify-self: center;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .overflow-y-scroll {
@@ -1827,6 +1861,20 @@ button.slick-next:before {
     max-width: 40rem;
   }
 
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .md\:animate-marquee-infinite {
+    animation: marquee 25s linear infinite;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1890,6 +1938,10 @@ button.slick-next:before {
 
   .md\:overflow-hidden {
     overflow: hidden;
+  }
+
+  .md\:overflow-x-hidden {
+    overflow-x: hidden;
   }
 
   .md\:p-4 {
