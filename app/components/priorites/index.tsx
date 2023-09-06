@@ -14,7 +14,7 @@ export default function PrioritesComponent() {
               <p className="text-secondary mt-2 text-lg md:text-xl">
                 Nos priorités
               </p>
-              <h1 className="text-primary mt-1 text-xl  md:leading-[120%] md:text-[2rem]  md:mr-8  md:w-[40rem] text-start">
+              <h1 className="text-primary mt-1 text-xl  md:leading-[120%] md:text-[2rem]  md:mr-8  md:w-[40rem] text-justify">
                 un cabinet d’étude producteur de données et de formations pour
                 l’aide aux décisions économiques et socio-démographiques
               </h1>
