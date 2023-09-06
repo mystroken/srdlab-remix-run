@@ -6,7 +6,8 @@
     "build": "npm run build:css && remix build",
     "build:css": "tailwindcss -m -i ./styles/app.css -o app/styles/app.css",
     "dev": "concurrently \"npm run dev:css\" \"remix dev\"",
-    "dev:css": "tailwindcss -w -i ./styles/app.css -o app/styles/app.css"
+    "dev:css": "tailwindcss -w -i ./styles/app.css -o app/styles/app.css",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@next-boost/hybrid-disk-cache": "^0.3.0",
@@ -14,6 +15,7 @@
     "@remix-run/react": "^1.10.1",
     "@remix-run/vercel": "^1.10.1",
     "@vercel/node": "^2.6.2",
+    "husky": "^8.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "remix-image": "^1.4.0"
