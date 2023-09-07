@@ -45,6 +45,7 @@ export default function EmploiSlug() {
                           <img
                             className={`logopng w-[13rem] h-[4.4rem] logocolor`}
                             src={LogoColor}
+                            loading="lazy"
                             alt=""
                           />
                         </div>
@@ -52,6 +53,7 @@ export default function EmploiSlug() {
                         <div>
                           <img
                             className="logosvg w-[13rem] h-[4.4rem] logowhite"
+                            loading="lazy"
                             src={Logo}
                             alt=""
                           />
