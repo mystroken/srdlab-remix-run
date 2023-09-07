@@ -8,13 +8,11 @@ export default function NosVisionsCompoment() {
               Notre vision{" "}
             </p>
             <h1 className="pt-[0.8rem] md:w-[50rem] w-full text-xl md:text-[2rem] md:text-center leading-[120%] text-white">
-              Devenir un cabinet reconnu mondialement pour ce qui est des
-              domaines de production des données, de réalisation d'études de
-              grande qualité et de formations.
+              Notre aspiration: devenir un cabinet reconnu mondialement !
             </h1>
             <p className="md:text-center text-white text-xs w-full md:text-[1rem] md:w-[33rem] pt-[2rem] leading-[175%]">
-              Grâce à la qualité de notre travail, nous souhaitons initier
-              et pérenniser une relation durable avec les gouvernements, les
+              Grâce à la qualité de notre travail, nous souhaitons initier et
+              pérenniser une relation durable avec les gouvernements, les
               institutions de développement, les chercheurs, les organisations
               non gouvernementales et le secteur privé.
             </p>
@@ -24,4 +22,3 @@ export default function NosVisionsCompoment() {
     </div>
   );
 }
-

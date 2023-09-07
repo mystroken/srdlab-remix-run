@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { equipes } from "~/data/equipes";
 import nameImg from "../../../assets/imgs/name.png";
-import jobImg from "../../../assets/imgs/job.png";
-import mailImg from "../../../assets/imgs/mail.png";
 import type { EquipeType } from "~/types";
 import { Modal } from "../commons/modal";
 
@@ -82,4 +80,3 @@ export default function EquipesComponent() {
     </div>
   );
 }
-

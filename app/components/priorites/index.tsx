@@ -14,10 +14,6 @@ export default function PrioritesComponent() {
               <p className="text-secondary mt-2 text-lg md:text-xl">
                 Nos priorités
               </p>
-              <h1 className="text-primary mt-1 text-xl  md:leading-[120%] md:text-[2rem]  md:mr-8  md:w-[40rem] text-justify">
-                un cabinet d’étude producteur de données et de formations pour
-                l’aide aux décisions économiques et socio-démographiques
-              </h1>
               <div className="pt-[3rem]">
                 <div className="grid md:grid-cols-4 gap-y-2 md:gap-y-0 md:gap-x-4 grid-cols-1">
                   {priorities.map((item: PriorityType, index) => {
@@ -27,7 +23,7 @@ export default function PrioritesComponent() {
                           src={item.image}
                           style={{ width: "6rem", height: "6rem" }}
                         />
-                          <h2 className="md:h-28 pt-7 pb-3 md:w-[14rem] xl:w-[16text-[1.2rem] leading-[130%] text-primary">
+                        <h2 className="md:h-28 pt-7 pb-3 md:w-[14rem] xl:w-[16text-[1.2rem] leading-[130%] text-primary">
                           {item.title}
                         </h2>
                         <p
@@ -65,4 +61,3 @@ export default function PrioritesComponent() {
     </div>
   );
 }
-
