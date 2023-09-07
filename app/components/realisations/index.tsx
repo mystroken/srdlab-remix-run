@@ -1,20 +1,18 @@
 import { PosteType } from "~/types";
 import { cleanText } from "~/utils/helpers";
-import React from "react";
 
 export default function Realisations({
   slug,
   date,
   context,
   open,
-  role,
   name,
   title,
-  description,
 }: PosteType) {
   return (
     <a
-      href={`realisations/${slug}`}
+      //href={`realisations/${slug}`}
+      href={"#realisations"}
       className={`my-1 lg:my-4 border hover:shadow-xl cursor-pointer`}
     >
       <article className="rounded-lg mb-4 md:mb-0">
