@@ -53,7 +53,7 @@ export default function EquipesComponent() {
         <Modal onClose={() => setDetail(false)} title="">
           <div className="px-4">
             <div className="flex flex-row items-center">
-              <img src={nameImg} className="w-8 h-8" alt="" />
+              <img loading="lazy" src={nameImg} className="w-8 h-8" alt="" />
               <div>
                 <h1 className="text-2xl py-1 font-semibold ml-4">
                   {equipes[myIndex].name}

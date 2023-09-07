@@ -700,6 +700,11 @@ h1 {
   margin-bottom: auto;
 }
 
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -954,6 +959,62 @@ h1 {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[92px\] {
+  width: 92px;
+}
+
+.w-\[96px\] {
+  width: 96px;
+}
+
+.w-\[100px\] {
+  width: 100px;
+}
+
+.w-\[110px\] {
+  width: 110px;
+}
+
+.w-\[120px\] {
+  width: 120px;
+}
+
+.w-\[140px\] {
+  width: 140px;
+}
+
+.w-\[130px\] {
+  width: 130px;
+}
+
+.w-\[132px\] {
+  width: 132px;
+}
+
+.w-\[134px\] {
+  width: 134px;
+}
+
+.w-\[136px\] {
+  width: 136px;
+}
+
+.w-20 {
+  width: 5rem;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
+.w-60 {
+  width: 15rem;
+}
+
+.w-\[150px\] {
+  width: 150px;
 }
 
 .flex-1 {
@@ -1842,6 +1903,14 @@ button.slick-next:before {
 
   .md\:w-\[9\.5rem\] {
     width: 9.5rem;
+  }
+
+  .md\:w-60 {
+    width: 15rem;
+  }
+
+  .md\:w-\[136px\] {
+    width: 136px;
   }
 
   .md\:max-w-\[40rem\] {

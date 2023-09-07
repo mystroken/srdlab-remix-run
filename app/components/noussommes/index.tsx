@@ -1,8 +1,6 @@
 import { ABOUT } from "~/data/images";
-import { useState } from "react";
 
 export default function NousSommesComponent() {
-  const [showText, setShowText] = useState(false);
   return (
     <div>
       <div className="py-16 md:py-44">
@@ -17,9 +15,7 @@ export default function NousSommesComponent() {
                 l'aide aux décisions économiques et socio-démographiques
               </h1>
               <p
-                className={`mt-2 md:mt-10 md:w-[29rem] text-[#333333] text-sm md:text-[1rem] text-justify leading-[175%] ${
-                  showText === false ? "flex" : "hidden"
-                }`}
+                className={`mt-2 md:mt-10 md:w-[29rem] text-[#333333] text-sm md:text-[1rem] text-justify leading-[175%]`}
               >
                 SRDLab, fondé en 2020, est un cabinet d'études et de conseils
                 spécialisé dans la collecte de données, les études économiques,
@@ -34,6 +30,7 @@ export default function NousSommesComponent() {
             </div>
             <img
               src={ABOUT}
+              loading="lazy"
               className={`md:flex justify-end hidden rounded-lg w-1/2 h-auto bg-cover`}
             />
           </div>

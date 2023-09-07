@@ -22,6 +22,7 @@ import PUB2 from "../../assets/imgs/pub2.jpg";
 import PUB3 from "../../assets/imgs/pub3.jpg";
 import PUB4 from "../../assets/imgs/pub4.jpg";
 import COLLABORATION from "../../assets/imgs/collaboration.png";
+import BUT from "../../assets/imgs/but.png";
 
 export {
   DG,
@@ -48,5 +49,5 @@ export {
   PUB2,
   PUB3,
   PUB4,
+  BUT,
 };
-

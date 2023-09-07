@@ -20,6 +20,7 @@ export default function PrioritesComponent() {
                     return (
                       <div key={index}>
                         <img
+                          loading="lazy"
                           src={item.image}
                           style={{ width: "6rem", height: "6rem" }}
                         />
