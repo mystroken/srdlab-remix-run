@@ -9,10 +9,6 @@ export default function Post({slug, date, context, open, role, name, title, desc
             <article className="rounded-lg mb-4 md:mb-0">
                 <div className="p-4">
                     <div className={'flex justify-between items-center py-3'}>
-                        <p
-                            className="text-primary text-sm leading-[155%] font-semibold">
-                            {cleanText(name, 60)}
-                        </p>
                         <div
                             className={`rounded-full text-xs text-white px-4 py-2 ${open === true ? 'bg-green-500' : 'bg-red-500'} w-12 h-6 flex justify-center items-center`}>
                             {open === true ? 'actu' : 'ferme'}
