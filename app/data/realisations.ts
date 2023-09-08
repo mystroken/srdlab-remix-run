@@ -1,4 +1,4 @@
-import { PosteType } from "~/types";
+import type { PosteType } from "~/types";
 
 export const realisations: PosteType[] = [
   {
