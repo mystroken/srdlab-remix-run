@@ -24,8 +24,8 @@ export default function PublicationComponent() {
                 Publications
               </h1>
               <p className="text-justify mt-2 text-sm md:mt-5 md:text-[1rem] leading-[1.7rem] md:w-[40rem]">
-                Découvrez nos actualités et restez informés sur nos réalisations,
-                événements et innovations.
+                Découvrez nos actualités et restez informés sur nos
+                réalisations, événements et innovations.
               </p>
             </div>
             <div className="xl:flex  hidden  w-1/4">
@@ -64,11 +64,14 @@ export default function PublicationComponent() {
                           </p>
                         </div>
                       </div>
+                      <p className="md:h-16 text-justify text-primary py-3 text-[1rem] leading-[155%] font-semibold cursor-pointer ">
+                        {cleanText(item.title, 50)}
+                      </p>
                       <a
                         href={`publication/${item.slug}`}
-                        className="text-justify text-primary py-3 text-[1rem] leading-[155%] font-semibold cursor-pointer hover:underline hover:underline-offset-4"
+                        className={`pt-[.3rem] cursor-pointer text-[0.7rem] text-black leading-[185%] text-justify underline underline-offset-4`}
                       >
-                        {cleanText(item.title, 60)}
+                        Lire l'article
                       </a>
                       {/* <p className="pt-[.6rem] text-[.8rem] leading-[170%] text-[#505A62] truncate">
                                                     {item.content}

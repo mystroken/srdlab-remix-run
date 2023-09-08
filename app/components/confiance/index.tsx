@@ -29,9 +29,7 @@ export default function ConfianceComponent() {
         <div className="container mx-auto md:overflow-x-hidden">
           <div className={"md:animate-marquee-infinite"}>
             <div
-              className={`wscroolpub grid ${
-                mySize === true ? "" : ""
-              } gap-y-12 xl:gap-y-0  sm:grid-cols-4 xl:grid-cols-5 -mx-1 lg:-mx-4 container py-10`}
+              className={`wscroolpub grid gap-y-12 xl:gap-y-0  sm:grid-cols-4 xl:grid-cols-5 -mx-1 lg:-mx-4 container py-10`}
             >
               {confiances.map((item, index) => {
                 return (

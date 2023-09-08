@@ -1699,6 +1699,10 @@ h1 {
   text-underline-offset: 8px;
 }
 
+.underline-offset-4 {
+  text-underline-offset: 4px;
+}
+
 .outline-offset-4 {
   outline-offset: 4px;
 }
@@ -1888,6 +1892,22 @@ button.slick-next:before {
 
   .md\:h-\[600px\] {
     height: 600px;
+  }
+
+  .md\:h-12 {
+    height: 3rem;
+  }
+
+  .md\:h-20 {
+    height: 5rem;
+  }
+
+  .md\:h-24 {
+    height: 6rem;
+  }
+
+  .md\:h-16 {
+    height: 4rem;
   }
 
   .md\:w-11\/12 {

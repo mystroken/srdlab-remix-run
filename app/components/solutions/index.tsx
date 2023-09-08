@@ -63,7 +63,7 @@ export default function SolutionsComponent() {
                     <h1 className="text-primary py-1 text-[1.2rem] leading-[155%] font-semibold text-start">
                       {item.title}
                     </h1>
-                    <div onClick={() => setShowText(!showText)}>
+                    <div>
                       <p
                         className={`pt-[.8rem] text-[.8rem] leading-[170%] text-[#505A62] text-justify ${
                           showText === false ? "flex" : "hidden"
@@ -77,6 +77,14 @@ export default function SolutionsComponent() {
                         }`}
                       >
                         {item.content}
+                      </p>
+                      <p
+                        onClick={() => setShowText(!showText)}
+                        className={`${
+                          showText === false ? "flex" : "hidden"
+                        } pt-[.3rem] cursor-pointer text-[0.7rem] text-black leading-[185%] text-justify underline`}
+                      >
+                        Lire la suite
                       </p>
                     </div>
                   </div>
