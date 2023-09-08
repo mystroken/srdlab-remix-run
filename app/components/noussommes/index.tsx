@@ -3,7 +3,7 @@ import { ABOUT } from "~/data/images";
 export default function NousSommesComponent() {
   return (
     <div>
-      <div className="py-16 md:py-44">
+      <div className="py-12 md:py-36">
         <div className="container mx-auto">
           <div className="flex flex-row">
             <div className="w-full lg:w-3/4">

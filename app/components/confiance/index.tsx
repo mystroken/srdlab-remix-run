@@ -20,7 +20,7 @@ export default function ConfianceComponent() {
 
   return (
     <div className="bg-white">
-      <div className="pt-[7rem] md:py-[7rem]">
+      <div className="pt-[5rem]">
         <div className="mx-auto">
           <p className="text-[##0E3758] mt-2 text-center text-lg mx-auto md:text-xl">
             {t("confiance")}

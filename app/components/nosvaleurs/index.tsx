@@ -6,7 +6,7 @@ export default function NosValeursComponent() {
   const [showText, setShowText] = useState(false);
   return (
     <div>
-      <div className="py-16 md:py-44">
+      <div className="py-12 md:py-36">
         <div className="container mx-auto">
           <div className="flex flex-row">
             <div className="w-full">

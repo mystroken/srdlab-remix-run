@@ -1,7 +1,7 @@
 export default function NosVisionsCompoment() {
   return (
     <div className="bg-[#1e75ba]">
-      <div className="py-16 md:py-44">
+      <div className="py-12 md:py-36">
         <div className="container mx-auto">
           <div className="flex flex-col justify-center md:items-center">
             <p className="text-secondary mt-2 text-lg md:text-xl">

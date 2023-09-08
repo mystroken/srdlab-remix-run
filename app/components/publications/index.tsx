@@ -2,15 +2,12 @@ import { publications } from "~/data/publications";
 import type { PublicationType } from "~/types";
 import Clock from "../../../assets/imgs/clock.svg";
 import { Button } from "../commons/button";
-import { json } from "@remix-run/node";
 import { cleanText } from "~/utils/helpers";
 import { Image } from "remix-image";
-
-export const loader = async () => {
-  return json({ publication: publications });
-};
+import { useTranslation } from "react-i18next";
 
 export default function PublicationComponent() {
+  const { t } = useTranslation();
   return (
     <div className="bg-white">
       <div className="pt-[7rem]">
@@ -18,23 +15,18 @@ export default function PublicationComponent() {
           <div className="flex flex-row">
             <div className="w-full md:w-3/4">
               <p className="text-secondary mt-2 text-lg md:text-xl">
-                Nos dernières nouvelles
+                {t("published-span")}
               </p>
               <h1 className="text-primary mt-1 text-2xl md:text-5xl">
-                Publications
+                {t("publication")}
               </h1>
               <p className="text-justify mt-2 text-sm md:mt-5 md:text-[1rem] leading-[1.7rem] md:w-[40rem]">
-                Découvrez nos actualités et restez informés sur nos
-                réalisations, événements et innovations.
+                {t("publication-desc")}
               </p>
             </div>
             <div className="xl:flex  hidden  w-1/4">
-              <div className="absolute left-[81.88%] right-[4.62%] w-[194px] h-[200px]">
-                {/* <Image src="~/assets/Images/vect-second.png" alt="" /> */}
-              </div>
-              <div className="absolute left-[83.56%] right-[3.1%] w-[190px] h-[110px] mt-[4%]">
-                {/* <Image src="~/assets/Images/vect-prim.png" alt="" /> */}
-              </div>
+              <div className="absolute left-[81.88%] right-[4.62%] w-[194px] h-[200px]"></div>
+              <div className="absolute left-[83.56%] right-[3.1%] w-[190px] h-[110px] mt-[4%]"></div>
             </div>
           </div>
 
@@ -57,25 +49,22 @@ export default function PublicationComponent() {
                         />
                         <div>
                           <p className="pl-2 text-[.8rem] leading-[170%]">
-                            {item.date}
+                            {t(item.date)}
                           </p>
                           <p className="pl-2 text-[.8rem] leading-[170%]">
-                            {item.delay}
+                            {t(item.delay)}
                           </p>
                         </div>
                       </div>
                       <p className="md:h-16 text-justify text-primary py-3 text-[1rem] leading-[155%] font-semibold cursor-pointer ">
-                        {cleanText(item.title, 50)}
+                        {cleanText(t(item.title), 40)}
                       </p>
                       <a
                         href={`publication/${item.slug}`}
                         className={`pt-[.3rem] cursor-pointer text-[0.7rem] text-black leading-[185%] text-justify underline underline-offset-4`}
                       >
-                        Lire l'article
+                        {t("read-article")}
                       </a>
-                      {/* <p className="pt-[.6rem] text-[.8rem] leading-[170%] text-[#505A62] truncate">
-                                                    {item.content}
-                                                </p> */}
                     </div>
                   </article>
                 </div>
@@ -85,7 +74,7 @@ export default function PublicationComponent() {
         </div>
       </div>
       <div className="w-[17rem] mx-auto py-[4rem] md:py-[7rem]">
-        <Button name="Voir plus de publications" />
+        <Button name={t("publish-btn")} />
       </div>
     </div>
   );
