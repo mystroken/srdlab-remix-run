@@ -29,12 +29,8 @@ export default function SolutionsComponent() {
               </p>
             </div>
             <div className="xl:flex  hidden  w-1/4">
-              <div className="absolute left-[81.88%] right-[4.62%] w-[194px] h-[200px]">
-                {/* <Image src="~/assets/Images/vect-second.png" alt="" /> */}
-              </div>
-              <div className="absolute left-[83.56%] right-[3.1%] w-[190px] h-[110px] mt-[4%]">
-                {/* <Image src="~/assets/Images/vect-prim.png" alt="" /> */}
-              </div>
+              <div className="absolute left-[81.88%] right-[4.62%] w-[194px] h-[200px]"></div>
+              <div className="absolute left-[83.56%] right-[3.1%] w-[190px] h-[110px] mt-[4%]"></div>
             </div>
           </div>
         </div>

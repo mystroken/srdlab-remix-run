@@ -33,7 +33,7 @@ export default function ConfianceComponent() {
             >
               {confiances.map((item, index) => {
                 return (
-                  <div className="my-1 px-1 lg:my-4 lg:px-4">
+                  <div key={index} className="my-1 px-1 lg:my-4 lg:px-4">
                     <div className="w-full h-[4rem]">
                       <Image
                         src={item}
