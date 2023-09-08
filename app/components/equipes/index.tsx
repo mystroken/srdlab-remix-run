@@ -17,7 +17,7 @@ export default function EquipesComponent() {
                 Notre équipe
               </p>
               <h1 className="md:text-justify text-primary mt-1 text-xl  md:leading-[120%] md:text-[2rem]  md:mr-8  md:w-[40rem] text-start">
-                Notre équipe expérimentée et compétente vous accompagne dans
+                Notre équipe vous accompagne dans
                 l’atteinte de vos objectifs.
               </h1>
               <div className="pt-[3rem]">

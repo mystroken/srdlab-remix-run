@@ -11,8 +11,7 @@ export default function NousSommesComponent() {
                 Qui sommes-nous ?
               </p>
               <h1 className="text-primary mt-1 text-xl md:leading-[120%] md:text-[2rem]  xl:mr-8 md:mr-8 xl:w-[40rem] text-justify py-4 md:py-0">
-                Un cabinet d'étude producteur de données et de formations pour
-                l'aide aux décisions économiques et socio-démographiques
+                Un cabinet d'études et de conseils.
               </h1>
               <p
                 className={`mt-2 md:mt-10 md:w-[29rem] text-[#333333] text-sm md:text-[1rem] text-justify leading-[175%]`}

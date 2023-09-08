@@ -15,8 +15,7 @@ export default function NosValeursComponent() {
               </p>
               <h1 className="text-primary mt-1 text-xl md:leading-[120%] md:text-[2rem]  md:mr-8 md:w-[40rem] text-justify">
                 Chez SRDLab, nous sommes intègre, fiable, socialement
-                responsables et nous respectons la confidentialité des
-                informations et des données.
+                responsables et nous respectons la confidentialité.{" "}
               </h1>
               <div className="pt-[3rem]">
                 <div className="grid md:grid-cols-4 grid-cols-1 gap-y-3 md:gap-y-0 md:gap-x-2">

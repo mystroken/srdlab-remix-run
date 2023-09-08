@@ -23,6 +23,7 @@ export type PublicationType = {
     content1: String
     content2: String
     content3: String
+    delay?: String
     content4?: String[]
 }
 

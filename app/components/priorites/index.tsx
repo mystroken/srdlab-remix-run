@@ -14,6 +14,9 @@ export default function PrioritesComponent() {
               <p className="text-secondary mt-2 text-lg md:text-xl">
                 Nos priorités
               </p>
+              <h1 className="text-primary mt-1 text-xl md:leading-[120%] md:text-[2rem]  xl:mr-8 md:mr-8 xl:w-[40rem] text-justify py-4 md:py-0">
+                La satisfaction de nos clients.
+              </h1>
               <div className="pt-[3rem]">
                 <div className="grid md:grid-cols-4 gap-y-2 md:gap-y-0 md:gap-x-4 grid-cols-1">
                   {priorities.map((item: PriorityType, index) => {
