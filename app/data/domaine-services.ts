@@ -17,7 +17,7 @@ export const servicesProposes = [
             {
                 slug: 2,
                 title: "Infrastructure",
-                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus consequatur corporis doloremque, explicabo, iusto, laudantium possimus provident quidem recusandae tempora tenetur ut. A ab doloribus dolorum nesciunt nobis officia!"
+                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus consequatur corporis doloremque, explicabo, iusto, laudantium possimus provident quidem recusandae tempora tenetur ut. A ab doloribus dolorum nesciunt nobis officia"
             },
         ],
     },
