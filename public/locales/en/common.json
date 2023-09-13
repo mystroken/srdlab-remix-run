@@ -74,5 +74,11 @@
   "contact": "Contact",
   "contact-us": "Contact us",
   "cmr": "Cameroon",
-  "copyright": "Copyright 2023 SRD Lab. All rights reserved."
+  "copyright": "Copyright 2023 SRD Lab. All rights reserved.",
+  "banner-about-title": "A propos",
+  "banner-about-content": "En savoir plus sur qui nous sommes, nos priorités, nos valeurs et notre vision.",
+  "b-ns-t": "Qui sommes-nous ?",
+  "b-ns-c": "Un cabinet d'études et de conseils.",
+  "b-ns-d": "Un cabinet d'études et de conseils.",
+  "b-ns-d": "SRDLab, fondé en 2020, est un cabinet d'études et de conseils\n                                spécialisé dans la collecte de données, les études économiques,\n                                sociales et démographiques, l'analyse et la gestion de projets,\n                                ainsi que la formation. Nos partenaires proviennent des secteurs\n                                privé, public, institutionnel et de la recherche axée sur le\n                                développement. Notre équipe multidisciplinaire travaille en\n                                étroite collaboration avec ces acteurs pour leurs fournir des\n                                solutions adaptées et les aider à prendre des décisions\néclairées."
 }

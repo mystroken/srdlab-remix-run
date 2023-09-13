@@ -4,19 +4,22 @@ import NosValeursComponent from "~/components/nosvaleurs";
 import NosVisionsCompoment from "~/components/nosvisions";
 import NousSommesComponent from "~/components/noussommes";
 import PrioritesComponent from "~/components/priorites";
-import { DefaultLayout } from "~/layouts/default";
+import {DefaultLayout} from "~/layouts/default";
+import {useTranslation} from "react-i18next";
 
 export default function AboutRoute() {
+    let {t} = useTranslation();
     return (
         <>
             <DefaultLayout>
-                <BannerComponent title="A propos" content="En savoir plus sur qui nous sommes, nos priorités, nos valeurs et notre vision."
+                <BannerComponent title={t("banner-about-title")}
+                                 content={t("banner-about-content")}
                 />
-                <NousSommesComponent />
-                <PrioritesComponent />
-                <NosValeursComponent />
-                <EquipesComponent />
-                <NosVisionsCompoment />
+                <NousSommesComponent/>
+                <PrioritesComponent/>
+                <NosValeursComponent/>
+                <EquipesComponent/>
+                <NosVisionsCompoment/>
             </DefaultLayout>
         </>
     )
