@@ -6,6 +6,7 @@ import Logo from "../../../assets/imgs/srd-lab-logo.svg";
 import {HeaderType} from "~/types";
 import React, {useState} from "react";
 import {Button} from "~/components/commons/button";
+import {TEAM} from "~/data/images";
 
 
 export default function Index() {
@@ -89,7 +90,7 @@ export default function Index() {
                     <div className="bg-white">
                         <div className="pt-[7rem]">
                             <div className="container mx-auto">
-                                <div className="flex flex-row">
+                                <div className="flex flex-row space-x-12">
                                     <div className="w-full md:w-3/4">
                                         <p className="text-secondary mt-2 text-lg md:text-xl">Sollicitez nos</p>
                                         <h1 className="text-primary mt-1 text-2xl md:text-5xl">Services</h1>
@@ -127,7 +128,12 @@ export default function Index() {
                                             </div>
                                         </form>
                                         <div className="py-16">
-                                            {/*<p>HELLO SUITE</p>*/}
+                                        </div>
+                                    </div>
+                                    <div className={'row hidden md:flex md:w-1/2'}>
+                                        <div className={"rounded-md h-1/2 w-full"}>
+                                            <img src={TEAM} loading={"lazy"}
+                                                 className={'h-full rounded-lg object-cover'}/>
                                         </div>
                                     </div>
                                 </div>

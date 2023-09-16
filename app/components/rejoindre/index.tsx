@@ -1,5 +1,5 @@
 import {Button} from "~/components/commons/button";
-import Team from "../../../assets/imgs/team.jpg";
+import {TEAM} from "~/data/images";
 
 export default function Rejoindre() {
     return (
@@ -19,11 +19,7 @@ export default function Rejoindre() {
                                 nous, vous aurez l'opportunité de développer vos compétences, de contribuer à des
                                 projets stimulants et de faire partie d'une communauté dynamique axée sur l'excellence.
                             </p>
-                            <div className="py-16">
-                                <img className={`w-full h-auto`}
-                                     src={Team} alt="team"/>
-                            </div>
-                            <div className="pb-16 md:pb-32">
+                            <div className="py-10 md:py-20">
                                 <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
                                     <a href={"/offre-emplois"} className="md:w-[20rem]">
                                         <Button name="Consultez nos offres d'emploi"/>
@@ -32,6 +28,11 @@ export default function Rejoindre() {
                                         <Button name="Envoyez une candidature spontanée"/>
                                     </a>
                                 </div>
+                            </div>
+                        </div>
+                        <div className={'row hidden md:flex ml-2 md:w-1/2 space-x-2'}>
+                            <div className={"rounded-md h-2/3 w-full"}>
+                                <img src={TEAM} loading={"lazy"} className={'h-full rounded-lg object-cover'}/>
                             </div>
                         </div>
                     </div>

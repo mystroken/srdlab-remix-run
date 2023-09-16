@@ -8,6 +8,7 @@ import {useState} from "react";
 import Logo from "../../../assets/imgs/srd-lab-logo.svg"
 import LogoColor from "../../../assets/imgs/logo.png"
 import {Button} from "~/components/commons/button";
+import {TEAM} from "~/data/images";
 
 
 export const loader = async ({params}: LoaderArgs) => {
@@ -95,44 +96,51 @@ export default function Index() {
                 </header>
                 <div className="py-10 md:py-20">
                     <div className="container mx-auto">
-                        <div className="py-16 md:py-44">
-                            <p className="text-secondary mt-2 text-lg md:text-xl">Rejoignez notre</p>
-                            <h1 className="text-primary mt-1 text-2xl md:text-5xl">Equipe</h1>
-                            <p className="mt-2 text-sm md:mt-5 md:text-[1rem] text-justify leading-[1.7rem] md:w-[40rem]">
-                                Nous sommes à la recherche de personnes
-                                compétentes et engagées qui peuvent évoluer
-                                avec nous et nous aider à satisfaire et même
-                                à dépasser les attentes de nos clients. SRD
-                                Lab est reconnu comme un employeur ouvert
-                                qui se différencie par de vraies valeurs et
-                                considère ses employés comme son atout le
-                                plus important. SRD Lab est un employeur qui
-                                respecte l'égalité des chances et ne pratique
-                                aucune discrimination fondée sur l'âge, la race, la
-                                religion, la nationalité, le sexe, ou toute autre
-                                forme de discrimination.
-                            </p>
-                            <p className="mt-2 text-sm md:mt-5 md:text-[1rem] font-bold text-justify leading-[1.7rem] md:w-[40rem]">
-                                Merci de compléter les plages ci-dessous. Vos informations
-                                seront traitées avec la plus stricte confidentialité et serviront exclusivement à
-                                évaluer votre candidature.
-                            </p>
-                            <form className={"mt-6"} method="GET" action="mailto:abbasalimokolo@gmail.com">
-                                <input className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}
-                                       placeholder={"Prenom"} name={"subject"}/>
-                                <input className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}
-                                       placeholder={"Nom"}/>
-                                <input className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}
-                                       placeholder={"Email"}/>
-                                <input className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}
-                                       placeholder={"Phone"}/>
-                                <textarea cols={6} rows={6} placeholder={'Message'}
-                                          name={"body"}
-                                          className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}/>
-                                <div className="w-full md:w-3/5 mt-8">
-                                    <Button value={"send"} name="Envoyez un message"/>
+                        <div className="flex flex-row space-x-8">
+                            <div className="w-full md:w-3/4">
+                                <p className="text-secondary mt-2 text-lg md:text-xl">Rejoignez notre</p>
+                                <h1 className="text-primary mt-1 text-2xl md:text-5xl">Equipe</h1>
+                                <p className="mt-2 text-sm md:mt-5 md:text-[1rem] text-justify leading-[1.7rem] md:w-[40rem]">
+                                    Nous sommes à la recherche de personnes
+                                    compétentes et engagées qui peuvent évoluer
+                                    avec nous et nous aider à satisfaire et même
+                                    à dépasser les attentes de nos clients. SRD
+                                    Lab est reconnu comme un employeur ouvert
+                                    qui se différencie par de vraies valeurs et
+                                    considère ses employés comme son atout le
+                                    plus important. SRD Lab est un employeur qui
+                                    respecte l'égalité des chances et ne pratique
+                                    aucune discrimination fondée sur l'âge, la race, la
+                                    religion, la nationalité, le sexe, ou toute autre
+                                    forme de discrimination.
+                                </p>
+                                <p className="mt-2 text-sm md:mt-5 md:text-[1rem] font-bold text-justify leading-[1.7rem] md:w-[40rem]">
+                                    Merci de compléter les plages ci-dessous. Vos informations
+                                    seront traitées avec la plus stricte confidentialité et serviront exclusivement à
+                                    évaluer votre candidature.
+                                </p>
+                                <form className={"mt-6"} method="GET" action="mailto:abbasalimokolo@gmail.com">
+                                    <input className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}
+                                           placeholder={"Prenom"} name={"subject"}/>
+                                    <input className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}
+                                           placeholder={"Nom"}/>
+                                    <input className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}
+                                           placeholder={"Email"}/>
+                                    <input className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}
+                                           placeholder={"Phone"}/>
+                                    <textarea cols={6} rows={6} placeholder={'Message'}
+                                              name={"body"}
+                                              className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}/>
+                                    <div className="w-full md:w-3/5 mt-8">
+                                        <Button value={"send"} name="Envoyez un message"/>
+                                    </div>
+                                </form>
+                            </div>
+                            <div className={'row hidden md:flex md:w-1/2'}>
+                                <div className={"rounded-md h-1/2 w-full"}>
+                                    <img src={TEAM} loading={"lazy"} className={'h-full rounded-lg object-cover'}/>
                                 </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>

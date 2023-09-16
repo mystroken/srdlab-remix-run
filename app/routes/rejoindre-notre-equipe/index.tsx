@@ -85,7 +85,7 @@ export default function Index() {
                         </div>
                     </div>
                 </header>
-                <div className="py-16 md:py-44">
+                <div className="py-10 md:py-20">
                     <Rejoindre/>
                 </div>
             </DefaultLayout>

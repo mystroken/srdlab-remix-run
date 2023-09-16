@@ -24,6 +24,7 @@ import PUB4 from "../../assets/imgs/pub4.jpg";
 import COLLABORATION from "../../assets/imgs/collaboration.png";
 import BUT from "../../assets/imgs/but.png";
 import PUB6 from "../../assets/imgs/PUB6.png";
+import TEAM from "../../assets/imgs/team.jpg";
 
 export {
     DG,
@@ -51,5 +52,6 @@ export {
     PUB3,
     PUB4,
     BUT,
-    PUB6
+    PUB6,
+    TEAM
 };
