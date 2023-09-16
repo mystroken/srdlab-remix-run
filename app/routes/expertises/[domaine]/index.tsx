@@ -12,8 +12,8 @@ export default function DomaineExpertiseSlug() {
     const [navbar, setNavbar] = useState(false);
     const [isShow, setIsShow] = useState(false)
     const path = useMatches()
-    const idPath = path[1].pathname
-    const data = location.state.data
+    const idPath = path[1]?.pathname
+    const data = location?.state?.data
 
     console.log("SLUG =>", location.state.data)
 
@@ -97,7 +97,12 @@ export default function DomaineExpertiseSlug() {
                                 <h1 className="my-6 leading-10 text-xl md:text-3xl">
                                     {data.title}
                                 </h1>
-                                <p className="my-6 text-xs text-gray-600">{data.content}</p>
+                                <p className="my-6 text-xs text-gray-600 leading-5">{data.content}</p>
+                                <p className="mt-4 text-xs text-gray-600 leading-5">{data.content2 ?? ""}</p>
+                                <p className="mt-4 text-xs text-gray-600 leading-5">{data.content3 ?? ""}</p>
+                                <div className={"mt-8"}>
+                                    <img loading={"lazy"} src={data.img} alt=""/>
+                                </div>
                             </div>
                         </div>
                     </div>
