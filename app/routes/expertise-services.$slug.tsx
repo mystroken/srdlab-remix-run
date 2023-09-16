@@ -10,6 +10,7 @@ import Logo from "../../assets/imgs/srd-lab-logo.svg"
 import LogoColor from "../../assets/imgs/logo.png"
 import {Button} from "~/components/commons/button";
 import {Modal} from "~/components/commons/modal";
+import {useTranslation} from "react-i18next";
 
 
 export const loader = async ({params}: LoaderArgs) => {
@@ -27,9 +28,15 @@ export default function ServiceSlug() {
     const path = useMatches()
     const idPath = path[1].pathname
 
+    let {i18n, t} = useTranslation();
+
+    const changeLangItemClick = (lang: "fr" | "en") => {
+        i18n.changeLanguage(lang);
+    };
+
     useEffect(() => {
         typeof slug === "string" ? setLoading(true) : setLoading(false)
-    }, [])
+    }, [i18n.language]);
 
 
     return (
@@ -43,7 +50,7 @@ export default function ServiceSlug() {
                         >
                             <div className="py-2 container mx-auto">
                                 <nav>
-                                    <div className="flex items-center justify-between">
+                                    <div className="flex justify-between">
                                         <Link to="/">
                                             {
                                                 isShow === true ?
@@ -68,7 +75,7 @@ export default function ServiceSlug() {
                                             </button>
                                         </div>
                                         <div className="hidden xl:block">
-                                            <ul className="flex space-x-8 text-sm font-sans">
+                                            <ul className="flex space-x-8 text-sm font-sans items-center">
                                                 {
                                                     header.map((item: HeaderType, index) => {
                                                         return (
@@ -79,6 +86,15 @@ export default function ServiceSlug() {
                                                         )
                                                     })
                                                 }
+                                                <select
+                                                    onChange={(e: any) =>
+                                                        changeLangItemClick(e.target.value)
+                                                    }
+                                                    className="border bg-gray-500 px-1.5 py-2 border-gray-600 text-gray-100 text-sm rounded-lg flex items-center justify-center"
+                                                >
+                                                    <option value="en">En</option>
+                                                    <option value="fr">Fr</option>
+                                                </select>
                                             </ul>
                                         </div>
                                     </div>

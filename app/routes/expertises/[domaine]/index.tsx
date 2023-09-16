@@ -5,6 +5,7 @@ import type {HeaderType} from "~/types";
 import {useState} from "react";
 import Logo from "../../../../assets/imgs/srd-lab-logo.svg"
 import LogoColor from "../../../../assets/imgs/logo.png"
+import {useTranslation} from "react-i18next";
 
 
 export default function DomaineExpertiseSlug() {
@@ -17,6 +18,11 @@ export default function DomaineExpertiseSlug() {
 
     console.log("SLUG =>", location.state.data)
 
+    let {i18n, t} = useTranslation();
+
+    const changeLangItemClick = (lang: "fr" | "en") => {
+        i18n.changeLanguage(lang);
+    };
 
     return (
         <>
@@ -54,7 +60,7 @@ export default function DomaineExpertiseSlug() {
                                             </button>
                                         </div>
                                         <div className="hidden xl:block">
-                                            <ul className="flex space-x-8 text-sm font-sans">
+                                            <ul className="flex space-x-8 text-sm font-sans items-center">
                                                 {
                                                     header.map((item: HeaderType, index) => {
                                                         return (
@@ -65,6 +71,15 @@ export default function DomaineExpertiseSlug() {
                                                         )
                                                     })
                                                 }
+                                                <select
+                                                    onChange={(e: any) =>
+                                                        changeLangItemClick(e.target.value)
+                                                    }
+                                                    className="border bg-gray-500 px-1.5 py-2 border-gray-600 text-gray-100 text-sm rounded-lg flex items-center justify-center"
+                                                >
+                                                    <option value="en">En</option>
+                                                    <option value="fr">Fr</option>
+                                                </select>
                                             </ul>
                                         </div>
                                     </div>

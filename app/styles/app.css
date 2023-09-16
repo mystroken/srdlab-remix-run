@@ -1524,6 +1524,10 @@ h1 {
   line-height: 2.5rem;
 }
 
+.leading-5 {
+  line-height: 1.25rem;
+}
+
 .leading-6 {
   line-height: 1.5rem;
 }
@@ -1562,22 +1566,6 @@ h1 {
 
 .leading-\[2rem\] {
   line-height: 2rem;
-}
-
-.leading-tight {
-  line-height: 1.25;
-}
-
-.leading-7 {
-  line-height: 1.75rem;
-}
-
-.leading-9 {
-  line-height: 2.25rem;
-}
-
-.leading-5 {
-  line-height: 1.25rem;
 }
 
 .tracking-wider {

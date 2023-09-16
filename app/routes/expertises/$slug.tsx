@@ -8,6 +8,7 @@ import type {HeaderType} from "~/types";
 import {useEffect, useState} from "react";
 import Logo from "../../../assets/imgs/srd-lab-logo.svg"
 import LogoColor from "../../../assets/imgs/logo.png"
+import {useTranslation} from "react-i18next";
 
 
 export const loader = async ({params}: LoaderArgs) => {
@@ -28,9 +29,15 @@ export default function DomaineSlug() {
     const path = useMatches()
     const idPath = path[1].pathname
 
+    let {i18n, t} = useTranslation();
+
+    const changeLangItemClick = (lang: "fr" | "en") => {
+        i18n.changeLanguage(lang);
+    };
+
     useEffect(() => {
         typeof slug === "string" ? setLoading(true) : setLoading(false)
-    }, [])
+    }, [i18n.language]);
 
 
     return (
@@ -69,17 +76,26 @@ export default function DomaineSlug() {
                                             </button>
                                         </div>
                                         <div className="hidden xl:block">
-                                            <ul className="flex space-x-8 text-sm font-sans">
+                                            <ul className="flex space-x-8 text-sm font-sans items-center">
                                                 {
                                                     header.map((item: HeaderType, index) => {
                                                         return (
                                                             <li key={index}>
                                                                 <Link to={`${item.link}`}
-                                                                      className={`${item.link === idPath ? 'font-extrabold border rounded-full px-6 py-2 border-[#faaf42]' : 'font-normal'} text-sm ${item.link === '#travailleravecnous' ? '' : ''}`}>{item.name}</Link>
+                                                                      className={`${item.link === idPath ? 'font-extrabold border rounded-full px-6 py-2 border-[#faaf42]' : 'font-normal'} text-sm ${item.link === '#travailleravecnous' ? '' : ''}`}>{t(item.name)}</Link>
                                                             </li>
                                                         )
                                                     })
                                                 }
+                                                <select
+                                                    onChange={(e: any) =>
+                                                        changeLangItemClick(e.target.value)
+                                                    }
+                                                    className="border bg-gray-500 px-1.5 py-2 border-gray-600 text-gray-100 text-sm rounded-lg flex items-center justify-center"
+                                                >
+                                                    <option value="en">En</option>
+                                                    <option value="fr">Fr</option>
+                                                </select>
                                             </ul>
                                         </div>
                                     </div>
