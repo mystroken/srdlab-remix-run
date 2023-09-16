@@ -126,13 +126,13 @@ export default function RealisationsSlug() {
                         </div>
                     </div>
                 </header>
-                <div className="py-16 md:py-44">
+                <div className="py-10 md:py-20">
                     <div className="container mx-auto">
                         {loading === false ? (
                             <p>Chargement...</p>
                         ) : (
 
-                            <div>
+                            <div className={'pt-10 md:pt-0'}>
                                 <img src={myrealisation.picture} className={'w-auto object-cover h-auto'}/>
                                 <div className="flex flex-row mt-16 md:mt-0">
                                     <div className="w-full lg:w-3/4">
