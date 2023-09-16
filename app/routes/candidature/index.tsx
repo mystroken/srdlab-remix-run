@@ -93,12 +93,12 @@ export default function Index() {
                         </div>
                     </div>
                 </header>
-                <div className="py-16 md:py-44">
+                <div className="py-10 md:py-20">
                     <div className="container mx-auto">
                         <div className="py-16 md:py-44">
                             <p className="text-secondary mt-2 text-lg md:text-xl">Rejoignez notre</p>
                             <h1 className="text-primary mt-1 text-2xl md:text-5xl">Equipe</h1>
-                            <p className="mt-2 text-sm md:mt-5 md:text-[1rem] leading-[1.7rem] md:w-[40rem]">
+                            <p className="mt-2 text-sm md:mt-5 md:text-[1rem] text-justify leading-[1.7rem] md:w-[40rem]">
                                 Nous sommes à la recherche de personnes
                                 compétentes et engagées qui peuvent évoluer
                                 avec nous et nous aider à satisfaire et même
@@ -111,6 +111,11 @@ export default function Index() {
                                 aucune discrimination fondée sur l'âge, la race, la
                                 religion, la nationalité, le sexe, ou toute autre
                                 forme de discrimination.
+                            </p>
+                            <p className="mt-2 text-sm md:mt-5 md:text-[1rem] font-bold text-justify leading-[1.7rem] md:w-[40rem]">
+                                Merci de compléter les plages ci-dessous. Vos informations
+                                seront traitées avec la plus stricte confidentialité et serviront exclusivement à
+                                évaluer votre candidature.
                             </p>
                             <form className={"mt-6"} method="GET" action="mailto:abbasalimokolo@gmail.com">
                                 <input className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}

@@ -133,7 +133,6 @@ export default function DomaineSlug() {
                                         <h4 className="my-2 leading-10 text-sm md:text-base">
                                             {mydomaine.subtitle}
                                         </h4>
-                                        <p className="my-6 text-xs text-gray-600 text-justify">{mydomaine.content}</p>
                                         <div className="pt-[3rem]">
                                             <div className="grid md:grid-cols-2 grid-cols-1 gap-y-4">
                                                 {

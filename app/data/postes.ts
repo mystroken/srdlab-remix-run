@@ -5,8 +5,8 @@ export const postes: PosteType[] = [
     slug: 1,
     name: "",
     open: true,
-    title: "Agents de collecte de données quantitatives (projet DaYTA)",
-    date: "30/09/2023",
+    title: "Agents de collecte de données (projet DaYTA)",
+    date: "30/10/2023",
     quisommesnous:
       "SRD Lab est un cabinet d'études et de conseils en pleine croissance, spécialisé dans la collecte de données quantitatives et qualitatives, ainsi que dans la conduite de recherches dans les domaines de l'économie, du social et de l'humanitaire. Notre mission est d'aider les décideurs politiques et les acteurs du changement à prendre des décisions éclairées pour favoriser des sociétés plus inclusives. SRD Lab excelle également dans l'analyse et la gestion de projets, ainsi que dans la formation en statistiques, en économie et en analyse de projet." +
       "Pour accomplir nos missions, nous adoptons une approche éthique, rigoureuse, et fondée sur une expérience solide, particulièrement dans des contextes complexes et fragiles. Nos experts possèdent une vaste expérience tant dans les pays en développement que dans les pays développés, et sont des professionnels de confiance dans les domaines couverts par notre cabinet. Nous collaborons avec des entités du secteur public et privé, des institutions internationales, des ONG, ainsi que des chercheurs du milieu académique." +
@@ -76,8 +76,8 @@ export const postes: PosteType[] = [
     slug: 2,
     name: "",
     open: true,
-    title: "Superviseurs de collecte de données quantitatives (projet DaYTA)",
-    date: "20/09/2023",
+    title: "Superviseurs de collecte de données (projet DaYTA)",
+    date: "20/10/2023",
     quisommesnous:
       "SRD Lab est un cabinet d'études et de conseils en pleine croissance, spécialisé dans la collecte de données quantitatives et qualitatives, ainsi que dans la conduite de recherches dans les domaines de l'économie, du social et de l'humanitaire. Notre mission est d'aider les décideurs politiques et les acteurs du changement à prendre des décisions éclairées pour favoriser des sociétés plus inclusives. SRD Lab excelle également dans l'analyse et la gestion de projets, ainsi que dans la formation en statistiques, en économie et en analyse de projet." +
       "Pour accomplir nos missions, nous adoptons une approche éthique, rigoureuse, et fondée sur une expérience solide, particulièrement dans des contextes complexes et fragiles. Nos experts possèdent une vaste expérience tant dans les pays en développement que dans les pays développés, et sont des professionnels de confiance dans les domaines couverts par notre cabinet. Nous collaborons avec des entités du secteur public et privé, des institutions internationales, des ONG, ainsi que des chercheurs du milieu académique." +
@@ -142,7 +142,7 @@ export const postes: PosteType[] = [
     name: "",
     open: true,
     title: "Consultant(e)_Expert(e) associé(e)",
-    date: "25/09/2023",
+    date: "25/10/2023",
     quisommesnous:
       "SRD Lab est un cabinet d'études et de conseils en pleine croissance, spécialisé dans la collecte de données quantitatives et qualitatives, ainsi que dans la conduite de recherches dans les domaines de l'économie, du social et de l'humanitaire. Notre mission est d'aider les décideurs politiques et les acteurs du changement à prendre des décisions éclairées pour favoriser des sociétés plus inclusives. SRD Lab excelle également dans l'analyse et la gestion de projets, ainsi que dans la formation en statistiques, en économie et en analyse de projet.\n" +
       "Pour accomplir nos missions, nous adoptons une approche éthique, rigoureuse, et fondée sur une expérience solide, particulièrement dans des contextes complexes et fragiles. Nos experts possèdent une vaste expérience tant dans les pays en développement que dans les pays développés, et sont des professionnels de confiance dans les domaines couverts par notre cabinet. Nous collaborons avec des entités du secteur public et privé, des institutions internationales, des ONG, ainsi que des chercheurs du milieu académique.\n" +
@@ -210,12 +210,12 @@ export const postes: PosteType[] = [
     quisommesnous:
       "SRD Lab est un cabinet d'études et de conseils en pleine croissance, spécialisé dans la collecte de données quantitatives et qualitatives, ainsi que dans la conduite de recherches dans les domaines de l'économie, du social et de l'humanitaire. Notre mission est d'aider les décideurs politiques et les acteurs du changement à prendre des décisions éclairées pour favoriser des sociétés plus inclusives. SRD Lab excelle également dans l'analyse et la gestion de projets, ainsi que dans la formation en statistiques, en économie et en analyse de projet." +
       "Pour accomplir nos missions, nous adoptons une approche éthique, rigoureuse, et fondée sur une expérience solide, particulièrement dans des contextes complexes et fragiles. Nos experts possèdent une vaste expérience tant dans les pays en développement que dans les pays développés, et sont des professionnels de confiance dans les domaines couverts par notre cabinet. Nous collaborons avec des entités du secteur public et privé, des institutions internationales, des ONG, ainsi que des chercheurs du milieu académique." +
-      "Pour plus d’information, veuillez visiter notre site web : http://www.srd-lab.com",
+      "Pour plus d’information, veuillez visiter notre site web: http://www.srd-lab.com",
     context:
       "C'est une période passionnante pour notre cabinet. En effet, SRD Lab, en collaboration avec le cabinet Research Initiative for Social Development (RISD), s'engage en République démocratique du Congo (RDC) pour fournir des services techniques et consultatifs dans le cadre l’initiative des données pour la lutte antitabac (Tobacco Control Data Initiative, TCDI). L’initiative TCDI est dirigée par Development Gateway (DG), une filiale d'IREX, avec le soutien de la Fondation Bill et Melinda Gates (BMGF).\n" +
       "Cette initiative vise à agréger et faciliter l’accès aux données nécessaires à la conception et à la mise en œuvre des politiques de lutte antitabac effectuées par les gouvernements en Afrique Subsaharienne pami lesquels la RDC. La recherche proposée devrait répondre aux questions suivantes :1.  Quel est le pourcentage du commerce illicite de la cigarette en RDC ? 2.  Quelles sont les origines et les marques des cigarettes illicites vendues en RDC ?\n" +
       "Afin de mener à bien cette enquête, le consortium SRD Lab et RISD lance cet avis pour le recrutement d'agents enquêteurs, qui seront formés et impliqués dans l'opération de collecte des données.",
-    title: "Agents de collecte de données quantitatives (Initiative TCDI)",
+    title: "Agents de collecte de données (Projet TCDI)",
     date: "25/02/2023",
     role: [
       "Participer à la formation des agents de terrain, organisée dans le cadre de ce projet",
@@ -268,7 +268,7 @@ export const postes: PosteType[] = [
     name: "",
     open: false,
     title:
-      "Superviseurs de collecte de données quantitatives et qualitatives (Initiative TCDI)",
+      "Superviseurs de collecte de données (Projet TCDI)",
     date: "20/02/2023",
     quisommesnous:
       "SRD Lab est un cabinet en pleine croissance qui se consacre à la collecte de données quantitatives et qualitatives et à la réalisation de recherches dans les domaines de l’économie, du social et de l’humanitaire afin d'aider les décideurs politiques et les acteurs du changement à prendre de meilleures décisions pour des sociétés plus inclusives. SRD Lab opère également dans la gestion des projets et la formation dans les domaines de la statistique, de l’économie de la gestion. Pour la réalisation des missions qui lui sont confiées, les experts de SRD Lab adoptent une approche éthique, rigoureuse et fondée sur une expérience solide dans des contextes complexes et fragiles. Nos experts ont une importante expérience dans les pays en développement et les pays développés, ils sont des professionnels de confiance dans les domaines que couvre le champ d’action du cabinet. Nous travaillons pour, des entités du secteur public et privé, des organisations multinationales, des ONG et des chercheurs du milieu académique.\n" +

@@ -23,7 +23,7 @@ export const domaines = [
                 img: SanteImg,
             },
         ],
-        content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur culpa cum dicta dolores eum expedita itaque iure labore laboriosam, maxime nihil odio possimus quaerat, rem similique veniam vero, voluptatum?"
+        content: ""
     },
     {
         slug: 2,
@@ -41,7 +41,7 @@ export const domaines = [
             {
                 slug: 2,
                 title: "Travail des enfants",
-                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur culpa cum dicta dolores eum expedita itaque iure labore laboriosam, maxime nihil odio possimus quaerat, rem similique veniam vero, voluptatum?"
+                content: ""
             },
             {
                 slug: 3,
@@ -59,7 +59,7 @@ export const domaines = [
                 content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur culpa cum dicta dolores eum expedita itaque iure labore laboriosam, maxime nihil odio possimus quaerat, rem similique veniam vero, voluptatum?"
             },
         ],
-        content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur culpa cum dicta dolores eum expedita itaque iure labore laboriosam, maxime nihil odio possimus quaerat, rem similique veniam vero, voluptatum?"
+        content: ""
     },
     {
         slug: 3,
@@ -87,7 +87,7 @@ export const domaines = [
                 content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur culpa cum dicta dolores eum expedita itaque iure labore laboriosam, maxime nihil odio possimus quaerat, rem similique veniam vero, voluptatum?"
             },
         ],
-        content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur culpa cum dicta dolores eum expedita itaque iure labore laboriosam, maxime nihil odio possimus quaerat, rem similique veniam vero, voluptatum?"
+        content: ""
     },
     {
         slug: 4,
@@ -115,7 +115,7 @@ export const domaines = [
                 content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur culpa cum dicta dolores eum expedita itaque iure labore laboriosam, maxime nihil odio possimus quaerat, rem similique veniam vero, voluptatum?"
             },
         ],
-        content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur culpa cum dicta dolores eum expedita itaque iure labore laboriosam, maxime nihil odio possimus quaerat, rem similique veniam vero, voluptatum?"
+        content: ""
     },
     {
         slug: 5,
@@ -143,7 +143,7 @@ export const domaines = [
                 content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur culpa cum dicta dolores eum expedita itaque iure labore laboriosam, maxime nihil odio possimus quaerat, rem similique veniam vero, voluptatum?"
             },
         ],
-        content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur culpa cum dicta dolores eum expedita itaque iure labore laboriosam, maxime nihil odio possimus quaerat, rem similique veniam vero, voluptatum?"
+        content: ""
     },
     {
         slug: 6,
@@ -159,7 +159,7 @@ export const domaines = [
                 title: "Environnement"
             },
         ],
-        content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur culpa cum dicta dolores eum expedita itaque iure labore laboriosam, maxime nihil odio possimus quaerat, rem similique veniam vero, voluptatum?"
+        content: ""
     },
     {
         slug: 7,
@@ -175,7 +175,7 @@ export const domaines = [
                 title: "Infrastructure"
             },
         ],
-        content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur culpa cum dicta dolores eum expedita itaque iure labore laboriosam, maxime nihil odio possimus quaerat, rem similique veniam vero, voluptatum?"
+        content: ""
     },
     {
         slug: 8,
@@ -187,6 +187,6 @@ export const domaines = [
                 title: "Développement"
             }
         ],
-        content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur culpa cum dicta dolores eum expedita itaque iure labore laboriosam, maxime nihil odio possimus quaerat, rem similique veniam vero, voluptatum?"
+        content: ""
     },
 ]

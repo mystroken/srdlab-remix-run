@@ -5,6 +5,7 @@ import LogoColor from "../../../assets/imgs/logo.png";
 import Logo from "../../../assets/imgs/srd-lab-logo.svg";
 import {HeaderType} from "~/types";
 import React, {useState} from "react";
+import {Button} from "~/components/commons/button";
 
 
 export default function Index() {
@@ -84,7 +85,7 @@ export default function Index() {
                         </div>
                     </div>
                 </header>
-                <div className="py-16 md:py-44">
+                <div className="py-10 md:py-20">
                     <div className="bg-white">
                         <div className="pt-[7rem]">
                             <div className="container mx-auto">
@@ -92,7 +93,7 @@ export default function Index() {
                                     <div className="w-full md:w-3/4">
                                         <p className="text-secondary mt-2 text-lg md:text-xl">Sollicitez nos</p>
                                         <h1 className="text-primary mt-1 text-2xl md:text-5xl">Services</h1>
-                                        <p className="mt-2 text-sm md:mt-5 md:text-[1rem] leading-[1.7rem] md:w-[40rem]">
+                                        <p className="mt-2 text-sm md:mt-5 md:text-[1rem] text-justify leading-[1.7rem] md:w-[40rem]">
                                             Si vous êtes une entreprise ou une organisation à la recherche de solutions
                                             professionnelles de haute qualité, nous sommes là pour répondre à vos
                                             besoins. Notre expertise couvre un large éventail de domaines, et nous
@@ -101,6 +102,30 @@ export default function Index() {
                                             notre approche collaborative nous permettent de créer des partenariats
                                             fructueux et durables.
                                         </p>
+                                        <p className="mt-2 text-sm md:mt-5 md:text-[1rem] font-bold text-justify leading-[1.7rem] md:w-[40rem]">
+                                            Veuillez remplir les champs ci-dessous. Notre cabinet vous contactera sous
+                                            peu pour discuter de notre collaboration à venir.
+                                        </p>
+                                        <form className={"mt-6"} method="GET" action="mailto:abbasalimokolo@gmail.com">
+                                            <input
+                                                className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}
+                                                placeholder={"Nom de votre sttucture"} name={"subject"}/>
+                                            <input
+                                                className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}
+                                                placeholder={"Nom personne de contact"}/>
+                                            <input
+                                                className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}
+                                                placeholder={"Email"}/>
+                                            <input
+                                                className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}
+                                                placeholder={"Phone"}/>
+                                            <textarea cols={6} rows={6} placeholder={'Message'}
+                                                      name={"body"}
+                                                      className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}/>
+                                            <div className="w-full md:w-3/5 mt-8">
+                                                <Button value={"send"} name="Envoyez un message"/>
+                                            </div>
+                                        </form>
                                         <div className="py-16">
                                             {/*<p>HELLO SUITE</p>*/}
                                         </div>
