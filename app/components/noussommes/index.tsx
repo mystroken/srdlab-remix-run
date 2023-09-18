@@ -5,7 +5,7 @@ export default function NousSommesComponent() {
     const {t} = useTranslation();
     return (
         <div>
-            <div className="py-12 md:py-36">
+            <div className="py-12 md:py-20">
                 <div className="container mx-auto">
                     <div className="flex flex-row space-x-12">
                         <div className="w-full lg:w-3/4">

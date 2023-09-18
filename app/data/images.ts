@@ -25,8 +25,33 @@ import COLLABORATION from "../../assets/imgs/collaboration.png";
 import BUT from "../../assets/imgs/but.png";
 import PUB6 from "../../assets/imgs/PUB6.png";
 import TEAM from "../../assets/imgs/team.jpg";
+import RECHAUFF1 from "../../assets/imgs/websites/rechauffement-climatique.jpg";
+import RECHAUFF2 from "../../assets/imgs/websites/rechauffement-climatique2.jpg";
+import AGR1 from "../../assets/imgs/websites/Agriculture 1.jpg";
+import AGR2 from "../../assets/imgs/websites/Agriculture 2.jpg";
+import TVL1 from "../../assets/imgs/websites/Travail des enfants 1.jpg";
+import TVL2 from "../../assets/imgs/websites/Travail des enfants 2.jpg";
+import GV1 from "../../assets/imgs/websites/Gouvernance 1.jpg";
+import GV2 from "../../assets/imgs/websites/Gouvernance 2.jpg";
+import GV3 from "../../assets/imgs/websites/Gouvernance 3.jpg";
+import ENG1 from "../../assets/imgs/websites/Energie 1.jpg";
+import TSP1 from "../../assets/imgs/websites/Transport et infrastructure 1.jpg";
+import SOCIAL from "../../assets/imgs/websites/Cohesion sociale 2.jpg";
+import DIGIT from "../../assets/imgs/websites/Digitalisation 2.jpg";
+
 
 export {
+    TSP1,
+    ENG1,
+    RECHAUFF2,
+    RECHAUFF1,
+    AGR2,
+    AGR1,
+    TVL2,
+    TVL1,
+    GV2,
+    GV3,
+    GV1,
     DG,
     ESC,
     RISD,
@@ -53,5 +78,7 @@ export {
     PUB4,
     BUT,
     PUB6,
-    TEAM
+    TEAM,
+    SOCIAL,
+    DIGIT
 };

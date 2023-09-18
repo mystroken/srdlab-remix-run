@@ -1,12 +1,14 @@
 import EducationImg from "../../assets/imgs/educ-pic.png";
 import SanteImg from "../../assets/imgs/sante-pic.jpg";
 import DevCapImg from "../../assets/imgs/dev-cap.png";
+import {AGR2, DIGIT, ENG1, GV3, SOCIAL, TSP1} from "~/data/images";
 
 export const domaines = [
     {
         slug: 1,
-        title: "Développement du capital humain",
-        subtitle: "Education , Santé",
+        title: "Développement du capital humain et Démographie",
+        subtitle: "Education , Santé, Genre, Migration et Transfert des Migrants",
+        picture: DIGIT,
         childs: [
             {
                 slug: 1,
@@ -28,6 +30,7 @@ export const domaines = [
     {
         slug: 2,
         title: "Développement du capital social",
+        picture: SOCIAL,
         subtitle: "Autonomisation des femmes et des jeunes, Travail des enfants, Fragilité, conflits, cohesion sociale",
         childs: [
             {
@@ -63,34 +66,7 @@ export const domaines = [
     },
     {
         slug: 3,
-        title: "Démographie et développement",
-        subtitle: "Genre, migration(transfert des migrants), Education, santé",
-        childs: [
-            {
-                slug: 1,
-                title: "Genre",
-                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur culpa cum dicta dolores eum expedita itaque iure labore laboriosam, maxime nihil odio possimus quaerat, rem similique veniam vero, voluptatum?"
-            },
-            {
-                slug: 2,
-                title: "migration(transfert des migrants)",
-                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur culpa cum dicta dolores eum expedita itaque iure labore laboriosam, maxime nihil odio possimus quaerat, rem similique veniam vero, voluptatum?"
-            },
-            {
-                slug: 3,
-                title: "Education",
-                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur culpa cum dicta dolores eum expedita itaque iure labore laboriosam, maxime nihil odio possimus quaerat, rem similique veniam vero, voluptatum?"
-            },
-            {
-                slug: 4,
-                title: "santé",
-                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur culpa cum dicta dolores eum expedita itaque iure labore laboriosam, maxime nihil odio possimus quaerat, rem similique veniam vero, voluptatum?"
-            },
-        ],
-        content: ""
-    },
-    {
-        slug: 4,
+        picture: GV3,
         title: "Gouvernance, Administration Publique et politique Macroéconomique",
         subtitle: "Gouvernance économique et politique Macroéconomique, Développement régional, Développement local, réforme de l’administration publique",
         childs: [
@@ -118,9 +94,10 @@ export const domaines = [
         content: ""
     },
     {
-        slug: 5,
-        title: "Agriculture, sécurité alimentaire et nutrition",
-        subtitle: "Agriculture, sécurité alimentaire, nutrition Energie, environnement",
+        slug: 4,
+        title: "Agriculture, sécurité alimentaire et changement climatique",
+        picture: AGR2,
+        subtitle: "Agriculture, sécurité alimentaire, changement climatique",
         childs: [
             {
                 slug: 1,
@@ -146,9 +123,10 @@ export const domaines = [
         content: ""
     },
     {
-        slug: 6,
-        title: "Energie, environnement",
-        subtitle: "Energie, environnement",
+        slug: 5,
+        title: "Energie, Eau, Environnement, Developement durable",
+        picture: ENG1,
+        subtitle: "Energie, Eau, Environnement, Developement durable",
         childs: [
             {
                 slug: 1,
@@ -162,7 +140,8 @@ export const domaines = [
         content: ""
     },
     {
-        slug: 7,
+        slug: 6,
+        picture: TSP1,
         title: "Transport et infrastructure, NTIC et Digitalisation",
         subtitle: "Transport et infrastructure",
         childs: [
@@ -174,18 +153,6 @@ export const domaines = [
                 slug: 2,
                 title: "Infrastructure"
             },
-        ],
-        content: ""
-    },
-    {
-        slug: 8,
-        title: "Développement durable et changement climatique",
-        subtitle: "Développement",
-        childs: [
-            {
-                slug: 1,
-                title: "Développement"
-            }
         ],
         content: ""
     },

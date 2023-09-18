@@ -3,7 +3,7 @@ import {DefaultLayout} from "~/layouts/default";
 import {useState} from "react";
 import {services} from "~/data/services";
 import {domaines} from "~/data/domaines";
-import {cleanText} from "~/utils/helpers";
+import Expertises from "~/components/expertises";
 
 
 export default function ExpertisesRoute() {
@@ -50,20 +50,28 @@ export default function ExpertisesRoute() {
                             {selectDomaine && (
                                 <div>
                                     <div className="pt-[3rem]">
-                                        <div className="grid md:grid-cols-3 grid-cols-1 gap-y-4">
+                                        <div
+                                            className="grid sm:grid-cols-2 md:grid-cols-3 container pt-10 gap-y-4  md:gap-x-10">
                                             {
                                                 domaines.map((item: any, index) => {
                                                     return (
-                                                        <a href={`/expertises/${item.slug}`} key={index}
-                                                           className="h-44 md:h-40 md:mb-6 md:w-11/12 cursor-pointer">
-                                                            <div
-                                                                className="p-4 border border-gray-400 hover:border-orange hover:bg-orange hover:border-2 flex items-start flex-col justify-center rounded-md h-full">
-                                                                <h2
-                                                                    className="md:w-[14rem] xl:w-[18rem] text-[1.1rem] text-primary">{item.title}</h2>
-                                                                <h2
-                                                                    className="text-[0.7rem] mt-2 font-normal leading-[130%] text-primary">{cleanText(item.subtitle, 80)}</h2>
-                                                            </div>
-                                                        </a>
+                                                        <Expertises
+                                                            key={index}
+                                                            open={item.open}
+                                                            slug={item.slug}
+                                                            name={item.title}
+                                                            picture={item.picture}
+                                                        />
+                                                        // <a href={`/expertises/${item.slug}`} key={index}
+                                                        //    className="h-44 md:h-40 md:mb-6 md:w-11/12 cursor-pointer">
+                                                        //     <div
+                                                        //         className="p-4 border border-gray-400 hover:border-orange hover:bg-orange hover:border-2 flex items-start flex-col justify-center rounded-md h-full">
+                                                        //         <h2
+                                                        //             className="md:w-[14rem] xl:w-[18rem] text-[1.1rem] text-primary">{item.title}</h2>
+                                                        //         <h2
+                                                        //             className="text-[0.7rem] mt-2 font-normal leading-[130%] text-primary">{cleanText(item.subtitle, 80)}</h2>
+                                                        //     </div>
+                                                        // </a>
                                                     )
                                                 })
                                             }

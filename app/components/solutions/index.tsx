@@ -30,7 +30,7 @@ export default function SolutionsComponent() {
                             </p>
                         </div>
                         <div className={'row hidden md:flex md:w-1/2 space-x-2'}>
-                            <div className={"rounded-md h-1/4 w-full"}>
+                            <div className={"rounded-md h-full w-full"}>
                                 <img src={TEAM} loading={"lazy"} className={'h-full rounded-lg object-cover'}/>
                             </div>
                         </div>

@@ -130,25 +130,24 @@ export default function DomaineSlug() {
                                         <h1 className="my-6 leading-10 text-xl md:text-3xl">
                                             {mydomaine.title}
                                         </h1>
-                                        <h4 className="my-2 leading-10 text-sm md:text-base">
+                                        <h4 className="my-2 leading-10 text-lg md:text-xl text-gray-800">
                                             {mydomaine.subtitle}
                                         </h4>
-                                        <div className="pt-[3rem]">
-                                            <div className="grid md:grid-cols-2 grid-cols-1 gap-y-4">
+                                        <div>
+                                            <div className="flex flex-col space-y-4">
                                                 {
                                                     mydomaine.childs.map((item: any, index) => {
-                                                        // console.log("CHILD ->", item)
                                                         return (
-                                                            <Link state={{data: item}}
-                                                                  to={{pathname: `/expertises/domaine`}}
-                                                                  key={index}
-                                                                  className="h-44 md:h-40 md:mb-6 md:w-11/12 cursor-pointer">
-                                                                <div
-                                                                    className="p-4 border border-gray-400 hover:border-orange hover:bg-orange hover:border-2 flex items-center flex-col justify-center rounded-md h-full">
-                                                                    <h2
-                                                                        className="text-center md:w-[14rem] xl:w-[18rem] text-[1.1rem] text-primary">{item.title}</h2>
-                                                                </div>
-                                                            </Link>
+                                                            <div className={"mb-10"}>
+                                                                <h4 className="my-6 leading-10 text-base md:text-xl">
+                                                                    {item.title}
+                                                                </h4>
+                                                                <p className="text-base text-gray-600">{item.content1}</p>
+                                                                <p className="text-base text-gray-600 mt-2">{item.content2}</p>
+                                                                <img src={item.img}
+                                                                     className={'w-auto object-cover h-auto my-4'}
+                                                                     loading="lazy"/>
+                                                            </div>
                                                         )
                                                     })
                                                 }
