@@ -797,14 +797,6 @@ h1 {
   margin-top: 4.4rem;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
 .block {
   display: block;
 }
@@ -847,10 +839,6 @@ h1 {
 
 .h-4 {
   height: 1rem;
-}
-
-.h-44 {
-  height: 11rem;
 }
 
 .h-6 {
@@ -1356,6 +1344,11 @@ h1 {
   padding-bottom: 1.25rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -1430,6 +1423,10 @@ h1 {
   padding-top: 0.5rem;
 }
 
+.pt-20 {
+  padding-top: 5rem;
+}
+
 .pt-3 {
   padding-top: 0.75rem;
 }
@@ -1494,10 +1491,6 @@ h1 {
   padding-top: 7rem;
 }
 
-.pt-\[1rem\] {
-  padding-top: 1rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -1537,10 +1530,6 @@ h1 {
 
 .text-\[1\.125rem\] {
   font-size: 1.125rem;
-}
-
-.text-\[1\.1rem\] {
-  font-size: 1.1rem;
 }
 
 .text-\[1\.2rem\] {
@@ -1787,16 +1776,6 @@ button.slick-next:before {
   border-width: 2px;
 }
 
-.hover\:border-orange:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(250 175 66 / var(--tw-border-opacity));
-}
-
-.hover\:bg-orange:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 175 66 / var(--tw-bg-opacity));
-}
-
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
@@ -1905,10 +1884,6 @@ button.slick-next:before {
     height: 7rem;
   }
 
-  .md\:h-40 {
-    height: 10rem;
-  }
-
   .md\:h-64 {
     height: 16rem;
   }
@@ -2011,10 +1986,6 @@ button.slick-next:before {
     animation: marquee 25s linear infinite;
   }
 
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -2102,6 +2073,11 @@ button.slick-next:before {
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+
+  .md\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .md\:py-20 {

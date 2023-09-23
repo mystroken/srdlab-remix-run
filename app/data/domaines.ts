@@ -1,14 +1,14 @@
 import EducationImg from "../../assets/imgs/educ-pic.png";
 import SanteImg from "../../assets/imgs/sante-pic.jpg";
 import DevCapImg from "../../assets/imgs/dev-cap.png";
-import {AGR2, DIGIT, ENG1, GV3, SOCIAL, TSP1} from "~/data/images";
+import {AGR2, ENG1, GV3, SOCIAL, TSP1} from "~/data/images";
 
 export const domaines = [
     {
         slug: 1,
         title: "Développement du capital humain et Démographie",
         subtitle: "Education , Santé, Genre, Migration et Transfert des Migrants",
-        picture: DIGIT,
+        picture: SanteImg,
         childs: [
             {
                 slug: 1,
@@ -31,7 +31,7 @@ export const domaines = [
         slug: 2,
         title: "Développement du capital social",
         picture: SOCIAL,
-        subtitle: "Autonomisation des femmes et des jeunes, Travail des enfants, Fragilité, conflits, cohesion sociale",
+        subtitle: "Autonomisation des femmes et des jeunes, Travail des enfants, Fragilité et conflits, cohesion sociale",
         childs: [
             {
                 slug: 1,
@@ -44,22 +44,17 @@ export const domaines = [
             {
                 slug: 2,
                 title: "Travail des enfants",
-                content: ""
+                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus consequatur corporis doloremque, explicabo, iusto, laudantium possimus provident quidem recusandae tempora tenetur ut. A ab doloribus dolorum nesciunt nobis officia!"
             },
             {
                 slug: 3,
                 title: "Fragilité",
-                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur culpa cum dicta dolores eum expedita itaque iure labore laboriosam, maxime nihil odio possimus quaerat, rem similique veniam vero, voluptatum?"
+                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus consequatur corporis doloremque, explicabo, iusto, laudantium possimus provident quidem recusandae tempora tenetur ut. A ab doloribus dolorum nesciunt nobis officia!"
             },
             {
                 slug: 4,
-                title: "conflits",
-                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur culpa cum dicta dolores eum expedita itaque iure labore laboriosam, maxime nihil odio possimus quaerat, rem similique veniam vero, voluptatum?"
-            },
-            {
-                slug: 5,
                 title: "cohesion sociale",
-                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur culpa cum dicta dolores eum expedita itaque iure labore laboriosam, maxime nihil odio possimus quaerat, rem similique veniam vero, voluptatum?"
+                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus consequatur corporis doloremque, explicabo, iusto, laudantium possimus provident quidem recusandae tempora tenetur ut. A ab doloribus dolorum nesciunt nobis officia!"
             },
         ],
         content: ""
@@ -73,22 +68,22 @@ export const domaines = [
             {
                 slug: 1,
                 title: "Gouvernance économique et politique Macroéconomique",
-                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur culpa cum dicta dolores eum expedita itaque iure labore laboriosam, maxime nihil odio possimus quaerat, rem similique veniam vero, voluptatum?"
+                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus consequatur corporis doloremque, explicabo, iusto, laudantium possimus provident quidem recusandae tempora tenetur ut. A ab doloribus dolorum nesciunt nobis officia!"
             },
             {
                 slug: 2,
                 title: "Développement régional",
-                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur culpa cum dicta dolores eum expedita itaque iure labore laboriosam, maxime nihil odio possimus quaerat, rem similique veniam vero, voluptatum?"
+                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus consequatur corporis doloremque, explicabo, iusto, laudantium possimus provident quidem recusandae tempora tenetur ut. A ab doloribus dolorum nesciunt nobis officia!"
             },
             {
                 slug: 3,
                 title: "Développement local",
-                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur culpa cum dicta dolores eum expedita itaque iure labore laboriosam, maxime nihil odio possimus quaerat, rem similique veniam vero, voluptatum?"
+                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus consequatur corporis doloremque, explicabo, iusto, laudantium possimus provident quidem recusandae tempora tenetur ut. A ab doloribus dolorum nesciunt nobis officia!"
             },
             {
                 slug: 4,
                 title: "Réforme de l’administration publique",
-                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur culpa cum dicta dolores eum expedita itaque iure labore laboriosam, maxime nihil odio possimus quaerat, rem similique veniam vero, voluptatum?"
+                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus consequatur corporis doloremque, explicabo, iusto, laudantium possimus provident quidem recusandae tempora tenetur ut. A ab doloribus dolorum nesciunt nobis officia!"
             },
         ],
         content: ""
@@ -102,22 +97,22 @@ export const domaines = [
             {
                 slug: 1,
                 title: "Agriculture",
-                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur culpa cum dicta dolores eum expedita itaque iure labore laboriosam, maxime nihil odio possimus quaerat, rem similique veniam vero, voluptatum?"
+                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus consequatur corporis doloremque, explicabo, iusto, laudantium possimus provident quidem recusandae tempora tenetur ut. A ab doloribus dolorum nesciunt nobis officia!"
             },
             {
                 slug: 2,
                 title: "Sécurité alimentaire",
-                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur culpa cum dicta dolores eum expedita itaque iure labore laboriosam, maxime nihil odio possimus quaerat, rem similique veniam vero, voluptatum?"
+                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus consequatur corporis doloremque, explicabo, iusto, laudantium possimus provident quidem recusandae tempora tenetur ut. A ab doloribus dolorum nesciunt nobis officia!"
             },
             {
                 slug: 3,
                 title: "Nutrition Energie",
-                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur culpa cum dicta dolores eum expedita itaque iure labore laboriosam, maxime nihil odio possimus quaerat, rem similique veniam vero, voluptatum?"
+                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus consequatur corporis doloremque, explicabo, iusto, laudantium possimus provident quidem recusandae tempora tenetur ut. A ab doloribus dolorum nesciunt nobis officia!"
             },
             {
                 slug: 4,
                 title: "Environnement",
-                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur culpa cum dicta dolores eum expedita itaque iure labore laboriosam, maxime nihil odio possimus quaerat, rem similique veniam vero, voluptatum?"
+                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus consequatur corporis doloremque, explicabo, iusto, laudantium possimus provident quidem recusandae tempora tenetur ut. A ab doloribus dolorum nesciunt nobis officia!"
             },
         ],
         content: ""
@@ -130,11 +125,13 @@ export const domaines = [
         childs: [
             {
                 slug: 1,
-                title: "Energie"
+                title: "Energie",
+                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus consequatur corporis doloremque, explicabo, iusto, laudantium possimus provident quidem recusandae tempora tenetur ut. A ab doloribus dolorum nesciunt nobis officia!"
             },
             {
                 slug: 2,
-                title: "Environnement"
+                title: "Environnement",
+                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus consequatur corporis doloremque, explicabo, iusto, laudantium possimus provident quidem recusandae tempora tenetur ut. A ab doloribus dolorum nesciunt nobis officia!"
             },
         ],
         content: ""
@@ -147,13 +144,16 @@ export const domaines = [
         childs: [
             {
                 slug: 1,
-                title: "Transport"
+                title: "Transport",
+                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus consequatur corporis doloremque, explicabo, iusto, laudantium possimus provident quidem recusandae tempora tenetur ut. A ab doloribus dolorum nesciunt nobis officia!"
             },
             {
                 slug: 2,
-                title: "Infrastructure"
+                title: "Infrastructure",
+                content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus consequatur corporis doloremque, explicabo, iusto, laudantium possimus provident quidem recusandae tempora tenetur ut. A ab doloribus dolorum nesciunt nobis officia!"
             },
         ],
         content: ""
     },
 ]
+

@@ -1,26 +1,24 @@
-import {DefaultLayout} from "~/layouts/default";
 import type {LoaderArgs} from "@remix-run/node";
 import {json} from "@remix-run/node";
 import {Link, useLoaderData, useMatches,} from "@remix-run/react"
-import {domaines} from "~/data/domaines";
-import {header} from "~/data/header";
-import type {HeaderType} from "~/types";
 import {useEffect, useState} from "react";
-import Logo from "../../../assets/imgs/srd-lab-logo.svg"
-import LogoColor from "../../../assets/imgs/logo.png"
 import {useTranslation} from "react-i18next";
+import {DefaultLayout} from "~/layouts/default";
+import {header} from "~/data/header";
+import {HeaderType} from "~/types";
+import Logo from "../../../../assets/imgs/srd-lab-logo.svg"
+import LogoColor from "../../../../assets/imgs/logo.png"
 import {TEAM} from "~/data/images";
+import { servicesProposes } from "~/data/domaine-services";
 
 
 export const loader = async ({params}: LoaderArgs) => {
     return json({slug: params.slug});
 };
 
-
-export default function DomaineSlug() {
+export default function ServiceSlug() {
 
     const {slug}: any = useLoaderData<typeof loader>();
-    const mydomaine = domaines[slug - 1];
     const [navbar, setNavbar] = useState(false);
     const [isShow, setIsShow] = useState(false);
     const [loading, setLoading] = useState(false);
@@ -37,6 +35,8 @@ export default function DomaineSlug() {
     useEffect(() => {
         typeof slug === "string" ? setLoading(true) : setLoading(false)
     }, [i18n.language]);
+
+    console.log("SERVICE ---->", slug);
 
 
     return (
@@ -122,12 +122,13 @@ export default function DomaineSlug() {
                 </header>
                 <div className="py-16 md:py-44">
                     <div className="container mx-auto">
+
                         {
                             loading === false ? <p>Chargement...</p> :
                                 <div className={"pt-20 md:pt-0"}>
                                     <div
                                         className={`flex space-y-4 md:space-y-0 md:space-x-4 md:flex-row flex-col`}>
-                                        {mydomaine.childs.map((item: any, index: number) => {
+                                        {servicesProposes[slug].childs.map((item: any, index: number) => {
                                             return (
                                                 <button
                                                     onClick={() => setSelectTab(item.slug)}
@@ -140,7 +141,7 @@ export default function DomaineSlug() {
                                         }
                                     </div>
                                     <div>
-                                        {mydomaine.childs.map((item: any, index: number) => {
+                                        {servicesProposes[slug].childs.map((item: any, index: number) => {
                                             return (
                                                 <div
                                                     className={`${item.slug === selectTab ? 'flex flex-col' : 'hidden'} w-full`}>

@@ -5,6 +5,7 @@ import {Link} from "@remix-run/react";
 export default function Expertises({
                                        slug,
                                        name,
+                                       domaine,
                                        picture
                                    }: any) {
     return (
@@ -24,7 +25,7 @@ export default function Expertises({
                                         {cleanText(name, 45)}
                                     </p>
                                     <Link
-                                        to={`/expertises/${slug}`}>
+                                        to={domaine === true ? `/expertises/${slug}` : `/expertises/services/${slug}`}>
                                         <div
                                             className={`bg-orange text-white rounded-full text-xs px-4 py-2 text-center w-full mt-4`}>
                                             Visiter
