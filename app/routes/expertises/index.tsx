@@ -3,7 +3,7 @@ import {DefaultLayout} from "~/layouts/default";
 import {useState} from "react";
 import {domaines} from "~/data/domaines";
 import Expertises from "~/components/expertises";
-import { servicesProposes } from "~/data/domaine-services";
+import { services } from "~/data/services";
 
 
 export default function ExpertisesRoute() {
@@ -76,7 +76,7 @@ export default function ExpertisesRoute() {
                                         <div
                                             className="grid sm:grid-cols-2 md:grid-cols-3 container pt-10 gap-y-4  md:gap-x-10">
                                             {
-                                                servicesProposes.map((item: any, index) => {
+                                                services.map((item: any, index) => {
                                                     return (
                                                         <Expertises
                                                             key={index}

@@ -22,10 +22,10 @@ export default function Expertises({
                                 className="transition-all transform opacity-100 translate-y-0">
                                 <div className="p-2">
                                     <p className="text-gray-200 text-lg leading-[155%] font-semibold">
-                                        {cleanText(name, 45)}
+                                        {cleanText(name, domaine == true ? 45 : 20)}
                                     </p>
                                     <Link
-                                        to={domaine === true ? `/expertises/${slug}` : `/expertises/services/${slug}`}>
+                                        to={domaine === true ? `/expertises/${slug}` : `/expertise-services/${slug}`}>
                                         <div
                                             className={`bg-orange text-white rounded-full text-xs px-4 py-2 text-center w-full mt-4`}>
                                             Visiter

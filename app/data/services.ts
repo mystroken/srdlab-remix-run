@@ -1,7 +1,11 @@
+import {AGR2, DIGIT, GV3} from "~/data/images";
+import SanteImg from "../../assets/imgs/sante-pic.jpg";
+
 export const services = [
     {
         slug: 1,
         title: "Collecte de données",
+        picture: DIGIT,
         context: "La collecte de données est une étape essentielle pour obtenir des informations précieuses et prendre des décisions éclairées. Notre cabinet est spécialisé dans la collecte de données précises et fiables, en utilisant des méthodologies éprouvées et des pratiques exemplaires. Que ce soit à travers des enquêtes sur le terrain, des entretiens, des observations ou l'analyse de données existantes; nous rassemblons les informations nécessaires pour comprendre les enjeux sociaux, économiques et environnementaux liés à votre projet. Nous travaillerons en étroite collaboration avec vous pour comprendre vos besoins spécifiques et vous offrir des solutions sur mesure qui maximisent l'impact de votre initiative. Notre approche rigoureuse garantit l'exactitude et la fiabilité des données recueillies.",
         actions: "Dans domaine d'expertise sur lesquels nous intervenons, la réalisation d’enquêtes devient un art. Avec un engagement inébranlable envers la recherche rigoureuse, nous capturons les données dont vous avez besoin dans toute leur complexité. Dans nos interventions, chaque chiffre et chaque témoignage peignent un portrait fidèle, afin d’éclairer les décideurs. Nous réalisons vos:",
         actions_list: ["Enquêtes quantitatives", "Enquêtes qualitatives"],
@@ -40,6 +44,7 @@ export const services = [
     },
     {
         slug: 2,
+        picture: GV3,
         title: "Conseil et analyse statistique au service de vos projets",
         context: "Notre expertise nous permet de comprendre les dynamiques sociales et économiques liées à votre projet. Nous réalisons des analyses approfondies aussi bien sur le plan social qu’économique pour vous fournir des analyses pertinentes et des recommandations stratégiques. Selon les objectifs de votre recherche, notre démarche peut se résumer à dresser une analyse de la situation dans un premier temps, Puis identifier les opportunités et concevoir des interventions adaptées pour vos projets. A terme nous pouvons également vous accompagner pour évaluer l'impact des projets sur les communautés, mesurer l'impact d'une politique publique ou comprendre les préférences de votre marché cible.",
         actions: "",
@@ -70,6 +75,7 @@ export const services = [
     },
     {
         slug: 3,
+        picture: AGR2,
         title: "Gestion de projet",
         context: "",
         actions: "",
@@ -104,6 +110,7 @@ export const services = [
     },
     {
         slug: 4,
+        picture: SanteImg,
         title: "Formation dans les metiers de la statistique et de la gestion de projet",
         context: "Nous souscrivons à l'idée que l'acquisition des compétences statistiques est un atout indéniable. Nous sommes fermement convaincus que la transmission des compétences en statistiques, accompagnée du transfert concret de connaissances, nécessite une approche menée par des experts qui combinent habilement la formation avec des responsabilités opérationnelles dans la réalisation d'enquêtes et d'analyses statistiques. C’est pourqoi SRD Lab met à votre disposition des formateurs expérimentés et pédagogues.",
         actions: "Formation à distance ou en présentiel",

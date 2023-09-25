@@ -11,6 +11,7 @@ import LogoColor from "../../assets/imgs/logo.png"
 import {Button} from "~/components/commons/button";
 import {Modal} from "~/components/commons/modal";
 import {useTranslation} from "react-i18next";
+import {TEAM} from "~/data/images";
 
 
 export const loader = async ({params}: LoaderArgs) => {
@@ -124,24 +125,24 @@ export default function ServiceSlug() {
                     <div className="container mx-auto">
                         {
                             loading === false ? <p>Chargement...</p> :
-                                <div className="flex flex-row mt-16 md:mt-0">
+                                <div className="flex flex-row mt-16 space-x-12">
                                     <div className="w-full lg:w-3/4">
                                         <h1 className="my-6 leading-10 text-xl md:text-3xl">
                                             {myservice.title}
                                         </h1>
                                         <div>
-                                            <h4 className="my-2 leading-10 text-lg underline underline-offset-8 text-blue-950">
+                                            <h4 className="my-2 leading-10 text-lg text-gray-700">
                                                 CONTEXTE
                                             </h4>
-                                            <p className="my-2 leading-8 text-sm">
+                                            <p className="my-2 leading-8 text-sm text-justify">
                                                 {myservice.context}
                                             </p>
                                         </div>
                                         <div className={'mt-8'}>
-                                            <h4 className="my-2 leading-10 text-lg underline underline-offset-8 text-blue-950">
+                                            <h4 className="my-2 leading-10 text-lg text-gray-700">
                                                 NOS ACTIONS
                                             </h4>
-                                            <p className="my-2 leading-8 text-sm">
+                                            <p className="my-2 leading-8 text-sm text-justify">
                                                 {myservice.actions}
                                             </p>
                                             <ul>
@@ -153,10 +154,10 @@ export default function ServiceSlug() {
                                             </ul>
                                         </div>
                                         <div className={'mt-8'}>
-                                            <h4 className="my-2 leading-10 text-lg underline underline-offset-8 text-blue-950">
+                                            <h4 className="my-2 leading-10 text-lg text-gray-700">
                                                 NOTRE APPORT
                                             </h4>
-                                            <p className="my-2 leading-8 text-sm">
+                                            <p className="my-2 leading-8 text-sm text-justify">
                                                 {myservice.apport}
                                             </p>
                                             <ul>
@@ -177,10 +178,10 @@ export default function ServiceSlug() {
                                             </ul>
                                         </div>
                                         <div className={'mt-8'}>
-                                            <h4 className="my-2 leading-10 text-lg underline underline-offset-8 text-blue-950">
+                                            <h4 className="my-2 leading-10 text-lg text-gray-700">
                                                 NOS RESSOURCES
                                             </h4>
-                                            <p className="my-2 leading-8 text-sm">
+                                            <p className="my-2 leading-8 text-sm text-justify">
                                                 {myservice.ressource}
                                             </p>
                                             <ul>
@@ -192,6 +193,14 @@ export default function ServiceSlug() {
                                             </ul>
                                         </div>
                                     </div>
+                                    <div
+                                        className={'row hidden md:flex md:w-1/2 space-x-2'}>
+                                        <div className={"rounded-md h-full w-full"}>
+                                            <img src={myservice.picture} loading={"lazy"}
+                                                 className={'h-1/6 rounded-lg object-cover'}/>
+                                        </div>
+                                    </div>
+
                                 </div>
                         }
                         <div className="md:w-[14rem] mt-10" onClick={() => setContact(true)}>
