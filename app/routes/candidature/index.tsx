@@ -4,16 +4,12 @@ import {json} from "@remix-run/node";
 import {Link, useMatches,} from "@remix-run/react"
 import {header} from "~/data/header";
 import type {HeaderType} from "~/types";
-import {useState} from "react";
+import React, {useState} from "react";
 import Logo from "../../../assets/imgs/srd-lab-logo.svg"
 import LogoColor from "../../../assets/imgs/logo.png"
 import {Button} from "~/components/commons/button";
 import {TEAM} from "~/data/images";
-
-
-export const loader = async ({params}: LoaderArgs) => {
-    return json({slug: params.slug});
-};
+import {useForm, ValidationError} from "@formspree/react";
 
 
 export default function Index() {
@@ -21,6 +17,11 @@ export default function Index() {
     const [isShow, setIsShow] = useState(false)
     const path = useMatches()
     const idPath = path[1].pathname
+    const [state, handleSubmit] = useForm("xwkdvdbl");
+
+    if (state.succeeded) {
+        return <p>Thanks for joining!</p>;
+    }
 
     return (
         <>
@@ -119,7 +120,7 @@ export default function Index() {
                                     seront traitées avec la plus stricte confidentialité et serviront exclusivement à
                                     évaluer votre candidature.
                                 </p>
-                                <form className={"mt-6"} method="GET" action="mailto:abbasalimokolo@gmail.com">
+                                <form onSubmit={handleSubmit} className={"mt-6"}>
                                     <input className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}
                                            placeholder={"Prenom"} name={"subject"}/>
                                     <input className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}

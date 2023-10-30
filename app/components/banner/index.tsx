@@ -2,17 +2,12 @@ import Logo from "../../../assets/imgs/srd-lab-logo.svg";
 import LogoColor from "../../../assets/imgs/logo.png";
 import BtnNext from "../../../assets/imgs/next.png";
 import BtnPrevious from "../../../assets/imgs/previous.png";
-import styles from "./styles.css";
 import { useEffect, useState } from "react";
 import { Link, useMatches } from "@remix-run/react";
 import { carouselItems, header } from "~/data/header";
 import type { HeaderType, SolutionsType } from "~/types";
 import { useTranslation } from "react-i18next";
 import { Image } from "remix-image";
-
-export function links() {
-  return [{ rel: "stylesheet", href: styles }];
-}
 
 interface BannerComponentProps {
   title: string;
@@ -27,6 +22,7 @@ export default function BannerComponent({
   arrow,
   list,
 }: BannerComponentProps) {
+
   const [navbar, setNavbar] = useState(false);
   const [isShow, setIsShow] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);

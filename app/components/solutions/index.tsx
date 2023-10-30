@@ -31,7 +31,8 @@ export default function SolutionsComponent() {
                         </div>
                         <div className={'row hidden md:flex md:w-1/2 space-x-2'}>
                             <div className={"rounded-md h-full w-full"}>
-                                <img src={TEAM} loading={"lazy"} className={'h-full rounded-lg object-cover'}/>
+                                <img src={TEAM} loading={"lazy"} alt="img"
+                                     className={'h-full rounded-lg object-cover'}/>
                             </div>
                         </div>
                     </div>
@@ -56,14 +57,14 @@ export default function SolutionsComponent() {
                                         <div>
                                             <p
                                                 className={`pt-[.8rem] text-[.8rem] leading-[170%] text-[#505A62] text-justify ${
-                                                    showText === false ? "flex" : "hidden"
+                                                    !showText ? "flex" : "hidden"
                                                 }`}
                                             >
                                                 {cleanText(t(item.content), 150)}
                                             </p>
                                             <p
                                                 className={`pt-[.8rem] text-[.8rem] leading-[170%] text-[#505A62] text-justify ${
-                                                    showText === true ? "flex" : "hidden"
+                                                    showText ? "flex" : "hidden"
                                                 }`}
                                             >
                                                 {t(item.content)}
@@ -71,7 +72,7 @@ export default function SolutionsComponent() {
                                             <p
                                                 onClick={() => setShowText(!showText)}
                                                 className={`${
-                                                    showText === false ? "flex" : "hidden"
+                                                    !showText ? "flex" : "hidden"
                                                 } pt-[.3rem] cursor-pointer text-[0.7rem] text-black leading-[185%] text-justify underline`}
                                             >
                                                 {t("more")}

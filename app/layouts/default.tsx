@@ -5,7 +5,7 @@ interface DefaultLayoutProps extends React.AllHTMLAttributes<HTMLDivElement> {
     children: ReactNode
 }
 
-export const DefaultLayout = ({ children, className, ...props }: DefaultLayoutProps) => {
+export const DefaultLayout = ({ children }: DefaultLayoutProps) => {
 
     return (
         <>
