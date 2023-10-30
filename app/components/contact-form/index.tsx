@@ -12,7 +12,7 @@ const ContactForm = () => {
     return (
         <form onSubmit={handleSubmit}>
             <div className={"mb-2"}>
-                <p className="text-sm py-2">Sujet</p>
+                <p className="text-sm py-2">Email</p>
                 <input
                     id="email"
                     type="email"
