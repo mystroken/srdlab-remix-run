@@ -162,6 +162,8 @@ export default function Index() {
                     className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}
                     placeholder={"Email"}
                     id="email"
+                    value="abbasaliaboubakar@gmail.com"
+                    disabled
                   />
                   <ValidationError
                     prefix="Email"
