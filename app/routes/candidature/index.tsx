@@ -155,14 +155,21 @@ export default function Index() {
                   />
                   <input
                     className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}
+                    placeholder={"Nom"}
                     name={"lastName"}
                     id="lastName"
                   />
                   <input
                     className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}
+                    name={"address"}
+                    placeholder={"Adresse"}
+                    id="address"
+                  />
+                  <input
+                    className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6 hidden`}
                     placeholder={"Email"}
                     id="email"
-                    value="abbasaliaboubakar@gmail.com"
+                    value="christelletchoupe@yahoo.fr"
                     disabled
                   />
                   <ValidationError
