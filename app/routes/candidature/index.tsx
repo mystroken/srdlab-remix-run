@@ -150,11 +150,13 @@ export default function Index() {
                   <input
                     className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}
                     placeholder={"Prenom"}
-                    name={"subject"}
+                    name={"firstName"}
+                    id="firstName"
                   />
                   <input
                     className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}
-                    placeholder={"Nom"}
+                    name={"lastName"}
+                    id="lastName"
                   />
                   <input
                     className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}
@@ -184,7 +186,13 @@ export default function Index() {
                     errors={state.errors}
                   />
                   <div className="w-full md:w-3/5 mt-8">
-                    <Button value={"send"} name="Envoyez un message" />
+                    <button
+                      aria-label="search"
+                      disabled={state.submitting}
+                      className="bg-orange rounded-full text-[.9rem] text-primary px-[30px] py-[10px] md:py-[16px] md:px-[48px] w-full font-semibold"
+                    >
+                      Envoyez un message
+                    </button>
                   </div>
                 </form>
               </div>

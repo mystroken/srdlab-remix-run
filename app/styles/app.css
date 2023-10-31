@@ -977,18 +977,6 @@ h1 {
   width: 100%;
 }
 
-.max-w-4xl {
-  max-width: 56rem;
-}
-
-.max-w-2xl {
-  max-width: 42rem;
-}
-
-.max-w-xl {
-  max-width: 36rem;
-}
-
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1013,10 +1001,6 @@ h1 {
 
 .cursor-pointer {
   cursor: pointer;
-}
-
-.resize {
-  resize: both;
 }
 
 .grid-cols-1 {
@@ -1314,6 +1298,11 @@ h1 {
   padding-right: 1.5rem;
 }
 
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .px-\[1\.3rem\] {
   padding-left: 1.3rem;
   padding-right: 1.3rem;
@@ -1397,11 +1386,6 @@ h1 {
 .py-\[7rem\] {
   padding-top: 7rem;
   padding-bottom: 7rem;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .pb-3 {
@@ -2233,10 +2217,6 @@ button.slick-next:before {
 
   .lg\:w-3\/4 {
     width: 75%;
-  }
-
-  .lg\:w-3\/5 {
-    width: 60%;
   }
 
   .lg\:w-3\/6 {
