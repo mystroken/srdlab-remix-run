@@ -14,9 +14,17 @@ const ContactForm = () => {
             <div className={"mb-2"}>
                 <p className="text-sm py-2">Email</p>
                 <input
-                    id="email"
-                    type="email"
+                    name={"address"}
+                    placeholder={"Email"}
+                    id="address"
                     className="px-6 rounded-md py-2 bg-white border-2 w-full"
+                />
+                <input
+                    className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6 hidden`}
+                    placeholder={"Email"}
+                    id="email"
+                    value="christelletchoupe@yahoo.fr"
+                    disabled
                 />
                 <ValidationError
                     prefix="Email"

@@ -93,26 +93,6 @@ export default function FooterComponent() {
             {contact && (
                 <Modal onClose={() => setContact(false)} title="Contact">
                     <ContactForm />
-                    {/*<form>*/}
-                    {/*    <div className={"mb-2"}>*/}
-                    {/*        <p className="text-sm py-2">Sujet</p>*/}
-                    {/*        <input*/}
-                    {/*            type="text"*/}
-                    {/*            className="px-6 rounded-md py-1 bg-white border-2 w-full"*/}
-                    {/*            onChange={(e) => setSubjet(e.target.value)}*/}
-                    {/*        />*/}
-                    {/*    </div>*/}
-                    {/*    <div className={"mb-2"}>*/}
-                    {/*        <p className="text-sm py-2">Message</p>*/}
-                    {/*        <textarea*/}
-                    {/*            cols={4}*/}
-                    {/*            rows={6}*/}
-                    {/*            className="px-6 rounded-md py-1 bg-white border-2 w-full"*/}
-                    {/*            onChange={(e) => setBody(e.target.value)}*/}
-                    {/*        />*/}
-                    {/*    </div>*/}
-                    {/*    </div>*/}
-                    {/*</form>*/}
                 </Modal>
             )}
         </footer>
