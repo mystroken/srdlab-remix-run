@@ -146,15 +146,15 @@ const Candidature = () => {
                                 <form onSubmit={handleSubmit} className={"mt-6"}>
                                     <input
                                         className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}
-                                        placeholder={"Prenom"}
-                                        name={"firstName"}
-                                        id="firstName"
-                                    />
-                                    <input
-                                        className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}
                                         placeholder={"Nom"}
                                         name={"lastName"}
                                         id="lastName"
+                                    />
+                                    <input
+                                        className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}
+                                        placeholder={"Prenom"}
+                                        name={"firstName"}
+                                        id="firstName"
                                     />
                                     <input
                                         className={`rounded-lg border w-full md:w-3/5 border-gray-300 p-4 mt-6`}
