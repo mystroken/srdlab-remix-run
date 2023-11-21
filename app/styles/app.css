@@ -977,6 +977,22 @@ h1 {
   width: 100%;
 }
 
+.w-\[4rem\] {
+  width: 4rem;
+}
+
+.w-\[6rem\] {
+  width: 6rem;
+}
+
+.w-\[10rem\] {
+  width: 10rem;
+}
+
+.w-\[12rem\] {
+  width: 12rem;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1099,6 +1115,10 @@ h1 {
 
 .justify-self-center {
   justify-self: center;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .overflow-y-scroll {
@@ -1730,6 +1750,11 @@ h1 {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#0E3758\] {
+  --tw-text-opacity: 1;
+  color: rgb(14 55 88 / var(--tw-text-opacity));
 }
 
 .underline {
