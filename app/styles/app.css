@@ -901,6 +901,10 @@ h1 {
   height: 100%;
 }
 
+.h-\[4rem\] {
+  height: 4rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1049,6 +1053,10 @@ h1 {
 
 .gap-y-4 {
   row-gap: 1rem;
+}
+
+.gap-y-12 {
+  row-gap: 3rem;
 }
 
 .space-x-12 > :not([hidden]) ~ :not([hidden]) {
@@ -1729,6 +1737,10 @@ h1 {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[\#\#0E3758\] {
+  color: ##0E3758;
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -1808,6 +1820,10 @@ button.slick-next:before {
 @media (min-width: 640px) {
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
@@ -1970,6 +1986,20 @@ button.slick-next:before {
     max-width: 40rem;
   }
 
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .md\:animate-marquee-infinite {
+    animation: marquee 25s linear infinite;
+  }
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -2043,6 +2073,10 @@ button.slick-next:before {
 
   .md\:overflow-hidden {
     overflow: hidden;
+  }
+
+  .md\:overflow-x-hidden {
+    overflow-x: hidden;
   }
 
   .md\:px-\[48px\] {
@@ -2231,5 +2265,13 @@ button.slick-next:before {
 
   .xl\:w-\[40rem\] {
     width: 40rem;
+  }
+
+  .xl\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .xl\:gap-y-0 {
+    row-gap: 0px;
   }
 }
