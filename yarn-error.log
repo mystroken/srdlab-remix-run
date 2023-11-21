@@ -1,8 +1,8 @@
 Arguments: 
-  /snap/node/7844/bin/node /snap/node/7844/bin/yarn.js
+  /snap/node/7844/bin/node /snap/node/7844/bin/yarn.js install
 
 PATH: 
-  /snap/node/7844/usr/sbin:/snap/node/7844/usr/bin:/snap/node/7844/sbin:/snap/node/7844/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+  /snap/node/7844/usr/sbin:/snap/node/7844/usr/bin:/snap/node/7844/sbin:/snap/node/7844/bin:/home/asam/.nvm/versions/node/v16.20.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
 
 Yarn version: 
   1.22.19
@@ -14,7 +14,16 @@ Platform:
   linux x64
 
 Trace: 
-  Error: ENOENT: no such file or directory, open '/home/asam/.cache/yarn/v6/npm-@esbuild-linux-ppc64-0.18.20-2f7156bde20b01527993e6881435ad79ba9599fb-integrity/node_modules/@esbuild/linux-ppc64/.yarn-metadata.json'
+  Error: https://registry.yarnpkg.com/get-stream/-/get-stream-6.0.1.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (/snap/node/7844/lib/cli.js:141517:19)
+      at Object.onceWrapper (node:events:628:28)
+      at ClientRequest.emit (node:events:514:28)
+      at TLSSocket.emitRequestTimeout (node:_http_client:840:9)
+      at Object.onceWrapper (node:events:628:28)
+      at TLSSocket.emit (node:events:526:35)
+      at Socket._onTimeout (node:net:589:8)
+      at listOnTimeout (node:internal/timers:573:17)
+      at process.processTimers (node:internal/timers:514:7)
 
 npm manifest: 
   {
