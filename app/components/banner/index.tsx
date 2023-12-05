@@ -200,9 +200,6 @@ const BannerComponent: React.FC<BannerComponentProps> = ({
                     </div>
                   ))}
                 </div>
-                {/*<div classNamessName="hidden md:flex md:absolute md:right-0 md:top-0">*/}
-                {/*    <p className={'text-[24px] w-[46px] text-gray-400'}>{currentIndex + 1}/{carouselItems.length}</p>*/}
-                {/*</div>*/}
                 <div className="flex justify-center md:absolute md:right-0 md:bottom-40">
                   <button
                     onClick={prev}
