@@ -63,7 +63,7 @@ const BannerComponent: React.FC<BannerComponentProps> = ({
   const path = useMatches();
   const idPath = path[1].pathname;
   return (
-    <div className="bg-cover h-[90vh] lg:h-[80vh] bg-[url('assets/imgs/banner.jpg')] z-50">
+    <div className="bg-cover lg:h-[80vh] bg-[url('assets/imgs/banner.jpg')] z-50">
       <header
         className={`bg-center bg-cover fixed right-0 top-0 left-0 z-40 ${
           colorChange ? "bg-primary" : ""

@@ -969,10 +969,6 @@ h1 {
   width: 194px;
 }
 
-.w-\[46px\] {
-  width: 46px;
-}
-
 .w-auto {
   width: auto;
 }
@@ -1553,10 +1549,6 @@ h1 {
   font-size: 1rem;
 }
 
-.text-\[24px\] {
-  font-size: 24px;
-}
-
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1701,11 +1693,6 @@ h1 {
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
-.text-gray-400 {
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
-}
-
 .text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
@@ -1833,10 +1820,6 @@ button.slick-next:before {
 
   .md\:right-0 {
     right: 0px;
-  }
-
-  .md\:top-0 {
-    top: 0px;
   }
 
   .md\:mx-0 {
