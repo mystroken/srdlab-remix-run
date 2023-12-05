@@ -1,13 +1,14 @@
-import Logo from "../../../assets/imgs/srd-lab-logo.svg";
-import LogoColor from "../../../assets/imgs/logo.png";
-import BtnNext from "../../../assets/imgs/next.png";
-import BtnPrevious from "../../../assets/imgs/previous.png";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useMatches } from "@remix-run/react";
 import { carouselItems, header } from "~/data/header";
 import type { HeaderType, SolutionsType } from "~/types";
 import { useTranslation } from "react-i18next";
 import { Image } from "remix-image";
+
+import Logo from "../../../assets/imgs/srd-lab-logo.svg";
+import LogoColor from "../../../assets/imgs/logo.png";
+import BtnNext from "../../../assets/imgs/next.png";
+import BtnPrevious from "../../../assets/imgs/previous.png";
 
 interface BannerComponentProps {
   title: string;
@@ -16,19 +17,17 @@ interface BannerComponentProps {
   list?: boolean;
 }
 
-export default function BannerComponent({
+const BannerComponent: React.FC<BannerComponentProps> = ({
   title,
   content,
   arrow,
   list,
-}: BannerComponentProps) {
-
+}: BannerComponentProps) => {
   const [navbar, setNavbar] = useState(false);
   const [isShow, setIsShow] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [colorChange, setColorchange] = useState(false);
-
-  let { i18n, t } = useTranslation();
+  const [colorChange, setColorChange] = useState(false);
+  const { i18n, t } = useTranslation();
 
   const changeLangItemClick = (lang: "fr" | "en") => {
     i18n.changeLanguage(lang);
@@ -37,6 +36,10 @@ export default function BannerComponent({
   useEffect(() => {
     document.documentElement.setAttribute("lang", i18n.language);
     window.addEventListener("scroll", changeNavbarColor);
+
+    return () => {
+      window.removeEventListener("scroll", changeNavbarColor);
+    };
   }, [i18n.language]);
 
   const handleScrollToTop = () => {
@@ -44,16 +47,13 @@ export default function BannerComponent({
   };
 
   const changeNavbarColor = () => {
-    if (window.scrollY >= 80) {
-      setColorchange(true);
-    } else {
-      setColorchange(false);
-    }
+    setColorChange(window.scrollY >= 80);
   };
 
   const next = () => {
     setCurrentIndex((currentIndex + 1) % carouselItems.length);
   };
+
   const prev = () => {
     setCurrentIndex(
       (currentIndex - 1 + carouselItems.length) % carouselItems.length
@@ -61,11 +61,14 @@ export default function BannerComponent({
   };
 
   const path = useMatches();
-
   const idPath = path[1].pathname;
   return (
     <div className="bg-cover h-[90vh] lg:h-[80vh] bg-[url('assets/imgs/banner.jpg')] z-50">
-      <header className="bg-center bg-cover">
+      <header
+        className={`bg-center bg-cover fixed right-0 top-0 left-0 z-40 ${
+          colorChange ? "bg-primary" : ""
+        }`}
+      >
         <div
           className={`fixed right-0 top-0 left-0 z-40 ${
             colorChange ? "bg-primary" : ""
@@ -251,4 +254,6 @@ export default function BannerComponent({
       )}
     </div>
   );
-}
+};
+
+export default BannerComponent;

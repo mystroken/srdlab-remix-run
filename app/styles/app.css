@@ -646,10 +646,6 @@ h1 {
   top: 0px;
 }
 
-.bottom-40 {
-  bottom: 10rem;
-}
-
 .z-20 {
   z-index: 20;
 }
@@ -901,28 +897,16 @@ h1 {
   height: 4rem;
 }
 
+.h-\[90vh\] {
+  height: 90vh;
+}
+
 .h-auto {
   height: auto;
 }
 
 .h-full {
   height: 100%;
-}
-
-.h-\[100vh\] {
-  height: 100vh;
-}
-
-.h-\[70vh\] {
-  height: 70vh;
-}
-
-.h-\[80vh\] {
-  height: 80vh;
-}
-
-.h-\[75vh\] {
-  height: 75vh;
 }
 
 .w-1\/2 {
@@ -995,10 +979,6 @@ h1 {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[100vw\] {
-  width: 100vw;
 }
 
 .flex-1 {
@@ -1252,10 +1232,6 @@ h1 {
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'assets\/imgs\/banner\.png\'\)\] {
-  background-image: url('assets/imgs/banner.png');
-}
-
 .bg-\[url\(\'assets\/imgs\/banner\.jpg\'\)\] {
   background-image: url('assets/imgs/banner.jpg');
 }
@@ -1264,16 +1240,8 @@ h1 {
   background-size: cover;
 }
 
-.bg-contain {
-  background-size: contain;
-}
-
 .bg-center {
   background-position: center;
-}
-
-.bg-no-repeat {
-  background-repeat: no-repeat;
 }
 
 .fill-current {
@@ -2253,10 +2221,6 @@ button.slick-next:before {
 
   .lg\:h-\[80vh\] {
     height: 80vh;
-  }
-
-  .lg\:h-\[75vh\] {
-    height: 75vh;
   }
 
   .lg\:w-3\/4 {
