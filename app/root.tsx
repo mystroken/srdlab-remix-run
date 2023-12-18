@@ -51,10 +51,11 @@ export default function App() {
           href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Poppins:wght@300;400;500;600&display=swap"
           rel="stylesheet"
         />
+        <link rel="icon" href="/favicon.ico" />
         <Meta />
         <Links />
       </head>
-      <body style={{ fontFamily: "Poppins" }}>
+      <body>
         <Theme>
           <Outlet />
           <LiveReload />
