@@ -62,9 +62,6 @@ const BannerComponent: React.FC<BannerComponentProps> = ({
 
   const path = useMatches();
   const idPath = path[1].pathname;
-  if (!t) {
-    return <p>Loading...</p>;
-  }
   return (
     <div className="bg-cover lg:h-[80vh] bg-[url('assets/imgs/banner.jpg')] z-50">
       <header
