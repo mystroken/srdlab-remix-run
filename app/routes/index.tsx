@@ -11,9 +11,16 @@ import Spinner from "~/components/spinner";
 export default function Index() {
   const [isLoading, setIsLoading] = useState(true);
   let { t } = useTranslation();
+  useEffect(() => {
+    const delay = setTimeout(() => {
+      setIsLoading(false);
+    }, 4000);
+    return () => clearTimeout(delay);
+  }, []);
+
   return (
     <>
-      {!t("indexBanner") ? (
+      {isLoading ? (
         <Spinner />
       ) : (
         <DefaultLayout>
