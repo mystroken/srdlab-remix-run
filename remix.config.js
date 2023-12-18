@@ -7,4 +7,11 @@ module.exports = {
   assetsBuildDirectory: "public/build",
   serverBuildPath: "api/index.js",
   publicPath: "/build/",
+  optimize: {
+    bundle: {
+      external: {
+        include: ["../assets/fonts/Poppins/Poppins-SemiBold.woff2"],
+      },
+    },
+  },
 };

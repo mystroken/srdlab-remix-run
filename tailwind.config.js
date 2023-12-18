@@ -4,7 +4,6 @@ module.exports = {
     content: ["./app/**/*.{js,ts,jsx,tsx}"],
     theme: {
         fontFamily: {
-            // Override tailwind fontFamily
             sans: ["Poppins", ...defaultTheme.fontFamily.sans],
         },
         extend: {
