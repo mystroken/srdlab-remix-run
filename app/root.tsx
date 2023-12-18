@@ -15,6 +15,8 @@ import { useTranslation } from "react-i18next";
 import "@radix-ui/themes/styles.css";
 import i18next from "~/i18next.server";
 import { Theme } from "@radix-ui/themes";
+import { useEffect, useState } from "react";
+import Spinner from "./components/spinner";
 
 export function links() {
   return [
@@ -43,6 +45,13 @@ export let handle = {
 export default function App() {
   let { locale } = useLoaderData<typeof loader>();
   let { i18n } = useTranslation();
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    const delay = setTimeout(() => {
+      setIsLoading(false);
+    }, 4000);
+    return () => clearTimeout(delay);
+  }, []);
   useChangeLanguage(locale);
   return (
     <html lang={locale} dir={i18n.dir()}>
@@ -57,7 +66,7 @@ export default function App() {
       </head>
       <body>
         <Theme>
-          <Outlet />
+          {isLoading ? <Spinner /> : <Outlet />}
           <LiveReload />
           <Scripts />
         </Theme>
