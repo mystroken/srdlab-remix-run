@@ -26,13 +26,6 @@ export function links() {
   ];
 }
 
-export const meta: MetaFunction = () => ({
-  charset: "utf-8",
-  title:
-    "SRD Lab  |  Cabinet spécialisé dans la conception approfondie et la réalisation d'études, la collecte de données de haute qualité",
-  viewport: "width=device-width,initial-scale=1",
-});
-
 export async function loader({ request }: LoaderArgs) {
   let locale = await i18next.getLocale(request);
   return json({ locale });
@@ -61,7 +54,7 @@ export default function App() {
           rel="stylesheet"
         />
         <link rel="icon" href="/favicon.ico" />
-        <Meta />
+        <Links />
         <meta name="description" content="Laboratory for Survey & Research" />
         <meta
           name="robots"
@@ -81,7 +74,10 @@ export default function App() {
         <meta property="article:tag" content="Development" />
         <meta property="article:tag" content="Laboratory" />
         <meta property="article:section" content="Statistic" />
-        <Links />
+        <title>
+          SRD Lab | Cabinet spécialisé dans la conception approfondie et la
+          réalisation d'études, la collecte de données de haute qualité
+        </title>
       </head>
       <body>
         <Theme>
