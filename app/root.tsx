@@ -18,6 +18,15 @@ import { Theme } from "@radix-ui/themes";
 import { useEffect, useState } from "react";
 import Spinner from "./components/spinner";
 
+export async function loader({ request }: LoaderArgs) {
+  let locale = await i18next.getLocale(request);
+  return json({ locale });
+}
+
+export let handle = {
+  i18n: "common",
+};
+
 export function links() {
   return [
     { rel: "stylesheet", href: styles },
@@ -27,20 +36,9 @@ export function links() {
 }
 
 export const meta: MetaFunction = () => ({
-  charset: "utf-8",
   title:
     "SRD Lab  |  Cabinet spécialisé dans la conception approfondie et la réalisation d'études, la collecte de données de haute qualité",
-  viewport: "width=device-width,initial-scale=1",
 });
-
-export async function loader({ request }: LoaderArgs) {
-  let locale = await i18next.getLocale(request);
-  return json({ locale });
-}
-
-export let handle = {
-  i18n: "common",
-};
 
 export default function App() {
   let { locale } = useLoaderData<typeof loader>();
@@ -61,6 +59,8 @@ export default function App() {
           rel="stylesheet"
         />
         <link rel="icon" href="/favicon.ico" />
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
       </head>
