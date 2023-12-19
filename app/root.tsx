@@ -28,7 +28,8 @@ export function links() {
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
-  title: "Laboratory for Survey & Research",
+  title:
+    "Laboratory for Survey & Research",
   viewport: "width=device-width,initial-scale=1",
 });
 
@@ -80,10 +81,8 @@ export default function App() {
         <meta property="article:tag" content="Development" />
         <meta property="article:tag" content="Laboratory" />
         <meta property="article:section" content="Statistic" />
-        <title>
-          SRD Lab | Cabinet spécialisé dans la conception approfondie et la
-          réalisation d'études, la collecte de données de haute qualité
-        </title>
+
+        <Links />
       </head>
       <body>
         <Theme>
