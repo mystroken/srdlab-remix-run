@@ -26,6 +26,12 @@ export function links() {
   ];
 }
 
+export const meta: MetaFunction = () => ({
+  charset: "utf-8",
+  title: "Laboratory for Survey & Research",
+  viewport: "width=device-width,initial-scale=1",
+});
+
 export async function loader({ request }: LoaderArgs) {
   let locale = await i18next.getLocale(request);
   return json({ locale });
@@ -54,7 +60,7 @@ export default function App() {
           rel="stylesheet"
         />
         <link rel="icon" href="/favicon.ico" />
-        <Links />
+        <Meta />
         <meta name="description" content="Laboratory for Survey & Research" />
         <meta
           name="robots"
