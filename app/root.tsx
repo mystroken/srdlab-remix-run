@@ -49,7 +49,7 @@ export default function App() {
   useEffect(() => {
     const delay = setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 1000);
     return () => clearTimeout(delay);
   }, []);
   useChangeLanguage(locale);
