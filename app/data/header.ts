@@ -6,19 +6,19 @@ export const header: HeaderType[] = [
     name: "home",
   },
   {
-    link: "/about",
+    link: "#about",
     name: "about",
   },
   {
-    link: "/expertises",
+    link: "#expertises",
     name: "expertise",
   },
   {
-    link: "/realisations",
+    link: "#realisations",
     name: "achievement",
   },
   {
-    link: "/travailleravecnous",
+    link: "#travailleravecnous",
     name: "work-with-us",
   },
 ];
